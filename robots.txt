@@ -1,0 +1,5 @@
+# Crawl liberado de proposito: o robot precisa LER a pagina para ver a
+# meta tag "noindex" do index.html. Um "Disallow: /" bloquearia a leitura
+# e o URL ainda poderia aparecer no indice sem descricao.
+User-agent: *
+Allow: /
