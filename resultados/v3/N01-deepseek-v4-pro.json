@@ -1,0 +1,66 @@
+{
+  "noticia_id": "N01",
+  "modelo": "openrouter/deepseek/deepseek-v4-pro",
+  "tokens_prompt": 3454,
+  "tokens_resposta": 2107,
+  "tempo_segundos": 53.14,
+  "erro": null,
+  "analise": {
+    "raciocinio": "Iniciando a análise do texto da CartaCapital sobre a pesquisa Nexus/BTG Pactual.\n\n**S1 — MARCAÇÃO LEXICAL AVALIATIVA:**\nO texto é predominantemente descritivo e baseado em dados de pesquisa. Não encontro adjetivação avaliativa (S1.1), rotulação lexical (S1.2) ou intensificação/sensacionalismo (S1.3) na linguagem do jornalista. Os verbos de elocução são neutros ('aponta', 'marca', 'registra'). Não há verbos carregados como 'admitiu' ou 'alegou' (S1.4). Portanto, nenhum sinal nesta categoria.\n\n**S2 — ENQUADRAMENTO CAUSAL-MORAL:**\nO texto apenas reporta os resultados de uma pesquisa, sem construir uma narrativa de causa, culpa ou ameaça. Não atribui causalidade (S2.1), não responsabiliza ninguém (S2.2), não induz julgamento moral por justaposição (S2.3), não faz apelo ao medo (S2.4) e não apresenta falsas dicotomias (S2.5). A estrutura é de relato factual de dados. Nenhum sinal detectado.\n\n**S3 — SUPORTE EVIDENCIAL E ATRIBUIÇÃO:**\nO texto é inteiramente baseado em uma pesquisa cuja fonte é explicitada: 'pesquisa Nexus/BTG Pactual'. A metodologia é detalhada: número de entrevistas (2.045), datas (22 a 24 de maio), margem de erro (2 p.p.), nível de confiança (95%) e registro no TSE (BR-04193/2026). Todas as afirmações numéricas derivam dessa fonte. Não há claims sem evidência (S3.1), fontes vagas (S3.2), opiniões como fato (S3.3), números sem origem (S3.4) ou generalizações infundadas (S3.5). Nenhum sinal detectado.\n\n**S4 — PLURALIDADE E CONTRAPONTO INTERNO:**\nO texto é um relato de pesquisa, não uma matéria sobre uma controvérsia ou acusação que exija contraponto. Não há uma 'parte diretamente afetada' a ser ouvida, pois o tema é a descrição de intenções de voto. A pesquisa em si é a fonte. Portanto, os critérios de pluralidade (S4.1, S4.2, S4.3, S4.4) não se aplicam a este formato de texto. Nenhum sinal detectado.\n\n**S5 — CONTEXTUALIZAÇÃO EPISÓDICA:**\nO texto é um exemplo claro de enquadramento episódico. Ele reporta o resultado de uma pesquisa como um fato isolado, sem fornecer nenhum contexto histórico ou comparativo. Não há antecedentes de pesquisas anteriores (S5.1), não há dados comparativos com eleições passadas ou tendências (S5.2), e o foco é puramente no 'cavalo de corrida' eleitoral ('quem ganha/perde') sem discutir as causas ou impactos substantivos da diferença de votos entre os grupos religiosos (S5.3). O contexto institucional da pesquisa é dado, mas o contexto do fenômeno (a relação entre voto e religião) está ausente. Detecto S5.1, S5.2 e S5.3.",
+    "sinais": [
+      {
+        "sinal": "S1",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto é estritamente descritivo e baseado em dados. Não foram encontrados adjetivos avaliativos, rótulos, intensificadores ou verbos de elocução carregados na linguagem do jornalista."
+      },
+      {
+        "sinal": "S2",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto limita-se a relatar resultados de uma pesquisa, sem construir narrativas de causalidade, culpa, ameaça ou julgamento moral. A estrutura é de apresentação factual de dados."
+      },
+      {
+        "sinal": "S3",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "Todas as afirmações são atribuídas a uma pesquisa específica ('Nexus/BTG Pactual'), com metodologia, margem de erro e registro eleitoral detalhados no texto. Não há claims sem evidência, fontes anônimas ou números sem origem."
+      },
+      {
+        "sinal": "S4",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto não trata de uma controvérsia, acusação ou disputa que exija a oitiva de múltiplas partes. É um relato de resultados de pesquisa, onde a pluralidade de vozes não é um critério aplicável."
+      },
+      {
+        "sinal": "S5",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S5.1",
+            "trecho": "Uma pesquisa Nexus/BTG Pactual publicada nesta segunda-feira 25 aponta que o presidente Lula (PT) venceria um eventual segundo turno contra Flávio Bolsonaro (PL) no eleitorado católico, enquanto o senador levaria a melhor entre evangélicos.",
+            "justificativa": "O evento (resultado da pesquisa) é apresentado como um fato novo e isolado. Não há menção a pesquisas anteriores do mesmo instituto ou de outros, que poderiam indicar se essa diferença entre os grupos religiosos é uma tendência, um fato novo ou uma oscilação dentro da margem de erro.",
+            "confianca": "alta",
+            "limitacao": "O texto pode ser uma nota curta com o objetivo exclusivo de divulgar o resultado da pesquisa, formato no qual a ausência de antecedentes é comum e esperada."
+          },
+          {
+            "sub_sinal": "S5.2",
+            "trecho": "No geral, sem o recorte por religião, Lula tem 47%, ante 43% de Flávio. [...] O pré-candidato do PT marca 51% das intenções de voto no segmento católico, ante 42% de Flávio. [...] A situação se inverte entre os evangélicos: Flávio vai a 54% e Lula registra 36%.",
+            "justificativa": "Os números são apresentados sem qualquer base de comparação temporal. Não se sabe se a vantagem de Lula entre católicos aumentou, diminuiu ou permaneceu estável em relação a medições anteriores. A ausência de uma série histórica impede o leitor de dimensionar a relevância e a dinâmica do fato.",
+            "confianca": "alta",
+            "limitacao": "A pesquisa pode ser a primeira de uma série ou um levantamento pontual, o que justificaria a falta de comparativos históricos. A limitação é intrínseca ao recorte de uma notícia sobre uma única pesquisa."
+          },
+          {
+            "sub_sinal": "S5.3",
+            "trecho": "Lula x Flávio: Como votam católicos e evangélicos segundo nova pesquisa",
+            "justificativa": "O título e o corpo do texto enquadram a informação exclusivamente na lógica da disputa eleitoral ('cavalo de corrida'), focando em 'quem venceria' em cada segmento. Não há qualquer discussão sobre as possíveis causas para a diferença de intenção de voto (ex: pautas de costumes, economia, identidade), nem sobre o impacto substantivo dessa divisão religiosa no eleitorado.",
+            "confianca": "alta",
+            "limitacao": "O foco em 'quem ganha/perde' é uma convenção consolidada na cobertura de pesquisas eleitorais. A ausência de análise sobre o 'porquê' pode ser uma limitação de espaço ou do gênero textual (nota curta), e não necessariamente um viés intencional."
+          }
+        ],
+        "justificativa_ausencia": ""
+      }
+    ],
+    "resumo": "O texto é um relato conciso e factual de uma pesquisa eleitoral. Apresenta alta qualidade nos critérios de linguagem neutra (S1), enquadramento não moralizante (S2), suporte evidencial robusto (S3) e não se aplica ao critério de pluralidade por não tratar de uma controvérsia (S4). A única limitação significativa é o enquadramento episódico (S5), típico do jornalismo diário, que reporta o dado como um fato isolado, sem oferecer ao leitor o contexto histórico, comparativo ou analítico necessário para uma compreensão mais profunda do fenômeno."
+  }
+}

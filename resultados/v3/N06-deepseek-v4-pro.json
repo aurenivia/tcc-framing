@@ -1,0 +1,74 @@
+{
+  "noticia_id": "N06",
+  "modelo": "openrouter/deepseek/deepseek-v4-pro",
+  "tokens_prompt": 3544,
+  "tokens_resposta": 2571,
+  "tempo_segundos": 49.57,
+  "erro": null,
+  "analise": {
+    "raciocinio": "Iniciando a análise do texto do R7 sobre a morte de Izz al-Din al-Haddad. Avaliarei cada categoria (S1 a S5) independentemente, buscando trechos literais que possam configurar os subcritérios.\n\n**S1 - Marcação Lexical Avaliativa:**\nO texto é predominantemente descritivo e baseado em declarações do exército israelense e da Associated Press. Termos como 'líder', 'arquitetos', 'comandantes seniores' são usados, mas são atribuídos ao exército israelense ('disse o exército israelense', 'segundo o exército de Israel, que o descreveu como...'). A descrição de que ele 'se cercou de reféns israelenses durante a guerra como um escudo contra um ataque' é uma afirmação do exército ('O exército disse que...'). Não encontro adjetivação avaliativa, rotulação, intensificação ou verbos de elocução carregados por parte do jornalista. A linguagem do jornalista é neutra ('disse', 'segundo', 'confirmou'). Portanto, S1 está ausente.\n\n**S2 - Enquadramento Causal-Moral:**\nO texto atribui a Al-Haddad o planejamento dos ataques de 7 de outubro, citando o exército israelense. A causalidade é apresentada como um fato relatado, não como uma construção editorial unilateral. Não há justaposição que induza julgamento moral implícito, apelo ao medo ou falsa dicotomia. A responsabilização é atribuída a uma fonte específica (exército de Israel). A afirmação de que ele usou reféns como 'escudo' é uma acusação grave, mas é claramente atribuída ('O exército disse que...'), não sendo um enquadramento do jornalista. Portanto, S2 está ausente.\n\n**S3 - Suporte Evidencial e Atribuição:**\nAs afirmações centrais são todas atribuídas: a morte e o papel de Al-Haddad são atribuídos ao 'exército israelense' e 'exército de Israel'. A confirmação da morte é atribuída à 'família de Al-Haddad' via 'Associated Press'. As informações sobre sua trajetória ('Ele se juntou ao Hamas...') não têm uma atribuição explícita no parágrafo final, o que poderia ser uma generalização, mas são fatos biográficos de domínio público ou de agência (AP). Não há claims sem evidência, fontes vagas (exército israelense é uma fonte institucional, ainda que interessada), opinião como fato, números sem origem ou generalizações não fundamentadas pelo jornalista. Portanto, S3 está ausente.\n\n**S4 - Pluralidade e Contraponto Interno:**\nO texto trata de um evento (morte de um líder do Hamas) com acusações graves (planejamento de ataques, uso de escudos humanos). A única voz presente é a do exército israelense. A família confirma a morte, mas não comenta as acusações. O Hamas, como parte diretamente afetada e acusada, não é ouvido. Não há qualquer contraponto ou busca por uma versão do grupo. Isso configura uma ausência da parte diretamente afetada (S4.1) e, consequentemente, o texto depende de uma fonte única para uma controvérsia (S4.4). A justificativa 'procurado, não respondeu' também não está presente.\n\n**S5 - Contextualização Episódica:**\nO texto fornece algum contexto: menciona os ataques de 7/10, o número de mortos e reféns, o antecessor de Al-Haddad (Mohammed Sinwar) e um breve histórico de sua entrada no Hamas nos anos 80. No entanto, falta contexto mais amplo sobre a guerra em si, o papel da ala militar, ou o impacto substantivo dessa morte. O foco é no evento da morte e no 'currículo' do indivíduo, sem discutir o que isso significa para o conflito, para as negociações de reféns ou para a estrutura do Hamas. Isso se alinha com S5.1 (ausência de antecedente relevante sobre o impacto) e S5.3 (foco no bastidor/liderança, 'cavalo de corrida' ao listar quem foi morto e quem assumiu).",
+    "sinais": [
+      {
+        "sinal": "S1",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto mantém linguagem descritiva e atribui termos potencialmente valorativos ('arquitetos', 'comandantes seniores', 'escudo humano') diretamente às fontes ('exército israelense', 'exército disse'), sem que o jornalista empregue adjetivação, rotulação, intensificação ou verbos de elocução carregados por conta própria."
+      },
+      {
+        "sinal": "S2",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "A atribuição de causalidade e culpa é claramente creditada ao exército israelense por meio de verbos de elocução neutros ('disse', 'descreveu'). Não há construção narrativa do jornalista que induza julgamento moral, cenário catastrófico ou falsa dicotomia de forma independente das fontes."
+      },
+      {
+        "sinal": "S3",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "Todas as afirmações centrais e potencialmente controversas são atribuídas a fontes identificáveis (exército israelense, família via AP). Não foram encontradas afirmações sem evidência, fontes anônimas, opiniões travestidas de fato, números sem origem ou generalizações infundadas por parte do jornalista."
+      },
+      {
+        "sinal": "S4",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S4.1",
+            "trecho": "Um ataque aéreo israelense em Gaza matou o líder da ala militar do Hamas, Izz al-Din al-Haddad, um dos últimos arquitetos sobreviventes dos ataques de 7 de outubro de 2023, que desencadearam a guerra em Gaza, disse o exército israelense neste sábado (16). [...] O exército disse que Al-Haddad se cercou de reféns israelenses durante a guerra como um escudo contra um ataque.",
+            "justificativa": "O texto baseia-se exclusivamente na versão do exército israelense para descrever as ações e o papel do líder do Hamas, incluindo acusações graves como a de usar reféns como escudo humano. O Hamas, como parte diretamente acusada e afetada, não teve sua posição buscada ou incluída na matéria.",
+            "confianca": "alta",
+            "limitacao": "Em contextos de conflito ativo, o acesso a fontes do grupo adversário pode ser extremamente difícil ou perigoso, e o Hamas é designado como organização terrorista por diversos países, o que pode impor restrições legais ou editoriais ao contato direto."
+          },
+          {
+            "sub_sinal": "S4.4",
+            "trecho": "[O texto inteiro é construído a partir das declarações do exército israelense e da confirmação da morte pela família, sem incluir nenhuma outra perspectiva.]",
+            "justificativa": "A matéria trata de um tema controverso (a morte de um líder militar e as acusações contra ele) utilizando um único campo de atores: a força militar que o matou. A família apenas confirma o óbito, sem oferecer contraponto às acusações.",
+            "confianca": "alta",
+            "limitacao": "A confirmação da morte pela família e os dados biográficos podem ser vistos como um segundo campo de informação, mas não constituem um contraponto às alegações centrais da narrativa, que permanecem incontestadas no texto."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S5",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S5.1",
+            "trecho": "Al-Haddad foi o mais recente comandante do Hamas a ser morto por Israel. Israel disse que ele assumiu o papel após seu antecessor, Mohammed Sinwar, ser morto.",
+            "justificativa": "O texto menciona a sucessão de comandantes, mas não fornece o contexto histórico ou estratégico sobre o impacto dessas mortes para a estrutura do Hamas, para a dinâmica da guerra ou para as negociações de reféns. O evento é tratado como um fato isolado em uma sequência de baixas.",
+            "confianca": "media",
+            "limitacao": "O texto fornece um breve histórico da trajetória de Al-Haddad no Hamas, o que constitui um tipo de contextualização. A ausência se refere especificamente à falta de análise sobre as consequências ou o significado mais amplo do evento para além da sucessão de comando."
+          },
+          {
+            "sub_sinal": "S5.3",
+            "trecho": "Al-Haddad foi o mais recente comandante do Hamas a ser morto por Israel. Israel disse que ele assumiu o papel após seu antecessor, Mohammed Sinwar, ser morto.",
+            "justificativa": "A narrativa foca na lógica de 'cavalo de corrida' ou 'jogo de poder' ao destacar a eliminação de um líder e sua substituição por outro, sem aprofundar o impacto substantivo dessa ação sobre a população civil, o conflito ou as políticas.",
+            "confianca": "media",
+            "limitacao": "Este é um formato comum em notícias de guerra, que priorizam a atualização factual sobre baixas de liderança. A limitação é inerente ao gênero da notícia curta, que não se propõe a ser uma análise aprofundada."
+          }
+        ],
+        "justificativa_ausencia": ""
+      }
+    ],
+    "resumo": "O texto do R7 é uma notícia factual que relata a morte de um líder do Hamas com base em fontes oficiais israelenses. A análise não encontrou sinais de marcação lexical avaliativa (S1), enquadramento causal-moral (S2) ou fragilidade evidencial (S3) por parte do jornalista, que mantém uma linguagem neutra e atribui as informações. Contudo, foram detectados sinais significativos de falta de pluralidade (S4), pois o texto não inclui contraponto do Hamas ou de outras fontes, e de contextualização episódica (S5), ao focar no evento da morte e na sucessão de comando sem explorar seus impactos mais amplos."
+  }
+}

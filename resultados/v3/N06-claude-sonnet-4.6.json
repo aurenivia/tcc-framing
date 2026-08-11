@@ -1,0 +1,90 @@
+{
+  "noticia_id": "N06",
+  "modelo": "openrouter/anthropic/claude-sonnet-4.6",
+  "tokens_prompt": 5795,
+  "tokens_resposta": 2531,
+  "tempo_segundos": 47.71,
+  "erro": null,
+  "analise": {
+    "raciocinio": "Analisando o texto categoria por categoria:\n\nS1 — MARCAÇÃO LEXICAL AVALIATIVA:\nO título usa 'eliminado' em vez de 'morto' ou 'matou', que é um termo com conotação mais técnico-militar e pode ser considerado eufemismo ou linguagem do exército israelense adotada pelo jornalista. No corpo do texto, o jornalista usa 'matou' de forma neutra. O termo 'arquitetos sobreviventes' é uma metáfora que enquadra Al-Haddad como responsável pelos ataques, mas está atribuído ao exército israelense ('disse o exército israelense'). A expressão 'perseguir colaboradores com Israel' é factual no contexto. O verbo 'disse' é neutro. Não há adjetivação avaliativa clara do jornalista fora de citações. O título usa 'eliminado' — palavra do exército israelense adotada pelo veículo, o que pode configurar S1.2 (rotulação lexical) ou S1.4 (verbo de elocução carregado). Avalio como S1.2 de confiança média, pois 'eliminado' é termo eufemístico com conotação militar que substitui 'morto'.\n\nS2 — ENQUADRAMENTO CAUSAL-MORAL:\nO texto atribui a Al-Haddad papel no planejamento dos ataques de 7/10, mas isso é atribuído ao exército israelense. A afirmação de que 'se cercou de reféns israelenses durante a guerra como um escudo' é uma acusação grave atribuída ao exército israelense sem contraponto. Isso pode configurar S2.3 (avaliação moral implícita) por justaposição — a narrativa apresenta Al-Haddad como vilão sem qualquer contraponto. Porém, trata-se de reprodução de declarações do exército israelense. A ausência de contraponto é mais S4 do que S2. Não identifico enquadramento causal-moral próprio do jornalista de forma clara.\n\nS3 — SUPORTE EVIDENCIAL E ATRIBUIÇÃO:\nA maioria das afirmações é atribuída ao exército israelense ou à família de Al-Haddad via AP. O número '1.200 pessoas mortas' e '250 reféns' são dados amplamente documentados, mas sem fonte explícita no texto. A afirmação de que Al-Haddad 'se cercou de reféns israelenses como escudo' é atribuída ao exército israelense, mas sem evidência adicional. Isso pode configurar S3.1 (claim sem evidência explícita) para a afirmação do escudo humano. Os dados numéricos (1.200 mortos, 250 reféns) aparecem sem fonte explícita no texto — S3.4.\n\nS4 — PLURALIDADE E CONTRAPONTO INTERNO:\nO texto apresenta apenas a perspectiva israelense (exército de Israel) e a confirmação da família de Al-Haddad sobre a morte. Não há voz do Hamas, de organizações humanitárias, ou qualquer contraponto às acusações feitas contra Al-Haddad (planejamento dos ataques, uso de reféns como escudo). Isso configura S4.1 e S4.4.\n\nS5 — CONTEXTUALIZAÇÃO EPISÓDICA:\nO texto fornece algum contexto histórico (Al-Haddad se juntou ao Hamas na década de 1980, papel no Conselho Militar, antecessor Mohammed Sinwar). Há referência aos ataques de 7/10 como contexto. O texto é uma nota factual sobre um evento específico, o que é padrão para esse tipo de cobertura. Não há ausência grave de contexto para o tipo de texto. Há ausência de dado comparativo sobre o impacto da morte de Al-Haddad na estrutura do Hamas, mas isso é esperado em nota factual. Identifico S5.2 de forma leve — sem dado sobre o impacto da morte na estrutura do Hamas ou no conflito.",
+    "sinais": [
+      {
+        "sinal": "S1",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S1.2",
+            "trecho": "Exército israelense diz ter eliminado líder do Hamas",
+            "justificativa": "O verbo 'eliminado' no título é termo eufemístico de linguagem militar adotado pelo veículo para descrever uma morte, substituindo termos neutros como 'matou' ou 'morreu'. A escolha lexical adota o enquadramento do exército israelense.",
+            "confianca": "media",
+            "limitacao": "O termo pode refletir simplesmente a tradução da comunicação oficial do exército israelense, sendo uso jornalístico comum para operações militares. Não é necessariamente avaliativo."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S2",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "As atribuições causais e morais presentes no texto (planejamento dos ataques, uso de reféns como escudo) são explicitamente atribuídas ao exército israelense, não constituindo enquadramento próprio do jornalista. Não há construção narrativa que induza julgamento moral além da reprodução de declarações oficiais."
+      },
+      {
+        "sinal": "S3",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S3.4",
+            "trecho": "Os ataques mataram cerca de 1.200 pessoas em Israel e resultaram em mais de 250 pessoas sendo feitas reféns em Gaza.",
+            "justificativa": "Os números são apresentados sem referência a fonte, pesquisa ou instituto que os sustente no próprio texto.",
+            "confianca": "baixa",
+            "limitacao": "Esses números são amplamente documentados e de domínio público, tendo sido divulgados por múltiplas fontes oficiais israelenses e internacionais. A ausência de citação explícita pode ser omissão editorial padrão para dados consolidados."
+          },
+          {
+            "sub_sinal": "S3.1",
+            "trecho": "O exército disse que Al-Haddad se cercou de reféns israelenses durante a guerra como um escudo contra um ataque.",
+            "justificativa": "Afirmação grave — uso de reféns como escudo humano — apresentada apenas com atribuição ao exército israelense, sem evidência adicional, documento, testemunho independente ou dado que a sustente.",
+            "confianca": "media",
+            "limitacao": "A afirmação é atribuída ao exército israelense, o que é transparente quanto à fonte. A ausência de evidência adicional é limitação do texto, mas pode refletir a natureza da informação disponível no momento da publicação."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S4",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S4.1",
+            "trecho": "Israel disse que ele assumiu o papel após seu antecessor, Mohammed Sinwar, ser morto. O exército disse que Al-Haddad se cercou de reféns israelenses durante a guerra como um escudo contra um ataque.",
+            "justificativa": "Acusações graves contra Al-Haddad (planejamento dos ataques de 7/10, uso de reféns como escudo humano) são apresentadas sem qualquer voz do Hamas, de representantes palestinos ou de fontes independentes que pudessem contestar ou contextualizar as afirmações.",
+            "confianca": "alta",
+            "limitacao": "O Hamas frequentemente não responde a pedidos de comentário da imprensa ocidental, e o contexto de conflito ativo pode dificultar o acesso a fontes alternativas. O texto não documenta tentativa de contato."
+          },
+          {
+            "sub_sinal": "S4.4",
+            "trecho": "Um ataque aéreo israelense em Gaza matou o líder da ala militar do Hamas, Izz al-Din al-Haddad, um dos últimos arquitetos sobreviventes dos ataques de 7 de outubro de 2023, que desencadearam a guerra em Gaza, disse o exército israelense neste sábado (16).",
+            "justificativa": "A matéria sobre um evento controverso (morte de líder militar em conflito ativo) depende quase exclusivamente de fontes israelenses (exército de Israel) e da família do morto para confirmação do óbito, sem fontes independentes ou do lado palestino para contextualizar o evento.",
+            "confianca": "alta",
+            "limitacao": "Trata-se de nota factual sobre declaração oficial do exército israelense. O padrão de cobertura de operações militares frequentemente depende de fontes do lado que realiza a operação, especialmente em conflitos de acesso restrito."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S5",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S5.2",
+            "trecho": "Al-Haddad foi o mais recente comandante do Hamas a ser morto por Israel.",
+            "justificativa": "A afirmação de que Al-Haddad é 'o mais recente' comandante morto não é acompanhada de dado comparativo sobre quantos comandantes já foram mortos, qual o impacto dessas mortes na capacidade operacional do Hamas ou qual a tendência da guerra.",
+            "confianca": "baixa",
+            "limitacao": "O texto é uma nota factual sobre um evento específico. A ausência de dado comparativo é característica do gênero jornalístico de nota/breaking news, não necessariamente uma limitação editorial deliberada."
+          }
+        ],
+        "justificativa_ausencia": ""
+      }
+    ],
+    "resumo": "O texto é uma nota factual sobre a morte de um comandante do Hamas, baseada predominantemente em declarações do exército israelense, sem contraponto de fontes palestinas ou independentes (S4). Há adoção do termo 'eliminado' do vocabulário militar israelense no título (S1) e uma afirmação grave sobre uso de reféns como escudo humano sem evidência adicional além da fonte oficial (S3). O enquadramento episódico é característico do gênero breaking news, com ausência de dados comparativos sobre o impacto da morte no conflito (S5)."
+  }
+}

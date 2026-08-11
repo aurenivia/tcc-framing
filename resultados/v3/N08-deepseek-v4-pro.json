@@ -1,0 +1,67 @@
+{
+  "noticia_id": "N08",
+  "modelo": "openrouter/deepseek/deepseek-v4-pro",
+  "tokens_prompt": 5358,
+  "tokens_resposta": 5847,
+  "tempo_segundos": 74.28,
+  "erro": null,
+  "analise": {
+    "raciocinio": "S1: Examinei o texto em busca de adjetivos avaliativos, rótulos, intensificações e verbos de elocução carregados. O texto usa linguagem neutra e atribui informações a fontes (Polícia Federal, diálogos). Termos como 'traficante' são factuais com base na PF. Verbos como 'disse', 'afirmou' são neutros. Não encontrei sinais.\nS2: Busquei enquadramento causal-moral, atribuição de culpa unilateral, avaliação moral implícita, apelo ao medo ou falsas dicotomias. O texto relata as mensagens e inclui a negativa de Gutemberg, sem atribuir culpa ou construir narrativa moral. Não há sinais.\nS3: Verifiquei afirmações sem evidência, fontes vagas, opinião como fato, números sem origem, generalizações. Todas as alegações são atribuídas à PF ou aos diálogos. As fontes são identificadas (PF, diálogos obtidos). Não há opiniões não atribuídas. Sem sinais.\nS4: Avaliei a pluralidade de vozes. O texto trata de uma acusação contra Marcos José Menezes, mas ele não é ouvido. A matéria diz que ele foi procurado e não respondeu. Isso configura ausência da parte diretamente afetada (S4.1). Gutemberg Fonseca é ouvido, mas Menezes é o principal envolvido. Portanto, S4.1 presente.\nS5: Analisei a contextualização. O texto fornece algum histórico de Menezes, mas foca na ligação com a campanha eleitoral atual, caracterizando enquadramento de 'cavalo de corrida' (S5.3). Também omite detalhes sobre o cargo público em questão e o processo de nomeação, faltando contexto institucional (S5.4). Assim, S5.3 e S5.4 presentes.",
+    "sinais": [
+      {
+        "sinal": "S1",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto utiliza linguagem descritiva e atribuições a fontes, sem adjetivos avaliativos, rótulos, intensificações ou verbos de elocução carregados."
+      },
+      {
+        "sinal": "S2",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "Não há atribuição de culpa unilateral, avaliação moral implícita, apelo ao medo ou falsas dicotomias; o relato é factual e inclui contraponto."
+      },
+      {
+        "sinal": "S3",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "Todas as afirmações relevantes estão atribuídas à Polícia Federal, aos diálogos interceptados ou às partes; não há claims sem evidência, fontes vagas ou opiniões como fato."
+      },
+      {
+        "sinal": "S4",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S4.1",
+            "trecho": "Procurado, Marcos José Menezes não respondeu aos questionamentos da coluna. O espaço está aberto para manifestações.",
+            "justificativa": "O principal acusado/envolvido não teve sua versão incluída, configurando ausência da parte diretamente afetada.",
+            "confianca": "alta",
+            "limitacao": "O jornalista afirma tê-lo procurado, o que indica tentativa de contato, mas a ausência de manifestação permanece."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S5",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S5.3",
+            "trecho": "Candidato do PL ao mesmo cargo neste ano, Gutemberg Fonseca afirmou à coluna que Marcos José Menezes seguirá como um dos coordenadores de sua campanha.",
+            "justificativa": "O texto destaca a condição de candidato e a manutenção do coordenador na campanha, enquadrando a notícia na lógica da disputa eleitoral (cavalo de corrida).",
+            "confianca": "media",
+            "limitacao": "A informação é relevante para contextualizar o vínculo político, mas o foco no aspecto eleitoral pode desviar de outros impactos."
+          },
+          {
+            "sub_sinal": "S5.4",
+            "trecho": "tratou sobre uma nomeação a pedido do traficante [...] cago público [sic]",
+            "justificativa": "O texto não explica o contexto institucional da nomeação, como o cargo pretendido, os procedimentos ou a competência legal, deixando lacuna informativa.",
+            "confianca": "media",
+            "limitacao": "Pode ser que a investigação não tenha revelado detalhes, mas a ausência de contexto limita a compreensão do fato."
+          }
+        ],
+        "justificativa_ausencia": ""
+      }
+    ],
+    "resumo": "O texto apresenta linguagem neutra e atribuída, sem marcas lexicais avaliativas ou enquadramento causal-moral. A principal fragilidade está na ausência da versão do acusado (S4.1) e no foco episódico com ênfase na disputa eleitoral e falta de contexto institucional (S5.3, S5.4)."
+  }
+}

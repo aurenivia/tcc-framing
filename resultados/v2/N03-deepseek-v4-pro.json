@@ -1,0 +1,46 @@
+{
+  "noticia_id": "N03",
+  "modelo": "openrouter/deepseek/deepseek-v4-pro",
+  "tokens_prompt": 3186,
+  "tokens_resposta": 2123,
+  "tempo_segundos": 80.7,
+  "erro": null,
+  "analise": {
+    "raciocinio": "Iniciando a análise do texto jornalístico do G1, aplicando o protocolo de forma independente para cada categoria.\n\n**S1 — MARCAÇÃO LEXICAL AVALIATIVA:**\nO texto é majoritariamente construído com citações diretas de Fernando Henrique Cardoso. A maior parte da carga avaliativa está na fala do entrevistado, não na voz do jornalista. O jornalista usa verbos de elocução neutros ('disse', 'afirmou', 'ressaltou', 'lembrou', 'argumentou'). Não há adjetivação avaliativa, rotulação ou intensificação por parte do narrador. A única exceção é o verbo 'admitiu', que não aparece no texto. Portanto, não identifico sinais claros de S1 na voz do veículo. A citação 'incapacidade que se nota hoje de o governo funcionar' é uma avaliação de FHC, não do jornalista. O protocolo orienta a marcar citação de terceiros apenas se o texto endossa ou amplifica sem contraponto, o que não é o caso aqui, pois o texto apenas relata.\n\n**S2 — ENQUADRAMENTO CAUSAL-MORAL:**\nO texto relata a opinião de FHC sobre a crise e o impeachment. A causalidade ('crise' -> 'impeachment como caminho') é atribuída a FHC. O jornalista não faz essa atribuição em sua própria voz. A justaposição de frases como 'incapacidade de o governo funcionar' e 'desfalecimento da economia' com a solução do impeachment é uma construção da fala de FHC, não um enquadramento autoral do texto. O texto não apresenta uma falsa dicotomia ou apelo ao medo por conta própria. A estrutura é de relato de entrevista.\n\n**S3 — SUPORTE EVIDENCIAL E ATRIBUIÇÃO:**\nO texto é um relato de uma entrevista publicada em outro veículo ('O Estado de S.Paulo'). As afirmações são todas atribuídas a FHC ('disse', 'afirmou', 'segundo ele'). A fonte é clara e nomeada. Não há claims do jornalista sem evidência. A afirmação de FHC de que as manifestações 'mobilizaram milhões' é uma citação dele, e o jornalista não a endossa como fato, apenas a relata. Não há números ou comparações sem origem na voz do narrador. A fonte é o próprio entrevistado e o jornal que publicou a entrevista.\n\n**S4 — PLURALIDADE E CONTRAPONTO INTERNO:**\nO texto é um relato de uma entrevista com um ator específico (FHC) sobre um tema controverso (impeachment). Não há contraponto interno. A parte diretamente afetada (governo Dilma, base aliada) não é ouvida. Não há qualquer tentativa de buscar o outro lado. Isso configura uma ausência de pluralidade em um tema de disputa. O texto não é uma nota curta sobre um fato incontroverso; é a divulgação de uma posição política forte sobre um processo em andamento. A ausência de contraponto é notável.\n\n**S5 — CONTEXTUALIZAÇÃO EPISÓDICA:**\nO texto fornece algum contexto factual sobre o processo de impeachment ('Atualmente, tramita no Congresso... comissão especial... instalada na última quinta-feira'). No entanto, o foco principal é a opinião de um ator político (FHC) e suas justificativas, enquadrando o evento como uma disputa de poder e uma solução para uma 'crise'. Não há contextualização histórica mais ampla sobre as crises políticas brasileiras, os pedidos de impeachment anteriores, ou os argumentos jurídicos do pedido em si. O foco é na fala do ex-presidente, um enquadramento típico de 'cavalo de corrida' (quem apoia o quê). A ausência de dados comparativos sobre a economia ou a crise, para além da fala de FHC, também se encaixa.\n\nCom base nisso, os sinais mais claros estão em S4 (ausência de contraponto) e S5 (foco episódico e de bastidor). S1, S2 e S3 não apresentam sinais significativos na voz do jornalista.",
+    "achados": [
+      {
+        "sinal": "S4",
+        "sub_sinal": "S4.1",
+        "sub_sinal_nome": "Parte diretamente afetada ausente",
+        "trecho": "O ex-presidente Fernando Henrique Cardoso, em entrevista publicada neste domingo (20) no jornal 'O Estado de S.Paulo', disse que 'o caminho' para sair da crise pela qual passa o país é o impeachment da presidente Dilma Rousseff.",
+        "justificativa": "O texto inteiro é dedicado a repercutir a posição de FHC a favor do impeachment, um tema de intensa controvérsia política. A parte diretamente afetada pela acusação (a presidente Dilma Rousseff, seu partido ou sua defesa) não é consultada, citada ou mencionada em qualquer momento da matéria. Não há justificativa para essa ausência.",
+        "confianca": "alta",
+        "limitacao": "A matéria pode ter sido concebida como uma nota de repercussão de uma entrevista de um ex-presidente, e não como uma reportagem analítica sobre o impeachment. A ausência de contraponto pode ser uma limitação de escopo, não necessariamente uma omissão deliberada."
+      },
+      {
+        "sinal": "S5",
+        "sub_sinal": "S5.3",
+        "sub_sinal_nome": "Foco estratégico / bastidor / cavalo de corrida",
+        "trecho": "Para FHC, é 'natural' que o vice de Dilma, Michel Temer, seja o presidente em caso de impeachment. Segundo o ex-presidente, o próximo ocupante do Palácio do Planalto, caso haja a saída de Dilma, vai ter que levar em conta que o país 'quer a continuidade da Lava Jato, soluções para as questões econômicas prementes, respeito à institucionalidade'.",
+        "justificativa": "O texto foca na opinião de um ator político sobre a sucessão presidencial ('quem ganha'), nos cálculos políticos ('é natural que Temer seja o presidente') e nas demandas que o próximo governo terá que atender. Essa abordagem centrada na disputa de poder e nos bastidores da sucessão se sobrepõe a uma discussão sobre o impacto substantivo do impeachment, seus fundamentos legais ou as políticas em jogo.",
+        "confianca": "media",
+        "limitacao": "O foco em 'cavalo de corrida' é um enquadramento jornalístico comum. O texto também menciona, pela fala de FHC, questões substantivas como 'desfalecimento da economia', mas o enquadramento geral é o da disputa política e da opinião de uma figura de peso."
+      },
+      {
+        "sinal": "S5",
+        "sub_sinal": "S5.1",
+        "sub_sinal_nome": "Ausência de antecedente relevante",
+        "trecho": "Atualmente, tramita no Congresso Nacional um pedido de impeachment contra a presidente. A comissão especial que vai analisar o caso foi instalada na última quinta-feira (17). Após a comissão, o plenário da Casa deve se posicionar sobre o tema.",
+        "justificativa": "O texto fornece apenas o contexto processual imediato (a tramitação atual). Não há qualquer menção aos antecedentes do pedido de impeachment, como seus fundamentos jurídicos (as 'pedaladas fiscais'), o histórico de outros pedidos, ou o contexto político que levou à sua aceitação. O evento é tratado como um fato dado, sem a profundidade histórica que permitiria ao leitor entender a sua origem.",
+        "confianca": "media",
+        "limitacao": "O parágrafo cumpre a função de contextualizar o momento processual do pedido. A ausência de antecedentes históricos ou jurídicos pode ser uma limitação de espaço em uma notícia de repercussão, mas contribui para um enquadramento episódico."
+      }
+    ],
+    "sinais_ausentes": [
+      "S1",
+      "S2",
+      "S3"
+    ],
+    "resumo": "O texto é um relato de entrevista que apresenta fortes sinais de falta de pluralidade (S4.1) ao repercutir uma posição controversa sem ouvir a parte contrária. Também exibe um enquadramento episódico (S5.3, S5.1) focado na disputa política e com pouca contextualização histórica ou jurídica. Não foram encontrados sinais significativos de marcação lexical avaliativa (S1), enquadramento causal-moral (S2) ou fragilidade evidencial (S3) na voz do jornalista, que mantém uma postura de relato neutro das declarações de FHC."
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "noticia_id": "N05",
+  "modelo": "openrouter/openai/gpt-5.4",
+  "tokens_prompt": 3820,
+  "tokens_resposta": 2100,
+  "tempo_segundos": 29.34,
+  "erro": null,
+  "analise": {
+    "raciocinio": "Analisei o texto separando linguagem do jornalista e falas/citações atribuídas. Em S1, encontrei marcação lexical avaliativa fora de citação, especialmente no uso repetido do rótulo \"grupo terrorista Hamas\" e \"grupo terrorista palestino\", que enquadra o ator por categoria valorativa no corpo narrativo. Não identifiquei com segurança adjetivação avaliativa adicional nem verbo de elocução claramente carregado, pois \"disse\" e \"afirmou\" são neutros, e \"classificando\" introduz fala atribuída à fonte. Em S2, há enquadramento causal que vincula a paralisação da trégua e o travamento do plano à \"recusa do Hamas em se desarmar\" e ao fato de o grupo \"ainda não se desarmou\"; embora haja menção à condição colocada pelo Hamas e ao controle israelense sobre parte de Gaza, a narrativa central atribui o bloqueio sobretudo a um fator/ator. Em S3, há afirmações relevantes com suporte evidencial limitado no próprio texto, como \"Mediadores internacionais afirmam há muito tempo\" sem identificação das fontes e \"nenhum progresso significativo foi feito\" sem dados ou parâmetro explícito. Em S4, o texto inclui a posição de Mladenov, de mediadores internacionais e uma síntese da posição do Hamas; há alguma pluralidade mínima, mas o contraponto do Hamas aparece de forma breve e indireta, sem desenvolvimento comparável, o que caracteriza contraponto fraco e assimetria de espaço. Em S5, a matéria é episódica: relata o impasse atual sem oferecer histórico suficiente do acordo, sem dados comparativos para dimensionar \"mais da metade\" ou \"nenhum progresso significativo\", e com contexto institucional limitado sobre as condições, etapas e regras do cessar-fogo.",
+    "sinais": [
+      {
+        "sinal": "S1",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S1.2",
+            "trecho": "trégua depende do desarmamento do grupo terrorista Hamas",
+            "justificativa": "O texto do jornalista emprega o rótulo valorativo \"grupo terrorista Hamas\" fora de citação direta, enquadrando o ator por uma categoria carregada em vez de usar apenas denominação descritiva neutra.",
+            "confianca": "alta",
+            "limitacao": "O termo pode refletir uma classificação amplamente usada em certos contextos políticos e jornalísticos; a análise aqui registra apenas o efeito lexical no texto, sem julgar sua veracidade ou adequação factual."
+          },
+          {
+            "sub_sinal": "S1.2",
+            "trecho": "O grupo terrorista palestino tem procurado condicionar qualquer desmilitarização",
+            "justificativa": "Há nova rotulação lexical valorativa no corpo da matéria, agora com nacionalidade agregada, reforçando o enquadramento do ator por rótulo carregado.",
+            "confianca": "alta",
+            "limitacao": "A expressão pode ser entendida como escolha editorial padronizada; ainda assim, o achado se limita ao uso do rótulo na formulação narrativa do texto."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S2",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S2.1",
+            "trecho": "Título: Plano de Trump em Gaza trava por recusa do Hamas em se desarmar",
+            "justificativa": "O título atribui o travamento do plano a uma causa principal única — a recusa do Hamas em se desarmar — orientando a leitura causal já na abertura.",
+            "confianca": "alta",
+            "limitacao": "O restante do texto menciona também a retirada das tropas israelenses e o controle territorial, o que atenua parcialmente a unilateralidade; ainda assim, o título privilegia uma causa singular."
+          },
+          {
+            "sub_sinal": "S2.1",
+            "trecho": "o acordo gradual está paralisado porque o Hamas ainda não se desarmou",
+            "justificativa": "A formulação apresentada no texto associa a paralisação do acordo diretamente a um único fator ligado a um ator específico, sem desenvolver outras causas possíveis do impasse.",
+            "confianca": "media",
+            "limitacao": "A frase é atribuída a Mladenov, e parte do enquadramento causal pode refletir a posição da fonte; o sinal decorre da centralidade que o texto concede a essa explicação sem maior contextualização multicausal."
+          },
+          {
+            "sub_sinal": "S2.2",
+            "trecho": "um ponto crucial que tem impedido o progresso em outras frentes, incluindo a reconstrução do enclave",
+            "justificativa": "O texto liga a falta de desarmamento do Hamas ao bloqueio de outras frentes, ampliando a responsabilização desse ator pelo impasse e seus efeitos mais amplos.",
+            "confianca": "media",
+            "limitacao": "A passagem pode apenas resumir a avaliação da fonte diplomática; sem mais contexto causal no próprio texto, a desproporcionalidade é sugestiva, não inequívoca."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S3",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S3.2",
+            "trecho": "Mediadores internacionais afirmam há muito tempo que o desarmamento é fundamental para o cessar-fogo",
+            "justificativa": "A expressão \"Mediadores internacionais\" designa uma fonte coletiva vaga e não identificável individualmente no texto.",
+            "confianca": "alta",
+            "limitacao": "O grupo pode ser conhecido no contexto mais amplo da cobertura, mas nesta matéria não há nomeação ou especificação suficiente da fonte."
+          },
+          {
+            "sub_sinal": "S3.1",
+            "trecho": "nenhum progresso significativo foi feito nesse sentido",
+            "justificativa": "A afirmação sobre ausência de progresso relevante é substantiva para a narrativa do impasse, mas não vem acompanhada de indicador, documento, cronologia ou evidência explícita no texto.",
+            "confianca": "alta",
+            "limitacao": "Em notas curtas, nem sempre há detalhamento de dados; ainda assim, a frase permanece sem sustentação explícita na própria matéria."
+          },
+          {
+            "sub_sinal": "S3.1",
+            "trecho": "um ponto crucial que tem impedido o progresso em outras frentes, incluindo a reconstrução do enclave",
+            "justificativa": "A relação entre o desarmamento e o bloqueio de \"outras frentes\" e da reconstrução é uma afirmação relevante sem documentação, dados ou demonstração adicional no texto.",
+            "confianca": "media",
+            "limitacao": "A informação pode derivar da avaliação da fonte citada, mas o texto não explicita evidências independentes para sustentá-la."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S4",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S4.2",
+            "trecho": "O grupo terrorista palestino tem procurado condicionar qualquer desmilitarização à retirada das tropas israelenses.",
+            "justificativa": "Há contraponto à tese central, mas ele aparece apenas em uma frase resumida e indireta, sem citação direta, sem desenvolvimento argumentativo e sem espaço comparável ao da posição de Mladenov.",
+            "confianca": "alta",
+            "limitacao": "A matéria é curta, o que reduz naturalmente o espaço para aprofundamento; ainda assim, o contraponto interno permanece limitado."
+          },
+          {
+            "sub_sinal": "S4.3",
+            "trecho": "Nickolay Mladenov, o principal diplomata responsável pelo cessar-fogo mediado pelos EUA em Gaza, disse...",
+            "justificativa": "A perspectiva de Mladenov e de mediadores ocupa a maior parte da matéria, enquanto a posição atribuída ao Hamas aparece de forma breve no final, indicando assimetria interna de espaço e desenvolvimento.",
+            "confianca": "media",
+            "limitacao": "Como o texto é breve, a assimetria é relativa e não extrema em volume absoluto; o sinal decorre da distribuição comparativa do espaço dentro da própria nota."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S5",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S5.1",
+            "trecho": "o acordo gradual está paralisado",
+            "justificativa": "O texto informa a paralisação do acordo, mas não explica suficientemente o histórico desse acordo gradual, suas etapas anteriores ou como se chegou ao impasse atual.",
+            "confianca": "alta",
+            "limitacao": "Pode tratar-se de nota de atualização, em que algum contexto prévio seja presumido; ainda assim, nesta peça o antecedente é escasso."
+          },
+          {
+            "sub_sinal": "S5.2",
+            "trecho": "O exército israelense continua a controlar mais da metade da Faixa de Gaza.",
+            "justificativa": "Há um dado quantitativo parcial, mas sem base comparativa, marco temporal, fonte ou parâmetro que permita dimensionar a relevância de \"mais da metade\" no contexto da notícia.",
+            "confianca": "media",
+            "limitacao": "A frase oferece alguma dimensão numérica mínima; o problema é a ausência de comparação ou origem explícita, não a inexistência total de quantificação."
+          },
+          {
+            "sub_sinal": "S5.4",
+            "trecho": "a trégua depende do desarmamento",
+            "justificativa": "A matéria afirma uma condição central da trégua, mas não explica o arranjo institucional do cessar-fogo, quem definiu essa exigência, em que termos ela opera ou qual o procedimento previsto para sua implementação.",
+            "confianca": "media",
+            "limitacao": "O texto menciona mediação dos EUA e um acordo gradual, o que fornece algum contexto institucional; ainda assim, faltam regras e mecanismos concretos relevantes para compreensão."
+          }
+        ],
+        "justificativa_ausencia": ""
+      }
+    ],
+    "resumo": "O texto apresenta marcação lexical avaliativa principalmente na rotulação repetida de Hamas como \"grupo terrorista\" no corpo narrativo. A matéria também enquadra o impasse de forma causalmente centrada no desarmamento do Hamas, com suporte evidencial por vezes vago, contraponto interno limitado e contextualização histórica e institucional reduzida."
+  }
+}

@@ -1,0 +1,75 @@
+[
+  {
+    "noticia_id": "N01",
+    "modelo": "openrouter/deepseek/deepseek-v4-pro",
+    "tokens_prompt": 5467,
+    "tokens_resposta": 7452,
+    "tempo_segundos": 91.1,
+    "erro": null,
+    "analise": {
+      "raciocinio": "Analisei cada categoria independentemente. S1: O texto é composto majoritariamente por citações de atores políticos; o jornalista não emprega adjetivação avaliativa, rotulação, intensificação ou verbos de elocução carregados. Portanto, S1 sem sinais. S2: A matéria relata acusações mútuas sem construir enquadramento causal-moral próprio; não há atribuição unilateral de causa, responsabilização desproporcional, avaliação moral implícita, apelo ao medo ou falsa dicotomia. S2 sem sinais. S3: Todas as afirmações são atribuídas a fontes nomeadas; não há claims sem evidência, fontes vagas, opiniões como fato, números sem origem ou generalizações. S3 sem sinais. S4: A matéria apresenta vozes de ambos os lados (Dilma, Temer, Cunha, Jucá, Moreira, Costa, Viana) com espaço equilibrado e contraponto desenvolvido. S4 sem sinais. S5: O texto é episódico: não fornece antecedentes do impeachment (S5.1), não apresenta dados comparativos (S5.2), foca na disputa política e estratégia (S5.3) e omite o contexto institucional do processo (S5.4). Portanto, S5 com quatro subcritérios detectados.",
+      "sinais": [
+        {
+          "sinal": "S1",
+          "presente": false,
+          "sub_sinais_detectados": [],
+          "justificativa_ausencia": "O texto é descritivo e baseado em citações, sem uso de adjetivação avaliativa, rotulação, intensificação ou verbos de elocução carregados por parte do jornalista."
+        },
+        {
+          "sinal": "S2",
+          "presente": false,
+          "sub_sinais_detectados": [],
+          "justificativa_ausencia": "A matéria relata acusações mútuas sem construir enquadramento causal-moral próprio; não há atribuição unilateral de causa, responsabilização desproporcional, avaliação moral implícita, apelo ao medo ou falsa dicotomia."
+        },
+        {
+          "sinal": "S3",
+          "presente": false,
+          "sub_sinais_detectados": [],
+          "justificativa_ausencia": "Todas as afirmações relevantes são atribuídas a fontes nomeadas; não há claims sem evidência, fontes vagas, opiniões apresentadas como fato, números sem origem ou generalizações não fundamentadas."
+        },
+        {
+          "sinal": "S4",
+          "presente": false,
+          "sub_sinais_detectados": [],
+          "justificativa_ausencia": "A matéria inclui múltiplas vozes de ambos os lados da controvérsia, com espaço equilibrado e contraponto desenvolvido."
+        },
+        {
+          "sinal": "S5",
+          "presente": true,
+          "sub_sinais_detectados": [
+            {
+              "sub_sinal": "S5.1",
+              "trecho": "O discurso em que a presidente Dilma Rousseff acusou o vice Michel Temer e o presidente da Câmara, Eduardo Cunha (PMDB-RJ), de 'chefes da conspiração' e 'chefes do golpe' provocou reações no PMDB e entre aliados do governo",
+              "justificativa": "O texto não apresenta o histórico do impeachment, as razões da crise política ou os antecedentes que levaram ao discurso de Dilma.",
+              "confianca": "alta",
+              "limitacao": "É uma notícia factual sobre um evento específico; a ausência de antecedentes é típica do jornalismo diário, mas limita a compreensão do contexto."
+            },
+            {
+              "sub_sinal": "S5.2",
+              "trecho": "O discurso em que a presidente Dilma Rousseff acusou o vice Michel Temer e o presidente da Câmara, Eduardo Cunha (PMDB-RJ), de 'chefes da conspiração' e 'chefes do golpe' provocou reações no PMDB e entre aliados do governo",
+              "justificativa": "O texto não fornece nenhum dado comparativo, série histórica ou estatística que permita dimensionar o fato.",
+              "confianca": "alta",
+              "limitacao": "O foco é a troca de acusações, não uma análise quantitativa; a ausência de dados comparativos é esperada nesse tipo de matéria."
+            },
+            {
+              "sub_sinal": "S5.3",
+              "trecho": "Rompido com Dilma, ele conduz o processo do impeachment na Câmara.",
+              "justificativa": "A cobertura centra-se na disputa de poder e no posicionamento político, sem discutir impactos substantivos das políticas.",
+              "confianca": "media",
+              "limitacao": "A matéria relata as falas dos atores, que naturalmente abordam estratégia; o foco estratégico é inerente ao tema."
+            },
+            {
+              "sub_sinal": "S5.4",
+              "trecho": "Nós estamos comprometidos, única e exclusivamente, com o respeito à Constituição, à lei e ao regimento da Casa. O que me parece que [isso] está sendo contestado com relação a ela porque existe a acusação, que vai ser decidida a abertura ou não do processo, justamente por isso, por descumprir a Constituição e descumprir a lei",
+              "justificativa": "O texto menciona a Constituição e a lei, mas não explica qual é a acusação específica, as regras do impeachment ou o contexto institucional do processo.",
+              "confianca": "alta",
+              "limitacao": "O foco é a reação política, não uma explicação do processo; a omissão é comum em notícias factuais."
+            }
+          ],
+          "justificativa_ausencia": ""
+        }
+      ],
+      "resumo": "A matéria é um relato equilibrado de acusações e reações, sem marcas lexicais avaliativas, enquadramento causal-moral, fragilidade evidencial ou falta de pluralidade. Contudo, apresenta forte enquadramento episódico, com ausência de antecedentes, dados comparativos, contexto institucional e foco na disputa política."
+    }
+  }
+]

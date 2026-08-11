@@ -1,0 +1,44 @@
+{
+  "noticia_id": "N02",
+  "modelo": "openrouter/deepseek/deepseek-v4-pro",
+  "tokens_prompt": 3558,
+  "tokens_resposta": 3845,
+  "tempo_segundos": 74.6,
+  "erro": null,
+  "analise": {
+    "raciocinio": "Analisei cada categoria independentemente. Para S1, não encontrei adjetivação avaliativa, rotulação lexical carregada, intensificação ou verbos de elocução carregados. O termo 'petista' é designação partidária comum, não um rótulo valorativo. Para S2, o texto é informativo sobre saúde, sem atribuição causal, moral ou apelo ao medo. Para S3, as informações são atribuídas ao hospital e equipe médica; não há claims sem evidência, fontes vagas ou opiniões como fato. Para S4, não há controvérsia ou disputa que exija contraponto; as fontes são adequadas ao tema. Para S5, o texto fornece antecedentes (cirurgia em abril), contexto médico e não se concentra em estratégia política. Portanto, nenhum sinal foi detectado.",
+    "sinais": [
+      {
+        "sinal": "S1",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto não apresenta adjetivação avaliativa, rotulação lexical carregada, intensificação ou verbos de elocução carregados. O termo 'petista' é uma designação partidária factual, sem carga valorativa."
+      },
+      {
+        "sinal": "S2",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto é um relato informativo sobre um procedimento médico, sem enquadramento causal, moral ou apelo ao medo."
+      },
+      {
+        "sinal": "S3",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "As afirmações são atribuídas ao Hospital Sírio-Libanês e à equipe médica. Não há claims relevantes sem evidência, fontes vagas ou opiniões apresentadas como fato."
+      },
+      {
+        "sinal": "S4",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto trata de um tema de saúde sem controvérsia; não há necessidade de contraponto, e as fontes são adequadas ao contexto."
+      },
+      {
+        "sinal": "S5",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto contextualiza o procedimento com antecedentes (cirurgia em abril), detalhes médicos e não adota enquadramento estratégico ou de bastidor."
+      }
+    ],
+    "resumo": "Nenhum sinal discursivo detectado em qualquer categoria. O texto é um relato jornalístico neutro e factual sobre um procedimento médico."
+  }
+}

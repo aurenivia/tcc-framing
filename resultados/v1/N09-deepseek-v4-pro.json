@@ -1,0 +1,56 @@
+{
+  "noticia_id": "N09",
+  "modelo": "openrouter/deepseek/deepseek-v4-pro",
+  "tokens_prompt": 4292,
+  "tokens_resposta": 4751,
+  "tempo_segundos": 134.38,
+  "erro": null,
+  "analise": {
+    "raciocinio": "S1 – MARCAÇÃO LEXICAL AVALIATIVA: A linguagem do jornalista é descritiva e neutra. As expressões avaliativas presentes ('grande e importante mudança', 'êxito', 'importante etapa') estão em citações diretas de atores governamentais, sem endosso explícito do texto. Verbos de elocução são neutros ('afirmou', 'disse'). Não há adjetivação, rotulação, intensificação ou verbos carregados por parte do narrador. Ausência de sinais.\n\nS2 – ENQUADRAMENTO CAUSAL-MORAL: O texto relata a aprovação e explica o conteúdo da MP. Não atribui culpa, não constrói julgamento moral implícito, não recorre a apelo ao medo ou falsas dicotomias. A nota da Presidência contém enquadramentos causais ('faltava vontade política'), mas é uma peça citada, não uma construção do jornalista. Ausência de sinais.\n\nS3 – SUPORTE EVIDENCIAL E ATRIBUIÇÃO: As informações factuais (carga horária, itinerários, vagas) são apresentadas como parte do texto da MP, sem necessidade de fonte externa. Números como 800 horas e 1.400 horas são de domínio público ou extraídos do próprio documento legal. Todas as fontes citadas são nomeadas (Temer, Mendonça Filho, Secom). Não há opinião do jornalista travestida de fato. Ausência de sinais.\n\nS4 – PLURALIDADE E CONTRAPONTO INTERNO: A matéria trata de uma reforma controversa, com menção a protestos e rejeição de destaques da oposição. No entanto, não há uma única fala de opositores, estudantes, professores ou especialistas críticos. O contraponto se limita a duas frases genéricas. O espaço é amplamente dominado pelo governo (nota oficial na íntegra, declarações do presidente e do ministro). Configura-se ausência da parte afetada, contraponto fraco, assimetria severa e dependência de fonte única. Presença de sinais S4.1, S4.2, S4.3, S4.4.\n\nS5 – CONTEXTUALIZAÇÃO EPISÓDICA: O texto oferece algum contexto: menciona a LDB, a carga horária atual, a BNCC, o histórico da MP desde setembro e os protestos. Há dados comparativos (800h vs 1400h). O foco não é excessivamente estratégico ou de bastidor; a maior parte é explicativa. Embora seja uma notícia diária, o nível de contextualização é razoável. Ausência de sinais fortes de enquadramento episódico.",
+    "achados": [
+      {
+        "sinal": "S4",
+        "sub_sinal": "S4.1",
+        "sub_sinal_nome": "Parte diretamente afetada ausente",
+        "trecho": "Desde que foi apresentada pelo governo, em setembro, a reforma se tornou alvo de protestos pelo país. Nos últimos meses de 2016, estudantes chegaram a ocupar escolas para se manifestar contra a MP.",
+        "justificativa": "O texto menciona protestos e a oposição, mas não inclui nenhuma citação direta de estudantes, professores, sindicatos ou parlamentares contrários à reforma. A única voz presente é a do governo.",
+        "confianca": "alta",
+        "limitacao": "A ausência pode refletir o foco da matéria na aprovação oficial, mas limita a pluralidade ao não dar espaço a quem será diretamente impactado ou discorda da medida."
+      },
+      {
+        "sinal": "S4",
+        "sub_sinal": "S4.2",
+        "sub_sinal_nome": "Contraponto formal / fraco",
+        "trecho": "Isso gerou a principal polêmica em torno do texto.",
+        "justificativa": "A única referência ao contraditório é uma menção genérica à polêmica e aos protestos, sem desenvolvimento, sem argumentos da oposição e sem citação direta. O contraponto é meramente formal.",
+        "confianca": "alta",
+        "limitacao": "Pode ser uma escolha editorial para manter o foco no trâmite legislativo, mas enfraquece o debate ao não apresentar os fundamentos da crítica."
+      },
+      {
+        "sinal": "S4",
+        "sub_sinal": "S4.3",
+        "sub_sinal_nome": "Assimetria severa de espaço",
+        "trecho": "Nota à imprensa O Presidente da República acompanhou a votação... [4 parágrafos] vs. 'Isso gerou a principal polêmica...' e 'estudantes chegaram a ocupar escolas...'",
+        "justificativa": "A perspectiva governamental domina o texto: há falas do presidente, do ministro e a íntegra da nota oficial (4 parágrafos). A oposição e os críticos aparecem apenas em duas frases curtas, sem qualquer citação.",
+        "confianca": "alta",
+        "limitacao": "A assimetria pode decorrer da natureza da pauta (aprovação no Senado), mas ainda assim configura desequilíbrio significativo na representação de vozes."
+      },
+      {
+        "sinal": "S4",
+        "sub_sinal": "S4.4",
+        "sub_sinal_nome": "Fonte única para controvérsia",
+        "trecho": "O ministro da Educação, Mendonça Filho, assistiu à votação... comemorou a aprovação. 'Trata-se de uma grande e importante mudança...'",
+        "justificativa": "Toda a matéria se apoia em fontes do governo (Temer, Mendonça Filho, nota da Secom). Não há qualquer fonte alternativa, mesmo tratando de tema controverso com protestos e rejeição de destaques da oposição.",
+        "confianca": "alta",
+        "limitacao": "A dependência de fonte única é comum em coberturas institucionais, mas reduz a capacidade do leitor de avaliar a controvérsia de forma informada."
+      }
+    ],
+    "sinais_ausentes": [
+      "S1",
+      "S2",
+      "S3",
+      "S5"
+    ],
+    "resumo": "Foram identificados 4 sinais discursivos, todos na categoria S4 (Pluralidade e Contraponto Interno). A matéria apresenta ausência de vozes contrárias, contraponto meramente formal, assimetria severa de espaço e dependência de fonte única governamental, apesar de tratar de tema controverso. As demais categorias (S1, S2, S3, S5) não apresentaram sinais relevantes."
+  }
+}

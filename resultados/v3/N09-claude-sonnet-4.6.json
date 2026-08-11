@@ -1,0 +1,88 @@
+{
+  "noticia_id": "N09",
+  "modelo": "openrouter/anthropic/claude-sonnet-4.6",
+  "tokens_prompt": 6298,
+  "tokens_resposta": 2495,
+  "tempo_segundos": 46.91,
+  "erro": null,
+  "analise": {
+    "raciocinio": "S1 — Marcação lexical avaliativa: Busco adjetivos avaliativos, rótulos, intensificações e verbos de elocução carregados. Encontro 'muitas atrações culturais bem interessantes' (parágrafo 2), que combina intensificação ('muitas') com adjetivação avaliativa ('bem interessantes') sem base factual explícita — é julgamento do jornalista sobre a qualidade das atrações. Também encontro 'ator consagrado pela Associação Paulista dos Críticos de Arte' — aqui 'consagrado' tem base factual explícita (o prêmio da associação), então não configura sinal. 'consagrado dramaturgo espanhol Rodolf Sirera' — 'consagrado' sem base factual explícita no texto. 'escritora que trouxe um novo olhar sobre a literatura infanto-juvenil' — avaliação qualitativa sem sustentação. 'show com muitos malabarismos, acrobacias e danças' — 'muitos' é intensificação sem dado comparativo. Não há verbos de elocução carregados nem rótulos ideológicos. S2 — Enquadramento causal-moral: O texto é essencialmente uma agenda cultural/guia de programação. Não há atribuição de causas, culpas, responsabilizações, cenários catastróficos ou dicotomias. A frase 'Ao contrário das primeiras edições, que priorizavam o centro, apenas cinco palcos serão montados na região central paulistana em 2026' apresenta uma comparação factual sem enquadramento moral. Não detecto sinais de S2. S3 — Suporte evidencial e atribuição: O texto afirma 'O evento deste ano reúne, nos dois dias, mais de mil atrações em 22 palcos espalhados por toda a cidade' sem citar fonte para esses números. Também 'Ao contrário das primeiras edições, que priorizavam o centro' é afirmação histórica sem fonte. 'exposição que cobre mais de 150 anos de publicações' — dado sem origem. 'escritora que trouxe um novo olhar sobre a literatura infanto-juvenil' — opinião apresentada como fato. S4 — Pluralidade e contraponto interno: O texto é uma agenda/guia de programação cultural, não uma matéria sobre conflito, disputa ou acusação. Não há controvérsia que exija contraponto. A ausência de múltiplas vozes é estrutural ao gênero textual (nota de serviço/agenda). Não configura sinal. S5 — Contextualização episódica: Trata-se de uma agenda de evento cultural com foco em programação prática. O gênero textual (guia/agenda) não requer contextualização histórica aprofundada. A menção às 'primeiras edições' oferece mínimo contexto histórico. A ausência de dados comparativos ou histórico aprofundado é inerente ao gênero, não um desvio discursivo relevante. Não detecto sinais significativos de S5.",
+    "sinais": [
+      {
+        "sinal": "S1",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S1.1",
+            "trecho": "muitas atrações culturais bem interessantes",
+            "justificativa": "A expressão 'bem interessantes' é adjetivação avaliativa que expressa juízo de valor sobre a qualidade das atrações sem base factual explícita no texto. 'Muitas' funciona como intensificador sem dado comparativo.",
+            "confianca": "media",
+            "limitacao": "Pode ser interpretado como linguagem coloquial de apresentação típica de textos de agenda/serviço, sem intenção avaliativa forte. O impacto na leitura do fato é limitado."
+          },
+          {
+            "sub_sinal": "S1.1",
+            "trecho": "um thriller do consagrado dramaturgo espanhol Rodolf Sirera",
+            "justificativa": "O adjetivo 'consagrado' expressa juízo de valor sobre o dramaturgo sem que o texto apresente base factual explícita (prêmio, reconhecimento institucional ou outra evidência) que sustente essa qualificação.",
+            "confianca": "media",
+            "limitacao": "O termo 'consagrado' pode refletir reconhecimento amplamente estabelecido no meio teatral, não verificável apenas pelo texto. Diferente do caso de Elias Andreato, onde a base factual (APCA) é explicitada."
+          },
+          {
+            "sub_sinal": "S1.1",
+            "trecho": "escritora que trouxe um novo olhar sobre a literatura infanto-juvenil",
+            "justificativa": "A expressão 'trouxe um novo olhar' é avaliação qualitativa sobre o impacto da obra da escritora Ruth Rocha, apresentada como constatação sem evidência ou atribuição a fonte específica.",
+            "confianca": "media",
+            "limitacao": "Pode ser interpretado como descrição do conteúdo da exposição (Ocupação Ruth Rocha), refletindo o enquadramento curatorial da própria instituição, não necessariamente julgamento autoral do jornalista."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S2",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto é uma agenda de programação cultural sem atribuição de causas, culpas, responsabilizações, cenários catastróficos ou dicotomias. A única comparação histórica presente ('Ao contrário das primeiras edições') é descritiva e factual, sem enquadramento moral."
+      },
+      {
+        "sinal": "S3",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S3.4",
+            "trecho": "O evento deste ano reúne, nos dois dias, mais de mil atrações em 22 palcos espalhados por toda a cidade.",
+            "justificativa": "Os números 'mais de mil atrações' e '22 palcos' são apresentados sem referência a fonte, organização responsável, release oficial ou qualquer origem explícita que permita verificação.",
+            "confianca": "media",
+            "limitacao": "Dados de programação de eventos públicos frequentemente provêm de releases oficiais das prefeituras ou organizadores, o que tornaria a omissão da fonte uma prática comum no jornalismo de agenda, não necessariamente uma fragilidade evidencial intencional."
+          },
+          {
+            "sub_sinal": "S3.4",
+            "trecho": "uma exposição que cobre mais de 150 anos de publicações de várias escritoras",
+            "justificativa": "O dado 'mais de 150 anos' é apresentado sem origem explícita — não há referência ao material da exposição, curadoria ou fonte que sustente o recorte temporal.",
+            "confianca": "baixa",
+            "limitacao": "Trata-se provavelmente de informação extraída do material de divulgação da própria exposição. Em textos de agenda, a omissão da fonte para descrições de exposições é prática corrente e de baixo impacto interpretativo."
+          },
+          {
+            "sub_sinal": "S3.3",
+            "trecho": "escritora que trouxe um novo olhar sobre a literatura infanto-juvenil",
+            "justificativa": "A afirmação de que Ruth Rocha 'trouxe um novo olhar' sobre a literatura infanto-juvenil é julgamento interpretativo apresentado como constatação objetiva, sem atribuição a críticos, pesquisadores ou à própria exposição.",
+            "confianca": "baixa",
+            "limitacao": "Como observado em S1, pode ser reprodução do enquadramento curatorial da exposição Ocupação Ruth Rocha, caso em que seria atribuição implícita ao Itaú Cultural, não opinião autoral."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S4",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto é uma agenda de programação cultural (gênero de serviço), sem controvérsia, acusação, conflito ou disputa que exija contraponto. A ausência de múltiplas vozes é estrutural ao gênero e não configura assimetria discursiva relevante."
+      },
+      {
+        "sinal": "S5",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O gênero textual (guia/agenda de evento) não requer contextualização histórica aprofundada, série histórica ou análise de impacto. A ausência de antecedentes e dados comparativos é inerente à função informativa do texto, não um desvio discursivo."
+      }
+    ],
+    "resumo": "O texto é uma agenda de programação cultural com linguagem predominantemente informativa e descritiva. Os sinais detectados são pontuais: adjetivação avaliativa sem base factual ('bem interessantes', 'consagrado') e dados numéricos sem fonte explícita ('mais de mil atrações', 'mais de 150 anos'). Não há enquadramento causal-moral, ausência de contraponto relevante ao gênero ou cobertura episódica problemática, dado o caráter de guia de serviço do texto."
+  }
+}

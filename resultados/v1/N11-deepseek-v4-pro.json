@@ -1,0 +1,46 @@
+{
+  "noticia_id": "N11",
+  "modelo": "openrouter/deepseek/deepseek-v4-pro",
+  "tokens_prompt": 3401,
+  "tokens_resposta": 6484,
+  "tempo_segundos": 243.86,
+  "erro": null,
+  "analise": {
+    "raciocinio": "Vou analisar cada categoria sistematicamente com base exclusivamente no texto fornecido.\n\n**S1 — MARCAÇÃO LEXICAL AVALIATIVA**: O texto é majoritariamente descritivo e informativo. Há dois elementos que merecem atenção: (1) Uso de 'salta aos olhos' por Gilmar Mendes — é uma expressão intensificadora, mas está em citação direta e o ministro a fundamenta com o raciocínio da proporcionalidade. O texto apenas reproduz a fala, não endossa. (2) O título usa 'quase 7 anos' e 'um grama' — descrição factual, sem adjetivação avaliativa. Não encontro adjetivação avaliativa (S1.1) feita pelo jornalista. Não há rotulação lexical (S1.2) como 'traficante' ou outros rótulos — o texto usa 'mulher', 'condenada'. Não há intensificação/sensacionalismo (S1.3) autoral — o 'salta aos olhos' é do ministro, não do veículo. Os verbos de elocução (S1.4) são neutros: 'destacou', 'escreveu', 'afirmou' — nenhum carregado como 'admitiu' ou 'alegou'. Portanto, S1 está ausente.\n\n**S2 — ENQUADRAMENTO CAUSAL-MORAL**: O texto narra um percurso judicial. Não há atribuição de causa do problema (tráfico, condenação desproporcional) a um ator único (S2.1) — menciona condenação em primeira instância e manutenção pelo TJ-SP, mas não explora causas da desproporção (lei, interpretação judicial). O foco é a decisão do STF. Não há responsabilização desproporcional (S2.2) — não aponta culpados específicos pela pena elevada. Não detecto avaliação moral implícita (S2.3) na construção narrativa. O texto não apela ao medo (S2.4). Não há falsa dicotomia ou lógica falha (S2.5). A estrutura é linear e descritiva. Entretanto, há uma possível construção de contraste entre o pequeno volume (1g) e a pena elevada (quase 7 anos) que pode sugerir desproporção — mas isso é o cerne do fato noticiado (a decisão do STF que reconhece a desproporção). O texto relata o argumento do ministro e da PGR, não o constrói autoralmente. Considero S2 ausente.\n\n**S3 — SUPORTE EVIDENCIAL E ATRIBUIÇÃO**: O texto cita 'Conforme o processo' e 'Ainda segundo o processo' para os fatos — fonte documental genérica, mas identificável (processo judicial). Afirmações relevantes estão apoiadas em citações diretas do ministro Gilmar Mendes e da subprocuradora Deborah Duprat, ambos nomeados. Não há 'claim sem evidência explícita' (S3.1) relevante. Não há fonte vaga ou anônima (S3.2) — 'processo' não é anônimo, é o processo judicial referenciado. Não há opinião apresentada como fato (S3.3) pelo jornalista. Dados como 'quase sete anos', 'um grama', datas estão no relato do caso. Não há número ou comparação sem origem (S3.4). Não há generalização não fundamentada (S3.5). S3 está ausente.\n\n**S4 — PLURALIDADE E CONTRAPONTO INTERNO**: O texto cita a decisão da Segunda Turma do STF (Gilmar Mendes como relator) e a PGR (Deborah Duprat). Ambos são favoráveis à absolvição. A parte 'acusadora' original (Ministério Público estadual de SP, juiz de primeira instância, TJ-SP) não é ouvida diretamente — o texto apenas menciona que houve condenação e manutenção. Isso poderia configurar S4.1 (parte diretamente afetada ausente), pois o texto trata de uma decisão que reverte condenações anteriores, mas não apresenta o argumento de quem condenou. No entanto, a matéria é sobre uma decisão do STF anulando uma condenação — ela relata o resultado e o fundamento. Não é uma reportagem investigativa sobre a desproporção. Ainda assim, a ausência de contraponto (por que a condenação foi aplicada e mantida? qual o argumento do TJ-SP?) poderia ser considerada S4.2 ou S4.1, mas é uma limitação típica de nota sobre decisão judicial. Vou registrar S4.1 com confiança baixa, pois a matéria é factual sobre a decisão e não necessariamente exige o contraditório do juízo anterior, mas a ausência de qualquer explicação do fundamento da condenação limita o contexto.\n\n**S5 — CONTEXTUALIZAÇÃO EPISÓDICA**: O texto fornece um breve histórico: prisão em 2012, condenação em 2013, manutenção pelo TJ-SP em 2014, pedido ao STF em 2015, liminar, julgamento definitivo. Há um encadeamento cronológico (S5.1 parcialmente atendido). Não há dado comparativo (S5.2) — quantas pessoas são condenadas por quantidades ínfimas? Qual a frequência? Não há. O foco é no caso individual, sem ampliar para política de drogas ou impacto (S5.3 — foco estratégico? Não exatamente, mas é um caso isolado sem contexto de 'guerra às drogas', encarceramento em massa etc.). O contexto institucional (S5.4) é parcialmente presente: menciona o STF, Segunda Turma, princípio da insignificância, proporcionalidade. Mas não explica a lei de drogas, a tipificação, a margem judicial etc. Considero S5.2 (ausência de dado comparativo) e S5.1 (falta de antecedentes sobre a política de drogas e o encarceramento por pequenas quantidades) como presentes, mas a confiança é média, pois a matéria tem algum contexto processual.",
+    "achados": [
+      {
+        "sinal": "S4",
+        "sub_sinal": "S4.1",
+        "sub_sinal_nome": "Parte diretamente afetada ausente",
+        "trecho": "Em janeiro de 2013, essa mulher foi condenada em primeira instância. Um ano depois, o Tribunal de Justiça do Estado de São Paulo (TJ-SP) manteve a condenação.",
+        "justificativa": "O texto menciona a condenação em primeira instância e sua manutenção pelo TJ-SP, mas não apresenta o fundamento dessas decisões. Apenas a perspectiva do STF (que anulou a condenação) e da PGR (favorável à absolvição) são expostas com argumentos. A parte que condenou não é ouvida diretamente nem tem seus argumentos citados, configurando ausência de contraponto da parte cuja decisão foi revertida.",
+        "confianca": "baixa",
+        "limitacao": "A matéria não é uma reportagem sobre a controvérsia da condenação, mas sim uma nota sobre a decisão do STF. A ausência de contraponto pode ser considerada natural em uma notícia que relata uma decisão judicial de instância superior, sem a obrigação de entrevistar o juízo de primeira instância ou o tribunal estadual. O foco está no resultado do julgamento e seus fundamentos."
+      },
+      {
+        "sinal": "S5",
+        "sub_sinal": "S5.2",
+        "sub_sinal_nome": "Ausência de dado comparativo",
+        "trecho": "A Segunda Turma do Supremo Tribunal Federal (STF) anulou a condenação de uma mulher condenada em São Paulo a quase sete anos de prisão por traficar um grama de maconha.",
+        "justificativa": "O texto trata de um caso individual de desproporcionalidade da pena, mas não fornece dados comparativos que permitam dimensionar o fenômeno (ex.: quantas pessoas no Brasil estão presas por tráfico de pequenas quantidades, qual a média de penas, comparativo com outros casos similares). O fato é apresentado como evento isolado, sem série histórica ou base de comparação.",
+        "confianca": "media",
+        "limitacao": "O texto tem caráter de nota sobre uma decisão judicial específica, e a ausência de dados comparativos não invalida a informação central. A limitação é própria do formato de 'hard news' diária, que prioriza o caso concreto em detrimento de contexto estatístico amplo."
+      },
+      {
+        "sinal": "S5",
+        "sub_sinal": "S5.1",
+        "sub_sinal_nome": "Ausência de antecedente relevante",
+        "trecho": "Conforme o processo, a mulher foi presa em 2012 em flagrante por vender um grama de maconha a um homem.",
+        "justificativa": "O texto apresenta um breve histórico cronológico do processo (prisão, condenações, liminar, decisão final), mas não fornece antecedentes sobre a política de drogas, a legislação que permite penas elevadas para pequenas quantidades ou o debate jurídico sobre o princípio da insignificância em casos de tráfico. O leitor não obtém elementos para entender por que uma pena tão elevada foi inicialmente aplicada e mantida.",
+        "confianca": "media",
+        "limitacao": "O texto menciona a aplicação do princípio da insignificância pelo ministro, o que pressupõe algum conhecimento jurídico prévio do leitor. A ausência de contextualização mais ampla é típica do jornalismo diário, que muitas vezes não recapitula todo o debate legal precedente."
+      }
+    ],
+    "sinais_ausentes": [
+      "S1",
+      "S2",
+      "S3"
+    ],
+    "resumo": "A matéria é predominantemente descritiva e reproduz decisão judicial com citações diretas dos ministros. Não apresenta marcação lexical avaliativa autoral (S1) nem enquadramento causal-moral (S2). O suporte evidencial (S3) é adequado, com fontes nomeadas (Gilmar Mendes, Deborah Duprat) e referência ao processo judicial. Foi detectada ausência de contraponto do juízo condenatório (S4.1), com baixa confiança por se tratar de nota sobre decisão de instância superior. Também foi identificada contextualização episódica (S5.1 e S5.2) pela falta de dados comparativos e antecedentes sobre a política de drogas, típica do jornalismo diário."
+  }
+}

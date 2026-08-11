@@ -1,0 +1,95 @@
+{
+  "noticia_id": "N09",
+  "modelo": "openrouter/deepseek/deepseek-v4-pro",
+  "tokens_prompt": 5599,
+  "tokens_resposta": 5552,
+  "tempo_segundos": 63.42,
+  "erro": null,
+  "analise": {
+    "raciocinio": "S1: Procurei adjetivos avaliativos, rótulos, intensificações e verbos de elocução carregados. Encontrei 'bem interessantes' (juízo de valor sem base factual) e 'consagrado' sem evidência (primeira ocorrência). S2: O texto não trata de causas, culpas, ameaças ou moralidade; é um roteiro descritivo de eventos, sem enquadramento causal-moral. S3: Verifiquei afirmações sem fonte, fontes anônimas, opinião como fato, números sem origem e generalizações. Há várias opiniões apresentadas como fatos: 'bem interessantes', 'demonstra a narrativa homogênea', 'consagrado', 'trouxe um novo olhar', 'evidencia a importância'. Nenhuma fonte ou dado as sustenta. S4: Não há controvérsia ou disputa; o texto é uma lista de programação, portanto não requer contraponto. S5: O texto fornece uma breve contextualização histórica ('Ao contrário das primeiras edições...'), embora seja predominantemente episódico. Não há ausência total de antecedente, dados comparativos ou contexto institucional, e o foco não é estratégico/político. Assim, os subcritérios não são acionados.",
+    "sinais": [
+      {
+        "sinal": "S1",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S1.1",
+            "trecho": "muitas atrações culturais bem interessantes",
+            "justificativa": "O adjetivo 'bem interessantes' expressa um juízo de valor positivo sem qualquer base factual ou evidência no texto, configurando adjetivação avaliativa.",
+            "confianca": "alta",
+            "limitacao": "Em guias culturais, linguagem promocional é comum, mas o protocolo considera marcador de opinião."
+          },
+          {
+            "sub_sinal": "S1.1",
+            "trecho": "consagrado dramaturgo espanhol Rodolf Sirera",
+            "justificativa": "O adjetivo 'consagrado' atribui um status de reconhecimento sem indicar a fonte ou critério desse reconhecimento, ao contrário da segunda ocorrência (Elias Andreato) que menciona a associação que o consagrou.",
+            "confianca": "media",
+            "limitacao": "Pode ser de conhecimento público, mas o texto não fornece elementos para sustentar a afirmação."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S2",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto é uma listagem de atrações culturais sem qualquer atribuição de causalidade, culpa, julgamento moral ou apelo ao medo. Não há enquadramento causal-moral."
+      },
+      {
+        "sinal": "S3",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S3.3",
+            "trecho": "muitas atrações culturais bem interessantes",
+            "justificativa": "A opinião de que as atrações são 'bem interessantes' é apresentada como um fato objetivo, sem atribuição de fonte ou critério.",
+            "confianca": "alta",
+            "limitacao": "Trata-se de um texto de divulgação, onde tal juízo é esperado, mas ainda assim constitui opinião sem evidência."
+          },
+          {
+            "sub_sinal": "S3.3",
+            "trecho": "demonstra a narrativa homogênea que atravessa o continente através de trajetórias paralelas",
+            "justificativa": "A afirmação de que a exposição 'demonstra' uma narrativa homogênea é uma interpretação curatorial sem respaldo factual no texto, sendo uma opinião travestida de constatação.",
+            "confianca": "alta",
+            "limitacao": "Pode refletir o texto da exposição, mas não há citação ou atribuição."
+          },
+          {
+            "sub_sinal": "S3.3",
+            "trecho": "consagrado dramaturgo espanhol Rodolf Sirera",
+            "justificativa": "A classificação de 'consagrado' é um juízo de valor sem fonte, apresentado como fato.",
+            "confianca": "media",
+            "limitacao": "A reputação do dramaturgo pode ser amplamente reconhecida, mas o texto não oferece evidência."
+          },
+          {
+            "sub_sinal": "S3.3",
+            "trecho": "trouxe um novo olhar sobre a literatura infanto-juvenil",
+            "justificativa": "A avaliação de que Ruth Rocha 'trouxe um novo olhar' é uma interpretação literária não fundamentada no texto, expressa como fato.",
+            "confianca": "media",
+            "limitacao": "É uma apreciação crítica comum, mas não há suporte na matéria."
+          },
+          {
+            "sub_sinal": "S3.3",
+            "trecho": "evidencia a importância do artista para evolução da luta contra o racismo",
+            "justificativa": "A afirmação de que a exposição 'evidencia' a importância de Mestre Didi é uma declaração de valor sem dados ou fontes que a corroborem.",
+            "confianca": "media",
+            "limitacao": "Pode ser a tese da exposição, mas o texto a reproduz como verdade inconteste."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S4",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto não aborda controvérsia, acusação ou conflito; é uma agenda cultural. Portanto, não há necessidade de pluralidade de vozes ou contraponto."
+      },
+      {
+        "sinal": "S5",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "Apesar de ser um texto episódico (focado em um evento), ele fornece algum contexto histórico ('Ao contrário das primeiras edições...') e não apresenta ausência gritante de antecedentes, dados comparativos ou contexto institucional, considerando sua natureza de guia de programação."
+      }
+    ],
+    "resumo": "O texto, de caráter informativo/guia cultural, apresenta avaliações subjetivas sem embasamento (S1, S3) e carece de suporte para afirmações interpretativas (S3). Não há enquadramento causal, falta de pluralidade ou descontextualização grave."
+  }
+}

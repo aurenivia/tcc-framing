@@ -1,0 +1,44 @@
+{
+  "noticia_id": "N10",
+  "modelo": "openrouter/anthropic/claude-sonnet-4.6",
+  "tokens_prompt": 4681,
+  "tokens_resposta": 1281,
+  "tempo_segundos": 23.06,
+  "erro": null,
+  "analise": {
+    "raciocinio": "S1 — Marcação lexical avaliativa: O texto é predominantemente factual e informativo. Não há adjetivos avaliativos sem base factual, rótulos valorativos, hipérboles ou verbos de elocução carregados. Termos como 'especial' em 'sorteio especial de 30 anos' são descritivos e referem-se ao nome oficial do concurso, não a julgamento do jornalista. Nenhum sinal detectado.\n\nS2 — Enquadramento causal-moral: O texto não atribui causas, culpas, responsabilidades morais ou apresenta cenários catastróficos. É uma nota informativa sobre resultado de sorteio e procedimentos de pagamento. Nenhum sinal detectado.\n\nS3 — Suporte evidencial e atribuição: As afirmações centrais são atribuídas à Caixa Econômica Federal ('A Caixa Econômica Federal detalha...'), com valores precisos, nomes de estabelecimentos, bairros e referência legal explícita (Lei 13.756/2018). Os números de ganhadores por faixa e os valores de prêmio são apresentados com precisão. Não há afirmações relevantes sem sustentação. Nenhum sinal detectado.\n\nS4 — Pluralidade e contraponto interno: O texto é uma nota factual sobre resultado de sorteio de loteria. Não há controvérsia, acusação, conflito ou disputa que exija contraponto. A ausência de múltiplas vozes é adequada ao gênero textual. Nenhum sinal detectado.\n\nS5 — Contextualização episódica: O texto é uma nota de serviço sobre resultado de sorteio e instruções de resgate de prêmio. O gênero não requer série histórica ou antecedentes aprofundados. Há menção ao próximo concurso e às regras de prescrição e destinação dos recursos, o que oferece contexto institucional mínimo adequado ao formato. A ausência de dados comparativos (ex: maiores prêmios da história) não configura limitação relevante dado o caráter de nota informativa. Nenhum sinal detectado.",
+    "sinais": [
+      {
+        "sinal": "S1",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto utiliza linguagem estritamente descritiva e factual. Não foram identificados adjetivos avaliativos sem base, rótulos valorativos, hipérboles ou verbos de elocução carregados. O termo 'especial' refere-se ao nome oficial do concurso."
+      },
+      {
+        "sinal": "S2",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto não constrói narrativa causal-moral, não atribui culpa ou responsabilidade a atores, não apresenta cenários catastróficos nem dicotomias. É uma nota de resultado de sorteio sem enquadramento interpretativo."
+      },
+      {
+        "sinal": "S3",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "As afirmações centrais são atribuídas à Caixa Econômica Federal com dados numéricos precisos, nomes de estabelecimentos identificados e referência legal explícita (Lei 13.756/2018). Não há claims relevantes sem sustentação."
+      },
+      {
+        "sinal": "S4",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto não trata de controvérsia, acusação, conflito ou disputa que exija contraponto. A ausência de múltiplas vozes é adequada ao gênero de nota informativa sobre resultado de sorteio."
+      },
+      {
+        "sinal": "S5",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O gênero textual (nota de serviço/resultado de sorteio) não requer contextualização histórica aprofundada. O texto oferece contexto institucional mínimo adequado ao formato, incluindo regras de prescrição e destinação legal dos recursos."
+      }
+    ],
+    "resumo": "O texto é uma nota informativa factual sobre o resultado do sorteio especial da Mega-Sena de 30 anos, com instruções de resgate de prêmios. Nenhum dos 22 subcritérios do protocolo foi detectado: a linguagem é descritiva e neutra, as afirmações são atribuídas à Caixa Econômica Federal com dados precisos e referência legal, não há controvérsia que exija contraponto e o gênero textual (nota de serviço) não requer contextualização histórica aprofundada."
+  }
+}

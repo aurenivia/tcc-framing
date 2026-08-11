@@ -1,0 +1,44 @@
+{
+  "noticia_id": "N10",
+  "modelo": "openrouter/openai/gpt-5.4",
+  "tokens_prompt": 3567,
+  "tokens_resposta": 916,
+  "tempo_segundos": 10.65,
+  "erro": null,
+  "analise": {
+    "raciocinio": "S1: Avaliei se havia marcação lexical avaliativa no texto do jornalista. O texto usa linguagem predominantemente informativa e descritiva, com números, regras de pagamento e locais das apostas. Expressões como 'sorteio especial de 30 anos' e 'aposta simples' funcionam como descrições do tipo de concurso e modalidade da aposta, sem juízo de valor explícito. Não identifiquei adjetivação avaliativa, rótulos, hipérboles ou verbos de elocução carregados. S2: Examinei se o texto constrói causalidade unilateral, culpa, ameaça, juízo moral implícito ou falsa dicotomia. A matéria apenas informa resultados, valores, procedimentos de saque e prazo prescricional, sem atribuir responsabilidade ou construir narrativa moralizante. Não encontrei sinais de enquadramento causal-moral. S3: Verifiquei se há afirmações relevantes sem evidência explícita, fonte vaga, opinião como fato, números sem origem ou generalizações. Há várias informações numéricas e procedimentais, e o texto atribui explicitamente um bloco à 'Caixa Econômica Federal detalha'. Em outros trechos, a matéria apresenta regras e valores de modo assertivo sem repetir a fonte em cada frase, mas, no contexto, isso se mantém compatível com notícia de serviço e não configura com clareza fragilidade evidencial textual. Não identifiquei subcritérios de S3 com segurança suficiente. S4: Analisei pluralidade e contraponto interno. A matéria não trata de controvérsia, acusação ou disputa pública; é uma notícia factual de resultado de loteria e instruções de resgate. Por isso, a ausência de múltiplas vozes não configura, por si, falta de contraponto relevante. Não há sinal detectado. S5: Avaliei se o evento foi tratado de forma episódica sem contexto relevante. Embora o texto não traga histórico amplo de concursos anteriores ou comparações extensas, ele oferece contexto funcional mínimo: edição especial de 30 anos, próximo concurso, regras de saque, prazo de prescrição e destinação legal dos recursos. Não identifiquei omissão contextual suficientemente clara para marcar S5.",
+    "sinais": [
+      {
+        "sinal": "S1",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "A linguagem do texto é majoritariamente descritiva e informativa, sem adjetivação avaliativa, rótulos valorativos, hipérboles ou verbos de elocução carregados."
+      },
+      {
+        "sinal": "S2",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "A matéria não atribui culpa, causalidade, ameaça ou juízo moral; limita-se a informar o resultado do sorteio e os procedimentos de resgate dos prêmios."
+      },
+      {
+        "sinal": "S3",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "As informações aparecem como notícia factual e de serviço, com atribuição explícita à Caixa em parte relevante do texto e sem sinais claros de opinião apresentada como fato ou uso de fontes vagas."
+      },
+      {
+        "sinal": "S4",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "Não se trata de tema controverso, acusatório ou disputado que exija contraponto interno entre partes; a estrutura factual da notícia não revela ausência relevante de pluralidade."
+      },
+      {
+        "sinal": "S5",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto oferece contexto funcional mínimo sobre a edição especial, o próximo concurso, regras de saque, prazo de prescrição e destinação dos recursos, sem omissão contextual claramente problemática no gênero apresentado."
+      }
+    ],
+    "resumo": "O texto apresenta formato predominantemente informativo e de serviço, com foco em valores, locais das apostas vencedoras e regras de pagamento. Não foram detectados sinais claros nas cinco categorias do protocolo com base apenas no conteúdo literal fornecido."
+  }
+}

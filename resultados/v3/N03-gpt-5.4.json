@@ -1,0 +1,97 @@
+{
+  "noticia_id": "N03",
+  "modelo": "openrouter/openai/gpt-5.4",
+  "tokens_prompt": 4043,
+  "tokens_resposta": 1606,
+  "tempo_segundos": 24.73,
+  "erro": null,
+  "analise": {
+    "raciocinio": "Examinei o texto separando a linguagem informativa do jornalista das informações atribuídas à pesquisa e ao contexto factual apresentado. Em S1, busquei adjetivos valorativos, rótulos, hipérboles e verbos de elocução carregados; encontrei um ponto potencial em “impacto negativo”, por introduzir avaliação sintética do efeito sem detalhamento imediato no próprio trecho, mas não identifiquei sensacionalismo, rótulos ideológicos do jornalista nem verbos de citação carregados. Em S2, avaliei se o texto atribuía causalidade, culpa ou julgamento moral de modo unilateral; o trecho que conecta o levantamento ao “vazamento do áudio” e afirma que “houve um impacto negativo para o senador” sugere um nexo causal simplificado, sem explicitar outros fatores possíveis nem metodologia para essa inferência no próprio texto.\n\nEm S3, procurei afirmações relevantes sem evidência explícita, números sem origem e generalizações. Como o texto atribui os dados ao Datafolha/Folha, há fonte nomeada para os percentuais, mas a frase sobre “impacto negativo” é uma interpretação causal não diretamente sustentada por evidência apresentada no próprio texto. Não encontrei fontes vagas, generalizações coletivas ou números sem origem explícita. Em S4, verifiquei pluralidade interna e contraponto; como se trata majoritariamente de uma nota de divulgação de pesquisa, não há controvérsia estruturada com múltiplos lados exigindo contraditório forte, e o texto não faz acusação nova a ser respondida internamente. Em S5, observei contextualização: há algum antecedente mínimo ao mencionar a pesquisa anterior e o episódio do áudio, mas faltam elementos metodológicos e comparativos mais amplos para dimensionar melhor os resultados, além de aparecer um foco episódico no efeito político imediato do vazamento.",
+    "sinais": [
+      {
+        "sinal": "S1",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S1.1",
+            "trecho": "O resultado da pequisa mostra que houve um impacto negativo para o senador.",
+            "justificativa": "A expressão “impacto negativo” introduz uma avaliação resumida do efeito eleitoral sobre Flávio Bolsonaro, sem explicitar nesse mesmo trecho a base analítica que sustenta essa qualificação.",
+            "confianca": "media",
+            "limitacao": "Pode ser apenas uma paráfrase descritiva da oscilação observada entre levantamentos, não necessariamente uma adjetivação indevida, já que o restante do texto traz números da pesquisa."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S2",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S2.1",
+            "trecho": "Esse é o primeiro levantamento do Datafolha feito após o vazamento do áudio entre Flávio Bolsonaro (PL) e o banqueiro Daniel Vorcaro. O resultado da pequisa mostra que houve um impacto negativo para o senador.",
+            "justificativa": "A construção associa temporalmente o vazamento do áudio ao desempenho de Flávio e conclui que houve “impacto negativo”, sugerindo causalidade principal sem apresentar, no próprio texto, outras variáveis possíveis ou evidência metodológica para isolar essa causa.",
+            "confianca": "media",
+            "limitacao": "A inferência pode ser uma síntese jornalística plausível da comparação entre levantamentos, mas o texto não explicita se a pesquisa mediu diretamente a causa da variação."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S3",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S3.1",
+            "trecho": "O resultado da pequisa mostra que houve um impacto negativo para o senador.",
+            "justificativa": "A afirmação é relevante para a interpretação política do levantamento, mas o texto não apresenta evidência explícita que demonstre que a pesquisa mediu “impacto” causal, apenas intenções de voto em momentos diferentes.",
+            "confianca": "alta",
+            "limitacao": "Os números subsequentes podem sugerir perda relativa de desempenho, porém isso não equivale, por si só, a evidência explícita do nexo causal afirmado."
+          },
+          {
+            "sub_sinal": "S3.3",
+            "trecho": "O resultado da pequisa mostra que houve um impacto negativo para o senador.",
+            "justificativa": "O trecho formula como constatação objetiva uma interpretação sobre o significado político da pesquisa, sem marcador de hipótese, inferência ou atribuição analítica a fonte específica.",
+            "confianca": "media",
+            "limitacao": "Em textos jornalísticos, esse tipo de formulação pode funcionar como resumo interpretativo dos dados; a fronteira entre síntese analítica e opinião factualizada pode ser sutil."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S4",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto é uma nota predominantemente descritiva sobre resultados de pesquisa e não estrutura uma controvérsia com múltiplas acusações ou posições que exijam contraditório interno robusto. Não há evidência suficiente, no próprio texto, de ausência indevida de parte diretamente afetada ou de assimetria relevante de vozes."
+      },
+      {
+        "sinal": "S5",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S5.2",
+            "trecho": "Na pesquisa anterior, na última semana, estavam empatados tecnicamente.",
+            "justificativa": "O texto oferece apenas uma comparação pontual com o levantamento imediatamente anterior, sem série mais ampla, tendência temporal ou outros referenciais que permitam dimensionar a variação observada.",
+            "confianca": "media",
+            "limitacao": "Para uma nota curta de divulgação de pesquisa, uma comparação com o levantamento anterior pode ser considerada contexto suficiente em termos jornalísticos mínimos."
+          },
+          {
+            "sub_sinal": "S5.3",
+            "trecho": "Esse é o primeiro levantamento do Datafolha feito após o vazamento do áudio entre Flávio Bolsonaro (PL) e o banqueiro Daniel Vorcaro. O resultado da pequisa mostra que houve um impacto negativo para o senador.",
+            "justificativa": "A matéria enquadra os resultados pelo efeito estratégico imediato de um episódio político sobre a corrida presidencial, enfatizando desempenho de atores e disputa eleitoral, sem discutir implicações programáticas ou substantivas.",
+            "confianca": "media",
+            "limitacao": "Como o tema da matéria é especificamente intenção de voto, algum foco em desempenho eleitoral é inerente ao gênero e não implica, por si só, deficiência grave."
+          },
+          {
+            "sub_sinal": "S5.4",
+            "trecho": "*Jair Bolsonaro está inelegível até 2030 após condenação do Tribunal Superior Eleitoral (TSE) por abuso de poder político e uso indevido dos meios de comunicação.",
+            "justificativa": "O texto informa a inelegibilidade, mas não explica o mecanismo institucional relevante — por exemplo, o que significa a inelegibilidade para a presença do nome em cenários de pesquisa ou o procedimento institucional que conecta a condenação a esse status.",
+            "confianca": "baixa",
+            "limitacao": "A nota não tem obrigação de desenvolver explicação jurídica detalhada, e a informação apresentada pode bastar para fins de identificação contextual do leitor."
+          }
+        ],
+        "justificativa_ausencia": ""
+      }
+    ],
+    "resumo": "O texto é majoritariamente informativo e atribui os dados ao Datafolha, mas introduz uma interpretação causal ao afirmar que o vazamento do áudio gerou “impacto negativo” para Flávio Bolsonaro sem evidência explícita dessa causalidade no próprio texto. Também há contextualização limitada, com foco no efeito eleitoral imediato e pouca ampliação comparativa ou institucional."
+  }
+}

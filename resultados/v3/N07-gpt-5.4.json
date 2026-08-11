@@ -1,0 +1,119 @@
+{
+  "noticia_id": "N07",
+  "modelo": "openrouter/openai/gpt-5.4",
+  "tokens_prompt": 4480,
+  "tokens_resposta": 1829,
+  "tempo_segundos": 24.01,
+  "erro": null,
+  "analise": {
+    "raciocinio": "Avaliei o texto categoria por categoria, distinguindo a narração do jornalista das falas atribuídas à polícia, ao boletim de ocorrência, à família e à SSP. Em S1, encontrei principalmente verbos de elocução carregados e formulações avaliativas fora de citação, como “alegou” e a expressão “gravidade concreta do crime”, embora boa parte do texto atribua avaliações à polícia e a documentos oficiais. Em S2, identifiquei enquadramento causal-moral porque a matéria organiza os fatos de modo a reforçar a conclusão policial de dolo eventual e risco assumido, com pouca exploração de outras explicações possíveis no próprio texto. Em S3, há várias afirmações relevantes ancoradas em fontes identificadas (“segundo a polícia”, “boletim de ocorrência”, “SSP”, “registros hospitalares”), então não há fragilidade forte de atribuição; ainda assim, aparece uma formulação técnica-jurídica sem detalhamento probatório no próprio texto. Em S4, observei que há menção à versão de MC Tuto e da modelo, mas o contraponto é curto e subordinado à narrativa policial, o que caracteriza contraponto fraco e assimetria de espaço. Em S5, a matéria é majoritariamente episódica: descreve o caso, o estado de saúde e os desdobramentos imediatos, mas oferece pouco contexto mais amplo sobre antecedentes, comparações ou enquadramento institucional além de uma referência ao artigo 322 do CPP.",
+    "sinais": [
+      {
+        "sinal": "S1",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S1.4",
+            "trecho": "Emerson Teixeira Muniz, o MC Tuto, em seu interrogatório alegou que não estava em alta velocidade",
+            "justificativa": "O verbo de elocução “alegou” pode sugerir distanciamento ou dúvida sobre a fala do interrogado, diferentemente de verbos mais neutros como “disse” ou “afirmou”.",
+            "confianca": "media",
+            "limitacao": "O uso de “alegou” é comum em texto policial/jurídico e pode refletir registro técnico, não necessariamente intenção avaliativa forte."
+          },
+          {
+            "sub_sinal": "S1.1",
+            "trecho": "Devido à gravidade concreta do crime, o delegado responsável solicitou a prisão preventiva",
+            "justificativa": "A expressão “gravidade concreta do crime” introduz avaliação qualitativa do fato no corpo do texto, sem explicitar no próprio trecho quais elementos objetivos sustentam essa qualificação.",
+            "confianca": "media",
+            "limitacao": "A formulação pode estar apenas reproduzindo linguagem técnica do delegado ou do despacho, e não um juízo autônomo do jornalista."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S2",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S2.1",
+            "trecho": "a polícia considera que, independentemente da velocidade exata, ao dirigir no local com um carro de grande porte durante a gravação de um videoclipe, MC Tuto assumiu o risco de causar um acidente grave ou até mesmo a morte de alguém.",
+            "justificativa": "O texto destaca uma linha causal centrada na conduta de MC Tuto como explicação decisiva para o evento e para o dolo eventual, sem desenvolver no próprio texto outras variáveis possíveis da dinâmica do acidente.",
+            "confianca": "media",
+            "limitacao": "A passagem está claramente atribuída à polícia; o sinal decorre do enquadramento editorial de enfatizar essa causalidade, não de afirmar que ela seja indevida."
+          },
+          {
+            "sub_sinal": "S2.3",
+            "trecho": "Apesar das versões do cantor e da modelo, a autoridade policial concluiu, após análise da dinâmica do acidente e de vídeos registrados no local, que o Porsche estava circulando em velocidade “absolutamente incompatível com a via”, configurando risco grave para pedestres.",
+            "justificativa": "A estrutura “Apesar das versões...” seguida da conclusão policial organiza a narrativa de modo a enfraquecer as versões defensivas e induzir uma leitura moralmente desfavorável ao condutor.",
+            "confianca": "media",
+            "limitacao": "Também pode ser apenas uma organização cronológica e probatória do relato, sem intenção de julgamento adicional além do que consta nos autos."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S3",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S3.1",
+            "trecho": "Essa avaliação técnica foi determinante para a caracterização do dolo eventual",
+            "justificativa": "A afirmação é relevante para a interpretação jurídica do caso, mas o texto não detalha qual laudo, perícia ou fundamento técnico específico sustenta essa determinação, além de referência genérica à análise da dinâmica e a vídeos.",
+            "confianca": "media",
+            "limitacao": "Há atribuição implícita à autoridade policial e ao boletim; a fragilidade está mais na falta de detalhamento da evidência no texto do que na ausência total de fonte."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S4",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S4.2",
+            "trecho": "Emerson Teixeira Muniz, o MC Tuto, em seu interrogatório alegou que não estava em alta velocidade, afirmando que trafegava a aproximadamente 30 km/h. Uma modelo, que participava das gravações e estava dentro do carro, também disse que o veículo estava em velocidade baixa",
+            "justificativa": "O contraponto existe, mas aparece de forma breve e sem maior desenvolvimento ou sustentação equivalente à narrativa policial e jurídica que domina o restante do texto.",
+            "confianca": "alta",
+            "limitacao": "Em notícias de hard news inicial, versões resumidas são comuns; a limitação não implica obrigação de paridade perfeita."
+          },
+          {
+            "sub_sinal": "S4.3",
+            "trecho": "Apesar das versões do cantor e da modelo, a autoridade policial concluiu...",
+            "justificativa": "A matéria dedica a maior parte do espaço às conclusões da polícia, ao enquadramento penal, ao estado da vítima e à prisão, enquanto a versão do condutor ocupa poucas linhas e é rapidamente contraposta.",
+            "confianca": "alta",
+            "limitacao": "A assimetria pode refletir o estágio da investigação e a disponibilidade de informações oficiais no momento da publicação."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S5",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S5.1",
+            "trecho": "O caso foi registrado como tentativa de homicídio e localização/apreensão de veículo na Delegacia Sede de Barueri.",
+            "justificativa": "O texto informa o enquadramento do caso, mas não oferece histórico mínimo sobre antecedentes do episódio ou desenvolvimento prévio da investigação além dos fatos imediatos narrados.",
+            "confianca": "media",
+            "limitacao": "Por ser notícia factual de acontecimento recente, é natural que o foco recaia no evento imediato."
+          },
+          {
+            "sub_sinal": "S5.2",
+            "trecho": "MC Tuto dirigia em velocidade incompatível ao atropelar jovem em SP",
+            "justificativa": "O texto trata a velocidade como elemento central, mas não fornece parâmetro comparativo objetivo, limite de referência ou medida confirmada que permita dimensionar a incompatibilidade além da avaliação policial.",
+            "confianca": "media",
+            "limitacao": "A própria matéria reconhece que a velocidade exata não foi fixada; portanto, a ausência de comparação pode decorrer da indisponibilidade de dado naquele momento."
+          },
+          {
+            "sub_sinal": "S5.4",
+            "trecho": "O condutor não teve direito à fiança, pois a pena prevista para o crime imputado ultrapassa quatro anos e, nesses casos, a autoridade policial não pode conceder o benefício, conforme o artigo 322 do Código de Processo Penal.",
+            "justificativa": "Há algum contexto institucional, mas ele é parcial: o texto explica a fiança, porém não detalha o procedimento e os critérios jurídicos mais amplos para a conversão da prisão em preventiva e para a imputação de dolo eventual.",
+            "confianca": "baixa",
+            "limitacao": "Como existe contextualização institucional mínima, o sinal aqui é apenas parcial e sutil, não uma ausência completa de contexto."
+          }
+        ],
+        "justificativa_ausencia": ""
+      }
+    ],
+    "resumo": "A matéria se apoia majoritariamente em fontes oficiais e documentos do caso, mas organiza a narrativa de forma a privilegiar a conclusão policial e jurídica sobre a versão do condutor. Os sinais mais fortes aparecem na assimetria de contraponto e no caráter episódico da cobertura, com algum enquadramento causal-moral e poucos elementos comparativos ou contextuais mais amplos."
+  }
+}

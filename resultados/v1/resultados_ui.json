@@ -1,0 +1,85 @@
+[
+  {
+    "noticia_id": "noticia_01",
+    "modelo": "openrouter/deepseek/deepseek-v4-pro",
+    "variacao": "A",
+    "tokens_prompt": 3221,
+    "tokens_resposta": 3100,
+    "tempo_segundos": 127.9,
+    "erro": null,
+    "analise": {
+      "raciocinio": "Li o texto integralmente. É uma reportagem sobre pesquisa Datafolha de avaliação do governo Lula. O texto é majoritariamente descritivo, apresentando percentuais, margem de erro e comparações com levantamentos anteriores. Verifiquei cada sub-sinal da rubrica: S1 (linguagem valorativa) – não há adjetivação subjetiva, verbos de elocução carregados ou hipérboles; os termos 'ruim', 'péssimo', 'ótimo', 'bom' são categorias da pesquisa, não juízos do jornalista. S2 (enquadramento dirigido) – não há atribuição causal unilateral, avaliação moral implícita, bode expiatório ou apelo ao medo. S3 (fragilidade de evidência) – todas as informações são atribuídas ao Datafolha ou ao Intercept Brasil, com dados amostrais e margem de erro; não há fontes anônimas, afirmações sem evidência ou generalizações infundadas. S4 (desequilíbrio de vozes) – por ser relato de pesquisa, não há lados a serem ouvidos; não se aplica. S5 (enquadramento episódico) – o texto fornece contexto histórico (comparação com abril, baixa de fev/2025), afastando S5.1. Contudo, a seção 'Cenário eleitoral' dedica-se a intenções de voto e vantagens numéricas, caracterizando foco em 'cavalo de corrida' (S5.2).",
+      "achados": [
+        {
+          "sub_sinal": "S5.2",
+          "sub_sinal_nome": "FOCO EM BASTIDORES / CAVALO DE CORRIDA",
+          "sinal_pai": "S5",
+          "sinal_pai_nome": "ENQUADRAMENTO EPISÓDICO",
+          "trecho": "No cenário de intenção de voto para um eventual primeiro turno, Lula ampliou sua vantagem sobre Flávio Bolsonaro, passando de 3 para 9 pontos percentuais (40% a 31%).",
+          "justificativa": "O trecho prioriza a competição eleitoral e a variação numérica das intenções de voto, sem mencionar propostas, programas ou impactos das candidaturas, configurando enquadramento de 'cavalo de corrida'.",
+          "confianca": "alta",
+          "limitacao": "A inclusão de intenção de voto é prática comum em pesquisas de opinião; o texto principal é de avaliação de governo, e a seção eleitoral é um complemento. Ainda assim, o foco na disputa numérica se enquadra no sub-sinal."
+        }
+      ],
+      "sinais_ausentes": [
+        "S1.1",
+        "S1.2",
+        "S1.3",
+        "S2.1",
+        "S2.2",
+        "S2.3",
+        "S2.4",
+        "S3.1",
+        "S3.2",
+        "S3.3",
+        "S4.1",
+        "S4.2",
+        "S4.3",
+        "S5.1"
+      ],
+      "resumo": "A análise identificou apenas o sub-sinal S5.2 (foco em cavalo de corrida) na seção sobre cenário eleitoral, onde o texto prioriza a disputa de intenções de voto em detrimento de propostas. Os demais sinais não foram detectados, indicando um texto predominantemente factual e baseado em dados de pesquisa."
+    }
+  },
+  {
+    "noticia_id": "noticia_01",
+    "modelo": "openrouter/deepseek/deepseek-v4-pro",
+    "variacao": "B",
+    "tokens_prompt": 1820,
+    "tokens_resposta": 4096,
+    "tempo_segundos": 96.24,
+    "erro": "JSON inválido: Expecting value: line 1 column 1 (char 0)",
+    "analise": null
+  },
+  {
+    "noticia_id": "noticia_01",
+    "modelo": "openrouter/deepseek/deepseek-v4-pro",
+    "variacao": "C",
+    "tokens_prompt": 1363,
+    "tokens_resposta": 3971,
+    "tempo_segundos": 71.49,
+    "erro": "JSON inválido: Unterminated string starting at: line 18 column 17 (char 704)",
+    "analise": null
+  },
+  {
+    "noticia_id": "noticia_01",
+    "modelo": "openrouter/deepseek/deepseek-v4-pro",
+    "variacao": "D",
+    "tokens_prompt": 1051,
+    "tokens_resposta": 1746,
+    "tempo_segundos": 38.87,
+    "erro": null,
+    "analise": {
+      "raciocinio": "Analisei o texto em busca de viés, enquadramento tendencioso ou fragilidade argumentativa. O conteúdo é majoritariamente uma apresentação direta de resultados de pesquisa, com metodologia clara e linguagem descritiva. O único elemento que pode sugerir um enquadramento sutil é o uso da palavra 'recuperação' para descrever a melhora nos índices de aprovação, pois carrega uma conotação positiva. Não foram identificadas distorções factuais, omissões relevantes ou argumentação falha. A menção ao caso de Flávio Bolsonaro é contextualizada pela própria pesquisa, não configurando viés isolado do texto.",
+      "achados": [
+        {
+          "tipo": "enquadramento sutil",
+          "trecho": "Os números atuais mostram uma recuperação em relação ao período de maior baixa do atual mandato.",
+          "justificativa": "O termo 'recuperação' atribui um tom positivo à variação numérica, sugerindo que o governo está se reestabelecendo, o que pode influenciar a percepção do leitor além da descrição neutra dos fatos.",
+          "confianca": "baixa",
+          "limitacao": "A palavra pode ser interpretada apenas como descrição de uma retomada estatística, sem intenção editorial, e o próprio contexto dos percentuais sustenta a ideia de melhora, tornando difícil afirmar viés intencional."
+        }
+      ],
+      "resumo": "O texto é majoritariamente neutro na divulgação dos dados da pesquisa Datafolha. A única possível nuance é o uso do termo 'recuperação' para caracterizar a subida na avaliação positiva do governo, que pode carregar um leve viés favorável, mas é de baixa confiança. No geral, a reportagem mantém objetividade informativa."
+    }
+  }
+]

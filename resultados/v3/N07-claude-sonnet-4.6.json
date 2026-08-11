@@ -1,0 +1,60 @@
+{
+  "noticia_id": "N07",
+  "modelo": "openrouter/anthropic/claude-sonnet-4.6",
+  "tokens_prompt": 6554,
+  "tokens_resposta": 2184,
+  "tempo_segundos": 39.83,
+  "erro": null,
+  "analise": {
+    "raciocinio": "Analisando o texto categoria por categoria:\n\nS1 — MARCAÇÃO LEXICAL AVALIATIVA:\nO texto usa majoritariamente linguagem factual e atribui afirmações a fontes identificadas (polícia, boletim de ocorrência, registros hospitalares). A expressão 'absolutamente incompatível com a via' aparece entre aspas, indicando que é citação da autoridade policial, não linguagem do jornalista. O verbo 'alegou' é usado para introduzir a fala de MC Tuto ('alegou que não estava em alta velocidade'), o que pode configurar S1.4, pois 'alegou' carrega conotação de dúvida sobre a veracidade da afirmação, diferentemente de 'disse' ou 'afirmou'. Há também 'disse' para a modelo, que é neutro. O uso de 'Apesar das versões do cantor e da modelo' também implica descredenciamento das falas, mas é contextualizado pela conclusão policial. Verifico se há adjetivação avaliativa sem base: 'ferimentos graves' é factual (confirmado por diagnóstico médico). 'estado grave' idem. Não há hipérboles ou superlativos sem base. O verbo 'alegou' para MC Tuto é o principal candidato a S1.4.\n\nS2 — ENQUADRAMENTO CAUSAL-MORAL:\nO texto apresenta a conclusão policial de que houve dolo eventual, explicando o raciocínio: área proibida para veículos, veículo de grande porte, gravação de videoclipe. Há apresentação das versões do cantor e da modelo, e depois a conclusão policial contrária. O texto não atribui culpa moral além do que a polícia já atribuiu. A estrutura narrativa ('Apesar das versões... a autoridade policial concluiu') pode induzir julgamento moral implícito (S2.3), mas está ancorada em conclusão oficial. Não há cenário catastrófico sem base, nem falsa dicotomia. A causalidade é apresentada com base em evidências (vídeos, análise da dinâmica). Não identifico sinais fortes de S2, mas o enquadramento narrativo que contrasta versões do cantor com conclusão policial pode ter leve S2.3.\n\nS3 — SUPORTE EVIDENCIAL E ATRIBUIÇÃO:\nA maioria das afirmações está atribuída a fontes identificadas: boletim de ocorrência, polícia, registros hospitalares, nota da família, SSP, Tribunal de Justiça. A afirmação sobre dolo eventual é atribuída à polícia. Os ferimentos são atribuídos a registros médicos. Não há claims sem evidência explícita relevantes. Há menção a 'vídeos registrados no local' sem especificar quem os registrou, mas isso é detalhe menor. Não identifico sinais significativos de S3.\n\nS4 — PLURALIDADE E CONTRAPONTO INTERNO:\nO texto apresenta a versão de MC Tuto (alegou velocidade de 30 km/h), a versão da modelo (velocidade baixa), e a conclusão policial contrária. Há pluralidade de vozes: cantor, modelo, polícia, família da vítima, hospital, SSP, Tribunal de Justiça. O contraponto entre versões está presente. Não há assimetria severa. Não identifico sinais de S4.\n\nS5 — CONTEXTUALIZAÇÃO EPISÓDICA:\nO texto é uma notícia de fato recente (madrugada do mesmo dia). Fornece contexto sobre o local (área de lazer de pedestres, entre duas pistas), sobre o enquadramento legal (dolo eventual, artigo 322 do CPP), sobre o estado de saúde da vítima, sobre os procedimentos policiais e judiciais. Não há série histórica ou dado comparativo, mas isso não seria esperado neste tipo de notícia factual. O texto explica o conceito de dolo eventual e a base legal para prisão preventiva, o que é contextualização institucional adequada. Não identifico sinais relevantes de S5.\n\nConclusão: O principal sinal detectado é S1.4 pelo uso de 'alegou' para introduzir a fala de MC Tuto, implicando dúvida sobre sua veracidade. Há também leve S2.3 na estrutura narrativa que contrasta versões do cantor com conclusão policial, mas isso está ancorado em fatos oficiais. Os demais sinais são ausentes ou muito fracos.",
+    "sinais": [
+      {
+        "sinal": "S1",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S1.4",
+            "trecho": "Emerson Teixeira Muniz, o MC Tuto, em seu interrogatório alegou que não estava em alta velocidade, afirmando que trafegava a aproximadamente 30 km/h.",
+            "justificativa": "O verbo 'alegou' introduz a fala de MC Tuto com conotação de dúvida sobre a veracidade da afirmação, diferentemente de verbos neutros como 'disse' ou 'afirmou'. Isso implica que o jornalista (ou o texto) antecipa descrédito à versão do cantor, antes mesmo de apresentar a conclusão policial contrária.",
+            "confianca": "media",
+            "limitacao": "O uso de 'alegou' pode ser interpretado como reflexo do contexto factual — a polícia já havia concluído o contrário — e não necessariamente como julgamento editorial. O verbo pode ser considerado adequado quando há contradição explícita entre a fala e a conclusão oficial."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S2",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S2.3",
+            "trecho": "Apesar das versões do cantor e da modelo, a autoridade policial concluiu, após análise da dinâmica do acidente e de vídeos registrados no local, que o Porsche estava circulando em velocidade 'absolutamente incompatível com a via'",
+            "justificativa": "A construção 'Apesar das versões do cantor e da modelo' seguida da conclusão policial cria uma justaposição narrativa que implicitamente desqualifica as versões dos envolvidos e induz julgamento moral sobre sua credibilidade, sem que o texto formule explicitamente esse julgamento.",
+            "confianca": "media",
+            "limitacao": "A justaposição é ancorada em conclusão oficial da polícia com base em evidências (vídeos, análise de dinâmica), o que reduz o caráter puramente editorial do enquadramento. Pode ser leitura legítima do contraste factual entre versões."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S3",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "As afirmações relevantes do texto estão atribuídas a fontes identificadas: boletim de ocorrência, polícia, registros hospitalares, nota da família, SSP e Tribunal de Justiça. Não foram identificados claims centrais sem evidência ou fonte explícita."
+      },
+      {
+        "sinal": "S4",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto apresenta múltiplas vozes: a versão de MC Tuto, a versão da modelo, a conclusão policial, informações da família da vítima, da SSP e do Tribunal de Justiça. Há contraponto interno adequado entre as versões dos envolvidos e a conclusão das autoridades."
+      },
+      {
+        "sinal": "S5",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto fornece contexto institucional relevante, incluindo a explicação do conceito de dolo eventual, a base legal para a prisão preventiva (artigo 322 do CPP), o local do acidente e os procedimentos periciais solicitados. Trata-se de notícia factual recente com contextualização adequada ao gênero."
+      }
+    ],
+    "resumo": "O texto apresenta cobertura predominantemente factual, com afirmações atribuídas a fontes identificadas e contraponto entre versões dos envolvidos e conclusão policial. O principal sinal detectado é o uso do verbo 'alegou' (S1.4) para introduzir a fala de MC Tuto, com conotação de dúvida sobre sua veracidade. Há também leve enquadramento causal-moral implícito (S2.3) na estrutura narrativa que contrasta as versões do cantor e da modelo com a conclusão da autoridade policial, embora esse contraste esteja ancorado em evidências oficiais."
+  }
+}

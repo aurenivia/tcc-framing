@@ -1,0 +1,82 @@
+{
+  "noticia_id": "N03",
+  "modelo": "openrouter/anthropic/claude-sonnet-4.6",
+  "tokens_prompt": 5970,
+  "tokens_resposta": 2878,
+  "tempo_segundos": 52.91,
+  "erro": null,
+  "analise": {
+    "raciocinio": "Vou analisar cada categoria individualmente.\n\nS1 — MARCAÇÃO LEXICAL AVALIATIVA:\nBusco adjetivos avaliativos, rótulos, intensificações e verbos de elocução carregados.\n- 'impacto negativo para o senador': a expressão 'impacto negativo' é uma avaliação do jornalista sobre o resultado da pesquisa. Porém, há sustentação factual imediata: a queda nas intenções de voto é demonstrada pelos dados apresentados logo em seguida (de empate técnico para 9 pontos de desvantagem). Portanto, trata-se de descrição factual sustentada pelos dados, não de adjetivação avaliativa sem base.\n- 'vazamento do áudio': o termo 'vazamento' pode ter conotação negativa, mas é um termo técnico jornalístico amplamente utilizado para descrever divulgação não autorizada de conteúdo. Não configura claramente S1.\n- Verbos de elocução: 'divulgou', 'publicados', 'mostra' — todos neutros.\n- Não identifico marcação lexical avaliativa sem sustentação factual. S1 ausente.\n\nS2 — ENQUADRAMENTO CAUSAL-MORAL:\n- O texto afirma: 'Esse é o primeiro levantamento do Datafolha feito após o vazamento do áudio entre Flávio Bolsonaro (PL) e o banqueiro Daniel Vorcaro. O resultado da pesquisa mostra que houve um impacto negativo para o senador.' Esta construção estabelece uma relação causal implícita entre o vazamento do áudio e a queda nas pesquisas de Flávio Bolsonaro. O texto não afirma explicitamente que o áudio causou a queda, mas a justaposição ('primeiro levantamento após o vazamento... houve impacto negativo') induz fortemente essa interpretação causal sem apresentar outras possíveis causas ou evidência metodológica de que o áudio foi o fator determinante. Isso configura S2.1 (causalidade unilateral) e possivelmente S2.3 (avaliação moral implícita pela justaposição).\n\nS3 — SUPORTE EVIDENCIAL E ATRIBUIÇÃO:\n- Os dados da pesquisa são atribuídos ao Datafolha, com publicação na Folha de S. Paulo — fonte identificada.\n- A afirmação 'houve um impacto negativo para o senador' é apresentada como constatação objetiva do jornalista, mas a causalidade (que o áudio causou o impacto) não tem evidência metodológica explicitada. A pesquisa mostra variação nos números, mas o texto não cita metodologia que permita atribuir a causa ao áudio. Isso pode configurar S3.3 (opinião apresentada como fato) — a interpretação de que houve 'impacto negativo' causado pelo áudio é do jornalista, não dado da pesquisa.\n- A nota sobre Jair Bolsonaro ('inelegível até 2030 após condenação do TSE') é factual e atribuída ao TSE.\n- Não há fontes vagas ou números sem origem relevantes além do já mencionado.\n\nS4 — PLURALIDADE E CONTRAPONTO INTERNO:\n- O texto é essencialmente uma reportagem de dados de pesquisa eleitoral. Não há acusação, conflito ou disputa que exija contraponto. Os dados são apresentados de forma descritiva.\n- Não há declarações de atores políticos que precisariam de contraponto.\n- A natureza do texto (divulgação de pesquisa) não exige pluralidade de vozes da mesma forma que uma reportagem investigativa. S4 ausente.\n\nS5 — CONTEXTUALIZAÇÃO EPISÓDICA:\n- O texto menciona a pesquisa anterior ('na última semana, estavam empatados tecnicamente'), fornecendo algum dado comparativo imediato.\n- No entanto, não há contextualização mais ampla: série histórica de pesquisas, tendências de longo prazo, contexto do que é o 'vazamento do áudio' (o que foi dito, qual a relevância), ou contexto institucional sobre as eleições de 2026.\n- A ausência de explicação sobre o que foi o 'vazamento do áudio' e sua relevância configura S5.1 (ausência de antecedente relevante) — o evento é mencionado como se o leitor já soubesse o que foi.\n- A ausência de série histórica mais ampla poderia ser S5.2, mas há pelo menos uma comparação com a semana anterior, o que mitiga parcialmente.\n- O foco em 'quem está na frente' sem discutir propostas ou impactos configura S5.3, mas é inerente ao gênero de cobertura de pesquisa eleitoral.",
+    "sinais": [
+      {
+        "sinal": "S1",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto utiliza linguagem predominantemente descritiva e factual para relatar dados de pesquisa. A expressão 'impacto negativo' é sustentada pelos dados numéricos apresentados imediatamente no texto, e os verbos de elocução são neutros ('divulgou', 'publicados', 'mostra')."
+      },
+      {
+        "sinal": "S2",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S2.1",
+            "trecho": "Esse é o primeiro levantamento do Datafolha feito após o vazamento do áudio entre Flávio Bolsonaro (PL) e o banqueiro Daniel Vorcaro. O resultado da pesquisa mostra que houve um impacto negativo para o senador.",
+            "justificativa": "A justaposição entre 'primeiro levantamento após o vazamento' e 'houve impacto negativo' estabelece implicitamente o áudio como causa única da queda nas pesquisas, sem apresentar outras causas possíveis (contexto econômico, outros eventos políticos, margem de erro acumulada) nem evidência metodológica de que o áudio foi o fator determinante.",
+            "confianca": "media",
+            "limitacao": "O texto não afirma explicitamente que o áudio causou a queda; a causalidade é inferida pela justaposição. É possível que o jornalista apenas esteja contextualizando temporalmente a pesquisa, sem intenção causal."
+          },
+          {
+            "sub_sinal": "S2.3",
+            "trecho": "Esse é o primeiro levantamento do Datafolha feito após o vazamento do áudio entre Flávio Bolsonaro (PL) e o banqueiro Daniel Vorcaro. O resultado da pesquisa mostra que houve um impacto negativo para o senador.",
+            "justificativa": "A sequência narrativa — primeiro mencionar o 'vazamento do áudio' (evento com conotação negativa) e imediatamente associá-lo ao 'impacto negativo' para Flávio — induz avaliação moral implícita sobre o senador sem formulá-la explicitamente.",
+            "confianca": "baixa",
+            "limitacao": "A construção pode ser simplesmente contextualização temporal jornalística padrão. A avaliação moral implícita depende fortemente da interpretação do leitor sobre o que foi o 'vazamento do áudio', evento não detalhado no texto."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S3",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S3.3",
+            "trecho": "O resultado da pesquisa mostra que houve um impacto negativo para o senador.",
+            "justificativa": "A afirmação de que 'houve um impacto negativo' é apresentada como constatação objetiva do jornalista, mas a pesquisa apenas mostra variação numérica. A interpretação de que essa variação constitui 'impacto' causado por um evento específico (o áudio) é julgamento interpretativo do jornalista, não dado explícito da pesquisa divulgada.",
+            "confianca": "media",
+            "limitacao": "A variação numérica entre as pesquisas (de empate técnico para 9 pontos de diferença) é factualmente demonstrada, o que dá alguma base para a afirmação de 'impacto negativo'. A limitação está na atribuição causal ao áudio, não necessariamente na constatação da variação em si."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S4",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto é uma reportagem de divulgação de dados de pesquisa eleitoral, gênero que não exige contraponto de atores políticos. Não há acusações, conflitos ou disputas que demandem pluralidade de vozes; os dados são apresentados de forma descritiva e os números falam por si."
+      },
+      {
+        "sinal": "S5",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S5.1",
+            "trecho": "Esse é o primeiro levantamento do Datafolha feito após o vazamento do áudio entre Flávio Bolsonaro (PL) e o banqueiro Daniel Vorcaro.",
+            "justificativa": "O 'vazamento do áudio' é mencionado como evento relevante para contextualizar a pesquisa, mas o texto não explica o que foi o áudio, o que foi dito, qual sua relevância política ou por que seria capaz de influenciar intenções de voto. O antecedente central que justificaria a interpretação dos dados é omitido.",
+            "confianca": "alta",
+            "limitacao": "É possível que o veículo tenha publicado matéria separada sobre o áudio e pressuponha que o leitor já tenha esse contexto. A ausência pode ser uma escolha editorial de não repetir informação já publicada."
+          },
+          {
+            "sub_sinal": "S5.3",
+            "trecho": "No cenário de primeiro turno, Lula (PT) lidera com 9 pontos percentuais de vantagem para Flávio. Na pesquisa anterior, na última semana, estavam empatados tecnicamente.",
+            "justificativa": "A cobertura foca inteiramente em quem está na frente e quem perdeu ou ganhou posições ('quem ganhou/perdeu'), sem discutir propostas, programas de governo ou impactos substantivos para a população. Trata-se de cobertura típica de 'cavalo de corrida' eleitoral.",
+            "confianca": "media",
+            "limitacao": "Reportagens de divulgação de pesquisa eleitoral têm como objeto central os números de intenção de voto. A ausência de discussão de propostas é inerente ao gênero, não necessariamente uma escolha editorial problemática."
+          }
+        ],
+        "justificativa_ausencia": ""
+      }
+    ],
+    "resumo": "O texto apresenta principalmente sinais de contextualização episódica (S5), ao mencionar o 'vazamento do áudio' sem explicar o que foi, e ao focar exclusivamente em posições de corrida eleitoral sem contexto substantivo. Há também enquadramento causal implícito (S2) pela justaposição entre o áudio e a queda nas pesquisas de Flávio Bolsonaro, sem evidência metodológica da relação causal. Um sinal de opinião apresentada como fato (S3.3) foi identificado na afirmação de 'impacto negativo' como constatação objetiva do jornalista."
+  }
+}

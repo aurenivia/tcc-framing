@@ -1,0 +1,108 @@
+{
+  "noticia_id": "N01",
+  "modelo": "openrouter/deepseek/deepseek-chat-v3-0324",
+  "tokens_prompt": 4119,
+  "tokens_resposta": 1894,
+  "tempo_segundos": 45.74,
+  "erro": null,
+  "analise": {
+    "raciocinio": "O texto foi analisado em relação às cinco categorias do protocolo. Na categoria S1 (Marcação Lexical Avaliativa), não foram encontrados sinais de adjetivação avaliativa, rotulação lexical, intensificação ou verbos de elocução carregados. Na categoria S2 (Enquadramento Causal-Moral), foram identificados sinais de causalidade unilateral e responsabilização desproporcional, com acusações sendo atribuídas a poucos atores sem contextualização adequada. Na categoria S5 (Contextualização Episódica), foram encontrados sinais de ausência de antecedente relevante, dado comparativo, foco estratégico e contexto institucional, indicando uma cobertura limitada e episódica do evento. As categorias S3 (Suporte Evidencial) e S4 (Pluralidade e Contraponto Interno) não apresentaram sinais relevantes, pois o texto inclui múltiplas vozes e citações diretas, embora sem aprofundamento contextual.",
+    "achados": [
+      {
+        "sinal": "S1",
+        "sub_sinal": "S1.1",
+        "sub_sinal_nome": "Adjetivação avaliativa",
+        "trecho": "Não há adjetivação avaliativa explícita no texto.",
+        "justificativa": "O texto apresenta múltiplas citações diretas de diferentes atores políticos, incluindo Dilma Rousseff, Michel Temer, Eduardo Cunha e outros parlamentares, sem adjetivação avaliativa explícita por parte do veículo.",
+        "confianca": "alta",
+        "limitacao": "Apesar da ausência de adjetivação avaliativa, a seleção das citações pode refletir um viés editorial implícito."
+      },
+      {
+        "sinal": "S1",
+        "sub_sinal": "S1.2",
+        "sub_sinal_nome": "Rotulação lexical",
+        "trecho": "Não há rotulação lexical explícita no texto.",
+        "justificativa": "O texto não utiliza rótulos valorativos para descrever os atores políticos, apresentando suas falas de forma direta e sem qualificação adicional.",
+        "confianca": "alta",
+        "limitacao": "A ausência de rótulos não impede que a seleção das citações possa influenciar a percepção do leitor."
+      },
+      {
+        "sinal": "S1",
+        "sub_sinal": "S1.3",
+        "sub_sinal_nome": "Intensificação / sensacionalismo",
+        "trecho": "Não há intensificação ou sensacionalismo explícito no texto.",
+        "justificativa": "O texto evita superlativos e termos dramáticos, apresentando as informações de forma equilibrada e sem sensacionalismo.",
+        "confianca": "alta",
+        "limitacao": "A neutralidade na apresentação pode ser interpretada como uma escolha editorial que evita polarização."
+      },
+      {
+        "sinal": "S1",
+        "sub_sinal": "S1.4",
+        "sub_sinal_nome": "Verbo de elocução carregado",
+        "trecho": "Não há verbos de elocução carregados no texto.",
+        "justificativa": "Os verbos de elocução utilizados são neutros ('disse', 'afirmou', 'declarou'), sem implicações de culpa ou dúvida.",
+        "confianca": "alta",
+        "limitacao": "A neutralidade dos verbos de elocução pode ser uma estratégia para manter a aparência de imparcialidade."
+      },
+      {
+        "sinal": "S2",
+        "sub_sinal": "S2.1",
+        "sub_sinal_nome": "Causalidade unilateral",
+        "trecho": "Dilma atacou Temer pela gravação de um áudio em que o vice-presidente fala como se o impeachment tivesse sido aprovado e como se ele fosse assumir o cargo de presidente.",
+        "justificativa": "O texto apresenta as acusações de Dilma Rousseff contra Michel Temer e Eduardo Cunha, mas não explora outras possíveis causas ou contextos para as ações descritas.",
+        "confianca": "media",
+        "limitacao": "A falta de contextualização pode limitar a compreensão do leitor sobre a complexidade da situação."
+      },
+      {
+        "sinal": "S2",
+        "sub_sinal": "S2.2",
+        "sub_sinal_nome": "Responsabilização desproporcional",
+        "trecho": "Para ela, o áudio 'revela traição a mim e à democracia'.",
+        "justificativa": "O texto atribui a responsabilidade pela crise política principalmente a Dilma Rousseff, Michel Temer e Eduardo Cunha, sem explorar outros fatores ou atores envolvidos.",
+        "confianca": "alta",
+        "limitacao": "A responsabilização desproporcional pode simplificar uma situação complexa."
+      },
+      {
+        "sinal": "S5",
+        "sub_sinal": "S5.1",
+        "sub_sinal_nome": "Ausência de antecedente relevante",
+        "trecho": "Não há contextualização histórica ou política no texto.",
+        "justificativa": "O texto apresenta as acusações de Dilma Rousseff e as respostas de Michel Temer e Eduardo Cunha, mas não explora o contexto histórico ou político mais amplo.",
+        "confianca": "media",
+        "limitacao": "A ausência de contexto pode limitar a compreensão do leitor sobre as motivações e implicações das ações descritas."
+      },
+      {
+        "sinal": "S5",
+        "sub_sinal": "S5.2",
+        "sub_sinal_nome": "Ausência de dado comparativo",
+        "trecho": "Não há dados comparativos ou séries históricas no texto.",
+        "justificativa": "O texto não apresenta dados comparativos ou séries históricas para situar as acusações e respostas no contexto mais amplo da crise política.",
+        "confianca": "alta",
+        "limitacao": "A falta de dados comparativos pode limitar a compreensão da magnitude e relevância dos eventos descritos."
+      },
+      {
+        "sinal": "S5",
+        "sub_sinal": "S5.3",
+        "sub_sinal_nome": "Foco estratégico / bastidor / cavalo de corrida",
+        "trecho": "O texto se concentra nas acusações e respostas dos atores políticos.",
+        "justificativa": "O texto se concentra nas disputas políticas e nas acusações entre os atores, sem discutir os impactos substantivos das ações descritas.",
+        "confianca": "alta",
+        "limitacao": "O foco nas disputas políticas pode desviar a atenção dos impactos reais sobre a sociedade e a democracia."
+      },
+      {
+        "sinal": "S5",
+        "sub_sinal": "S5.4",
+        "sub_sinal_nome": "Contexto institucional ausente",
+        "trecho": "Não há discussão sobre o contexto institucional ou legal no texto.",
+        "justificativa": "O texto não discute o contexto institucional ou legal das acusações e respostas, como os procedimentos de impeachment ou as normas constitucionais.",
+        "confianca": "alta",
+        "limitacao": "A ausência de contexto institucional pode limitar a compreensão do leitor sobre a legalidade e legitimidade das ações descritas."
+      }
+    ],
+    "sinais_ausentes": [
+      "S3",
+      "S4"
+    ],
+    "resumo": "O texto apresenta uma cobertura equilibrada em termos de pluralidade de vozes e ausência de marcação lexical avaliativa, mas falha em fornecer contexto histórico, institucional e comparativo, limitando-se a uma narrativa episódica centrada nas disputas políticas entre os atores envolvidos. A responsabilização desproporcional e a causalidade unilateral são evidentes, com acusações sendo atribuídas a poucos atores sem uma análise mais profunda das causas e implicações da crise política."
+  }
+}

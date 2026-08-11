@@ -1,0 +1,91 @@
+{
+  "noticia_id": "N05",
+  "modelo": "openrouter/deepseek/deepseek-v4-pro",
+  "tokens_prompt": 3391,
+  "tokens_resposta": 2748,
+  "tempo_segundos": 63.45,
+  "erro": null,
+  "analise": {
+    "raciocinio": "Iniciando a análise do texto fornecido, aplicando o protocolo de forma independente para cada categoria (S1 a S5).\n\n**S1 — MARCAÇÃO LEXICAL AVALIATIVA:**\n- O texto usa o termo \"grupo terrorista Hamas\" duas vezes. A primeira ocorrência está na fala do jornalista: \"...o desarmamento do grupo terrorista Hamas...\". A segunda também é do jornalista: \"O grupo terrorista palestino tem procurado...\". Isso se enquadra em S1.2 (Rotulação lexical), pois é um rótulo valorativo que enquadra o ator sem qualificação ou atribuição a uma fonte específica no momento do uso. Não é uma citação direta, mas linguagem do próprio texto.\n- Não foram encontrados adjetivos avaliativos (S1.1), intensificações (S1.3) ou verbos de elocução carregados (S1.4) na linguagem do jornalista. \"Disse\" e \"afirmou\" são neutros.\n- Portanto, S1 está presente.\n\n**S2 — ENQUADRAMENTO CAUSAL-MORAL:**\n- O título e o lead atribuem a paralisação do plano de Trump e do cessar-fogo unicamente à \"recusa do Hamas em se desarmar\". O texto afirma que \"a trégua depende do desarmamento do grupo terrorista Hamas, um ponto crucial que tem impedido o progresso\". Isso configura S2.1 (Causalidade unilateral), pois não menciona outras causas possíveis para a paralisação, como exigências de Israel, a continuidade do controle militar israelense (mencionado apenas como condição do Hamas) ou outros fatores políticos.\n- A justaposição da informação \"O exército israelense continua a controlar mais da metade da Faixa de Gaza\" no final, sem conectá-la como uma causa adicional para o impasse, pode ser vista como uma construção que induz um julgamento moral implícito (S2.3), focando a culpa no Hamas. No entanto, é uma informação factual, e a causalidade unilateral (S2.1) é o sinal mais forte.\n- Não há apelo ao medo (S2.4) ou falsa dicotomia explícita (S2.5).\n- Portanto, S2 está presente.\n\n**S3 — SUPORTE EVIDENCIAL E ATRIBUIÇÃO:**\n- A afirmação central do texto é que o cessar-fogo está travado pela recusa do Hamas em se desarmar. A fonte principal é Nickolay Mladenov, um diplomata nomeado. Suas falas são atribuídas com verbos neutros (\"disse\", \"afirmou\").\n- A frase \"Mediadores internacionais afirmam há muito tempo que o desarmamento é fundamental...\" é um exemplo de S3.2 (Fonte vaga ou anônima), pois não nomeia quais mediadores.\n- A afirmação \"...com o qual o Hamas concordou, mas nenhum progresso significativo foi feito nesse sentido\" é apresentada como fato, mas não há evidência ou fonte para a concordância do Hamas ou para a métrica de \"progresso significativo\". Isso se aproxima de S3.1 (Claim sem evidência explícita) e S3.3 (Opinião apresentada como fato), mas a fonte vaga (S3.2) é o sinal mais claro e direto.\n- Não há números ou comparações sem origem (S3.4) ou generalizações não fundamentadas (S3.5).\n- Portanto, S3 está presente.\n\n**S4 — PLURALIDADE E CONTRAPONTO INTERNO:**\n- O texto trata de um conflito e uma acusação (o Hamas é o responsável pelo travamento). Apenas a voz de Nickolay Mladenov, um mediador internacional, é ouvida diretamente.\n- O Hamas, parte diretamente afetada e acusada, não tem sua voz ou posição apresentada no texto, exceto por uma paráfrase do jornalista: \"O grupo terrorista palestino tem procurado condicionar qualquer desmilitarização à retirada das tropas israelenses.\" Isso configura S4.1 (Parte diretamente afetada ausente), pois não há citação direta, porta-voz ou comunicado do grupo.\n- Não há contraponto formal (S4.2) ou assimetria de espaço (S4.3) porque simplesmente não há outra voz. A fonte é única para a controvérsia (S4.4).\n- Portanto, S4 está presente.\n\n**S5 — CONTEXTUALIZAÇÃO EPISÓDICA:**\n- O texto foca em um evento atual: a declaração de um diplomata sobre a paralisação do plano. Não há antecedentes sobre o plano de Trump, as fases anteriores do cessar-fogo, ou o histórico das negociações de desarmamento (S5.1).\n- Não há dados comparativos, como o número de vezes que o desarmamento foi discutido, prazos anteriores, ou a proporção do território controlado por Israel em diferentes momentos (S5.2).\n- O foco é no impasse e na disputa de condições (\"quem cede primeiro\"), o que se alinha com S5.3 (Foco estratégico / bastidor / cavalo de corrida), centrando-se na dinâmica de poder e não no impacto humanitário ou nos detalhes do plano de reconstrução.\n- O contexto institucional do \"Conselho Internacional para a Paz em Gaza\" ou do mandato de Mladenov está ausente (S5.4).\n- Portanto, S5 está presente.",
+    "sinais": [
+      {
+        "sinal": "S1",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S1.2",
+            "trecho": "o desarmamento do grupo terrorista Hamas",
+            "justificativa": "O termo 'grupo terrorista' é um rótulo valorativo usado pelo jornalista para enquadrar o Hamas, sem atribuição a uma fonte específica ou qualificação contextual no momento do uso. A segunda ocorrência, 'O grupo terrorista palestino', reforça o enquadramento.",
+            "confianca": "alta",
+            "limitacao": "O termo 'terrorista' pode refletir a designação legal do grupo por diversos países e organizações, mas seu uso sem atribuição no texto jornalístico constitui uma tomada de posição lexical."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S2",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S2.1",
+            "trecho": "a trégua depende do desarmamento do grupo terrorista Hamas, um ponto crucial que tem impedido o progresso em outras frentes",
+            "justificativa": "O texto atribui a paralisação do cessar-fogo e do plano de reconstrução unicamente à recusa do Hamas em se desarmar. Outras causas possíveis, como as condições impostas por Israel ou a complexidade das negociações, não são apresentadas como fatores contribuintes para o impasse.",
+            "confianca": "alta",
+            "limitacao": "A afirmação é atribuída ao diplomata Mladenov, mas o texto a adota como premissa central sem oferecer um contexto multicausal, o que configura o enquadramento unilateral."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S3",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S3.2",
+            "trecho": "Mediadores internacionais afirmam há muito tempo que o desarmamento é fundamental para o cessar-fogo",
+            "justificativa": "A fonte da afirmação é vaga ('Mediadores internacionais'), sem nomeação de países, organizações ou indivíduos específicos, o que enfraquece a verificabilidade da informação.",
+            "confianca": "alta",
+            "limitacao": "É uma prática comum no jornalismo resumir posições consensuais de um grupo, mas a vagueza impede o leitor de aferir o peso e a representatividade da afirmação."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S4",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S4.1",
+            "trecho": "O grupo terrorista palestino tem procurado condicionar qualquer desmilitarização à retirada das tropas israelenses.",
+            "justificativa": "O Hamas é a parte central acusada de travar o acordo, mas sua posição é apresentada apenas por meio de uma paráfrase do jornalista. Não há citação direta, entrevista ou comunicado oficial do grupo que ofereça seu contraponto de forma desenvolvida.",
+            "confianca": "alta",
+            "limitacao": "Pode haver dificuldade de acesso a fontes oficiais do Hamas, mas a ausência de qualquer tentativa documentada de contato ou reprodução de posicionamento público configura a falta de pluralidade."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S5",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S5.1",
+            "trecho": "Plano de Trump em Gaza trava por recusa do Hamas em se desarmar",
+            "justificativa": "O texto não fornece o histórico do 'Plano de Trump', as fases anteriores do cessar-fogo ou os termos do acordo original. O evento é narrado como uma ocorrência isolada a partir da declaração do diplomata.",
+            "confianca": "baixa",
+            "limitacao": "Por ser uma notícia curta e factual sobre uma declaração do dia, a ausência de antecedentes pode ser uma limitação de espaço, mas ainda assim priva o leitor do contexto necessário para uma compreensão mais profunda."
+          },
+          {
+            "sub_sinal": "S5.3",
+            "trecho": "o acordo gradual está paralisado porque o Hamas ainda não se desarmou, classificando a situação como 'inegociável'.",
+            "justificativa": "O foco narrativo está na disputa de poder e no impasse tático ('quem cede primeiro'), centrando-se na condição de desarmamento versus retirada de tropas, sem discutir o impacto substantivo da paralisação para a população ou os detalhes do plano de reconstrução.",
+            "confianca": "media",
+            "limitacao": "O texto relata um impasse diplomático, e o foco em 'quem ganha/perde' é uma característica comum do jornalismo político. A ausência do impacto humanitário é uma limitação de enquadramento, não necessariamente um viés intencional."
+          }
+        ],
+        "justificativa_ausencia": ""
+      }
+    ],
+    "resumo": "O texto apresenta sinais discursivos em todas as cinco categorias analisadas. Destaca-se a rotulação lexical do Hamas como 'grupo terrorista' (S1.2), a atribuição unilateral da culpa pelo impasse ao grupo (S2.1), o uso de fontes vagas (S3.2), a ausência de contraponto direto do Hamas (S4.1) e um enquadramento episódico focado na disputa de poder sem contexto histórico ou de impacto (S5.1, S5.3)."
+  }
+}

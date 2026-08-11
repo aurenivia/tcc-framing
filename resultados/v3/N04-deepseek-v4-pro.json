@@ -1,0 +1,83 @@
+{
+  "noticia_id": "N04",
+  "modelo": "openrouter/deepseek/deepseek-v4-pro",
+  "tokens_prompt": 3560,
+  "tokens_resposta": 5287,
+  "tempo_segundos": 196.62,
+  "erro": null,
+  "analise": {
+    "raciocinio": "Analisei cada categoria individualmente, verificando a presença ou ausência de sinais com base estritamente no texto fornecido.\n\nS1: Procurei por adjetivos que expressam juízo de valor sem base factual. Termos como 'petista' (S1.2, rotulação político-partidária) e 'aliados avaliam' em citação indireta podem configurar rotulação lexical. Outros termos são descritivos ou parte de citações diretas. Detectados dois subcritérios com confiança média/baixa.\n\nS2: O texto apresenta uma possível causalidade unilateral ao sugerir que a variação na pesquisa é efeito direto das revelações sobre Flávio Bolsonaro, sem considerar outros fatores (S2.1). A justaposição entre as revelações e a queda na pesquisa pode configurar avaliação moral implícita (S2.3). Detectado S2.1 com confiança média e S2.3 não detectado por se tratar de justaposição factual para contexto.\n\nS3: O texto cita fonte explícita (Datafolha) para os números, dados de metodologia. Há menção a 'revelações das conversas', mas sem detalhamento ou fonte nomeada para elas, o que pode configurar claim sem evidência (S3.1). Há atribuição vaga a 'interlocutores' na citação indireta (S3.2). Detectado S3.2 com confiança média.\n\nS4: O texto é uma divulgação de pesquisa, não um debate ou controvérsia com múltiplos lados. Não há acusação ou necessidade de contraponto interno. Ausência de pluralidade não configura sinal aqui, dada a natureza do conteúdo. Nenhum subcritério detectado.\n\nS5: O texto contextualiza com pesquisa anterior e menciona eventos que podem ter afetado o cenário (revelações), mas não aprofunda o histórico dessas revelações nem fornece dados comparativos além dos dois pontos no tempo. Foco é nas intenções de voto, com leve ênfase na disputa eleitoral (S5.3). Detectado S5.3 com confiança baixa.\n\nRegistro estritamente conforme evidência textual.",
+    "sinais": [
+      {
+        "sinal": "S1",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S1.2",
+            "trecho": "o petista abriu quatro pontos de vantagem contra o filho do ex-presidente Jair Bolsonaro",
+            "justificativa": "Uso repetido do termo 'petista' como rótulo partidário para Lula, e 'filho do ex-presidente' para Flávio Bolsonaro, carregando implicações de afiliação e dependência política.",
+            "confianca": "media",
+            "limitacao": "Termos de uso comum no jornalismo político; podem ser considerados descritivos, mas carregam conotação reduzindo os atores a categorias específicas."
+          },
+          {
+            "sub_sinal": "S1.2",
+            "trecho": "interlocutores do senador avaliam que a reação de Flávio ao escândalo ainda não surtiu o efeito esperado",
+            "justificativa": "Rotulação 'interlocutores do senador' é vaga e atribui uma avaliação a um grupo sem identificação, servindo para enquadrar a reação como ineficaz.",
+            "confianca": "baixa",
+            "limitacao": "A frase está em discurso indireto livre, mesclando a voz do jornalista com a da fonte anônima. Não é claro se é rotulação lexical ou reprodução de avaliação da fonte."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S2",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S2.1",
+            "trecho": "Essa é a primeira pesquisa que mostra o impacto das revelações das conversas entre o senador e o banqueiro Daniel Vorcaro, do Banco Master, na campanha do filho do ex-presidente.",
+            "justificativa": "O texto atribui causalidade entre as revelações e o impacto na campanha, sem mencionar outras possíveis causas para a variação nas intenções de voto.",
+            "confianca": "media",
+            "limitacao": "A afirmação pode ser interpretada como constatação temporal (primeira pesquisa após o evento) e não necessariamente atribuição de causa única. A relação é plausível, mas não explorada multicausalmente."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S3",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S3.2",
+            "trecho": "interlocutores do senador avaliam que a reação de Flávio ao escândalo ainda não surtiu o efeito esperado",
+            "justificativa": "Fonte vaga e anônima ('interlocutores') usada para sustentar afirmação sobre a campanha.",
+            "confianca": "media",
+            "limitacao": "A informação não é central para a notícia principal (números da pesquisa), mas é apresentada como contexto. A vagueza é comum em notícias políticas para proteger fontes."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S4",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "Trata-se de divulgação de pesquisa eleitoral quantitativa, sem controvérsia ou acusação que demande pluralidade de vozes internamente. O texto não apresenta conflito entre partes que exigiria contraponto."
+      },
+      {
+        "sinal": "S5",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S5.3",
+            "trecho": "Veja os números do 2º turno: ... No cenário primeiro turno, o petista aparece com 40% ante 31% do senador. ... a vantagem do presidente sobre o senador passou de 3 para 9 pontos percentuais.",
+            "justificativa": "Foco no 'cavalo de corrida' (quem ganhou/perdeu, variação de pontos) sem discutir propostas, plataformas ou impacto substantivo das candidaturas.",
+            "confianca": "baixa",
+            "limitacao": "É prática padrão em matérias de pesquisa eleitoral focar em intenções de voto. O texto fornece dados comparativos com a pesquisa anterior, mas não aprofunda contexto programático."
+          }
+        ],
+        "justificativa_ausencia": ""
+      }
+    ],
+    "resumo": "Análise concluída com 5 categorias avaliadas. Detectados sinais em S1 (rotulação lexical S1.2), S2 (causalidade unilateral S2.1), S3 (fonte vaga S3.2) e S5 (foco em cavalo de corrida S5.3). Nenhum sinal detectado em S4, dada a natureza não-controversial do tema."
+  }
+}

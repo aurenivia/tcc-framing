@@ -1,0 +1,98 @@
+{
+  "noticia_id": "N12",
+  "modelo": "openrouter/deepseek/deepseek-v4-pro",
+  "tokens_prompt": 3586,
+  "tokens_resposta": 6984,
+  "tempo_segundos": 146.46,
+  "erro": null,
+  "analise": {
+    "raciocinio": "Analisei cada categoria independentemente, examinando o texto em busca dos 22 subcritérios. Para cada sinal detectado, associei um trecho literal e avaliei a confiança. Para categorias sem sinais, registrei a ausência explicitamente. A análise considerou apenas o conteúdo textual, sem conhecimento externo.",
+    "achados": [
+      {
+        "sinal": "S2",
+        "sub_sinal": "S2.3",
+        "sub_sinal_nome": "Avaliação moral implícita",
+        "trecho": "Após chamar massacre de acidente, Temer fala em 'pavorosa matança' (título) e 'Após se referir ao massacre em um presídio de Manaus de 'acidente', o presidente Michel Temer voltou a falar da crise no sistema penitenciário no país e se referiu ao episódio como 'pavorosa matança'' (lead).",
+        "justificativa": "A justaposição entre o termo 'acidente' (supostamente minimizador) e 'pavorosa matança' (supostamente mais adequado) constrói uma narrativa que induz o julgamento de que Temer inicialmente tratou o evento com descaso. O texto não explicita essa avaliação, mas a estrutura sequencial e a escolha lexical no título sugerem uma crítica moral implícita.",
+        "confianca": "media",
+        "limitacao": "O texto relata uma mudança factual na fala do presidente; a avaliação moral pode ser uma inferência do leitor, não necessariamente uma intenção do jornalista. A ausência de adjetivos avaliativos explícitos torna o enquadramento ambíguo."
+      },
+      {
+        "sinal": "S3",
+        "sub_sinal": "S3.1",
+        "sub_sinal_nome": "Claim sem evidência explícita",
+        "trecho": "Manaus registrou a morte de cerca de 60 presos na semana passada, durante rebeliões em presídios. Já em Roraima, mais de 30 presidiários foram mortos em outro massacre.",
+        "justificativa": "Os números de mortos ('cerca de 60' e 'mais de 30') são apresentados como fatos, mas o texto não cita a fonte desses dados (ex.: secretaria de segurança, boletim oficial, etc.). Apenas a identidade dos mortos é atribuída ao 'governo amazonense'.",
+        "confianca": "media",
+        "limitacao": "Os números podem ser de conhecimento público amplamente divulgado; a omissão da fonte pode ser um recurso de concisão jornalística. A ausência de atribuição não implica falsidade, mas fragiliza a verificabilidade interna do texto."
+      },
+      {
+        "sinal": "S3",
+        "sub_sinal": "S3.4",
+        "sub_sinal_nome": "Número ou comparação sem origem",
+        "trecho": "Manaus registrou a morte de cerca de 60 presos na semana passada, durante rebeliões em presídios. Já em Roraima, mais de 30 presidiários foram mortos em outro massacre.",
+        "justificativa": "Os quantitativos de vítimas não estão vinculados a nenhuma pesquisa, instituto ou fonte oficial no texto. Apenas a filiação criminosa dos mortos é atribuída ('De acordo com o governo amazonense').",
+        "confianca": "media",
+        "limitacao": "O texto pode pressupor que o leitor já conhece a origem dos números (ex.: notícias anteriores). A falta de referência direta, porém, reduz a transparência da evidência."
+      },
+      {
+        "sinal": "S4",
+        "sub_sinal": "S4.1",
+        "sub_sinal_nome": "Parte diretamente afetada ausente",
+        "trecho": "O texto cita apenas falas do presidente Michel Temer e dados do governo federal/amazonense. Não há falas de presos, familiares de vítimas, advogados, defensores de direitos humanos ou especialistas independentes.",
+        "justificativa": "A matéria aborda uma controvérsia (a fala inicial de Temer minimizando o massacre) e a crise penitenciária, mas não inclui nenhuma voz diretamente afetada ou contrária à posição oficial. A ausência desses atores limita a pluralidade interna.",
+        "confianca": "alta",
+        "limitacao": "O texto é uma nota curta sobre uma fala presidencial; a inclusão de contrapontos pode não ser o objetivo. A ausência de outras fontes pode ser justificada pelo formato, mas o protocolo sinaliza a falta de pluralidade."
+      },
+      {
+        "sinal": "S4",
+        "sub_sinal": "S4.4",
+        "sub_sinal_nome": "Fonte única para controvérsia",
+        "trecho": "Toda a matéria se baseia em declarações de Michel Temer e informações do governo (federal e amazonense). Não há fontes externas ao campo governista.",
+        "justificativa": "O texto trata de um tema controverso (a resposta do governo à crise penitenciária e a mudança de discurso de Temer) utilizando apenas fontes oficiais. Isso configura dependência de um único campo de atores.",
+        "confianca": "alta",
+        "limitacao": "Reportagens sobre pronunciamentos oficiais frequentemente focam na fala do governante. A ausência de outras fontes pode ser uma limitação do gênero, mas o protocolo a identifica como fragilidade de pluralidade."
+      },
+      {
+        "sinal": "S5",
+        "sub_sinal": "S5.1",
+        "sub_sinal_nome": "Ausência de antecedente relevante",
+        "trecho": "O texto menciona a crise penitenciária e os massacres, mas não apresenta o histórico da crise, as causas estruturais da superlotação ou o contexto das facções (PCC, FDN) antes dos eventos.",
+        "justificativa": "A narrativa começa com a fala de Temer e os massacres recentes, sem recuperar a evolução do sistema penitenciário, políticas anteriores ou a cronologia da violência entre facções. Isso isola o episódio de seu contexto histórico.",
+        "confianca": "media",
+        "limitacao": "O jornalismo diário frequentemente adota o enquadramento episódico por restrições de espaço e tempo. A ausência de antecedentes não indica viés, mas limita a compreensão do leitor."
+      },
+      {
+        "sinal": "S5",
+        "sub_sinal": "S5.2",
+        "sub_sinal_nome": "Ausência de dado comparativo",
+        "trecho": "O texto informa que 'cerca de 60 presos' morreram em Manaus e 'mais de 30' em Roraima, mas não compara esses números com estatísticas de anos anteriores, médias nacionais ou outros massacres prisionais.",
+        "justificativa": "Sem uma série histórica ou referência comparativa, o leitor não consegue dimensionar se esses números representam um agravamento excepcional ou estão dentro de um padrão. A falta de contexto comparativo enfraquece a análise da gravidade.",
+        "confianca": "media",
+        "limitacao": "A inclusão de dados comparativos pode não ser viável em uma nota curta. A ausência é típica do jornalismo factual imediato, mas o protocolo a registra como limitação contextual."
+      },
+      {
+        "sinal": "S5",
+        "sub_sinal": "S5.3",
+        "sub_sinal_nome": "Foco estratégico / bastidor / cavalo de corrida",
+        "trecho": "O título e o lead destacam a mudança de discurso de Temer ('Após chamar massacre de acidente, Temer fala em 'pavorosa matança''), centrando a narrativa na figura política e em sua retórica, em vez de aprofundar as causas ou impactos da crise penitenciária.",
+        "justificativa": "A matéria enfatiza o comportamento verbal do presidente (o 'antes' e 'depois') e a reunião ministerial, enquadrando o evento como uma disputa de imagem ou posicionamento político, e não como um problema substantivo de segurança pública.",
+        "confianca": "media",
+        "limitacao": "O foco em personagens e estratégias é uma característica do jornalismo político. A crítica aqui é sobre a predominância desse enquadramento, não sobre sua existência."
+      }
+    ],
+    "sinais_ausentes": [
+      "S1",
+      "S2",
+      "S2",
+      "S2",
+      "S2",
+      "S3",
+      "S3",
+      "S4",
+      "S4",
+      "S5"
+    ],
+    "resumo": "Foram detectados sinais em S2 (avaliação moral implícita), S3 (falta de evidência e números sem fonte), S4 (ausência de contraponto e fonte única) e S5 (contextualização episódica). Nenhum sinal foi encontrado em S1 (marcação lexical avaliativa)."
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "noticia_id": "N02",
+  "modelo": "openrouter/anthropic/claude-sonnet-4.6",
+  "tokens_prompt": 5739,
+  "tokens_resposta": 1637,
+  "tempo_segundos": 38.11,
+  "erro": null,
+  "analise": {
+    "raciocinio": "Analisando o texto categoria por categoria:\n\nS1 — MARCAÇÃO LEXICAL AVALIATIVA:\nO texto é predominantemente factual e descritivo. Os verbos de elocução usados são neutros ('divulgada', 'classificou', 'explicaram'). Não há adjetivos avaliativos, rótulos valorativos, hipérboles ou verbos de elocução carregados. O termo 'petista' para se referir a Lula é um rótulo partidário (S1.2), mas é amplamente usado como gentílico/identificador no jornalismo brasileiro e não carrega conotação negativa explícita no contexto. Avalio como confiança baixa/média. Não há outros sinais S1 detectáveis.\n\nS2 — ENQUADRAMENTO CAUSAL-MORAL:\nO texto não atribui culpa, não apresenta cenários catastróficos, não faz julgamentos morais implícitos, não usa falsas dicotomias. A narrativa é estritamente informativa sobre um procedimento médico. Nenhum sinal S2 detectado.\n\nS3 — SUPORTE EVIDENCIAL E ATRIBUIÇÃO:\nAs informações são atribuídas ao Hospital Sírio-Libanês e à equipe médica. A afirmação 'as sessões de radioterapia têm caráter preventivo e não provocam efeitos colaterais' é atribuída à equipe médica, mas sem nomear médicos específicos — isso pode configurar S3.2 (fonte vaga). A afirmação sobre a lesão ser 'localizada e não apresenta disseminação' é atribuída a 'os médicos que acompanham o presidente', também sem nomeação. O número '14 sessões restantes' aparece sem fonte explícita atribuída diretamente. Avalio S3.2 como presente com confiança média.\n\nS4 — PLURALIDADE E CONTRAPONTO INTERNO:\nTrata-se de uma nota informativa sobre um procedimento médico de saúde do presidente. Não há controvérsia, acusação ou disputa que exija contraponto. O texto não é sobre conflito político. Nenhum sinal S4 detectado — ausência justificada pelo gênero textual.\n\nS5 — CONTEXTUALIZAÇÃO EPISÓDICA:\nO texto fornece antecedente relevante (retirada do câncer em abril, biópsia anterior, resultado benigno), explica o contexto do tratamento (sessões complementares, 14 sessões restantes) e menciona que a lesão é localizada. Há contextualização razoável para o gênero nota informativa. Não há ausência significativa de contexto institucional ou histórico que configure sinal S5.",
+    "sinais": [
+      {
+        "sinal": "S1",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S1.2",
+            "trecho": "o petista vem realizando procedimentos complementares para evitar o retorno do quadro ou uma possível evolução",
+            "justificativa": "O termo 'petista' é um rótulo partidário usado para identificar o presidente em vez de seu nome ou cargo, enquadrando-o pela filiação política em contexto estritamente médico, sem necessidade informativa aparente.",
+            "confianca": "baixa",
+            "limitacao": "O uso de 'petista' como gentílico/identificador é prática comum no jornalismo brasileiro e pode ser interpretado como recurso de variação textual para evitar repetição do nome, sem intenção valorativa."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S2",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto é estritamente informativo sobre um procedimento médico, sem atribuição de culpa, julgamento moral, cenário catastrófico ou lógica argumentativa falha."
+      },
+      {
+        "sinal": "S3",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S3.2",
+            "trecho": "Segundo a equipe médica, as sessões de radioterapia têm caráter preventivo e não provocam efeitos colaterais.",
+            "justificativa": "A afirmação clínica relevante é atribuída genericamente à 'equipe médica' sem nomear médicos responsáveis, especialidade ou instituição específica além do hospital já mencionado.",
+            "confianca": "media",
+            "limitacao": "Em notas de saúde de chefes de Estado, a atribuição coletiva à equipe médica é prática padrão e pode refletir comunicado oficial do hospital, não necessariamente omissão jornalística."
+          },
+          {
+            "sub_sinal": "S3.2",
+            "trecho": "Os médicos que acompanham o presidente já explicaram que a lesão é localizada e não apresenta disseminação para outras partes do corpo",
+            "justificativa": "Afirmação médica relevante atribuída a 'os médicos que acompanham o presidente', sem identificação de nomes, especialidades ou referência a documento/comunicado específico.",
+            "confianca": "media",
+            "limitacao": "Pode tratar-se de referência a comunicados anteriores já publicados, indicados pela expressão 'já explicaram', o que reduziria a fragilidade evidencial."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S4",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto é uma nota informativa sobre procedimento médico sem controvérsia, acusação ou disputa que exija contraponto de outras partes. O gênero não demanda pluralidade de vozes."
+      },
+      {
+        "sinal": "S5",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto fornece antecedentes relevantes (retirada do câncer em abril, biópsia com resultado benigno, sessões complementares anteriores) e contextualiza adequadamente o procedimento para o gênero nota informativa."
+      }
+    ],
+    "resumo": "O texto é predominantemente factual e informativo, com sinais discursivos de baixa intensidade. Detectou-se uso do rótulo partidário 'petista' em contexto estritamente médico (S1.2, confiança baixa) e atribuição de afirmações clínicas relevantes a fontes coletivas não nomeadas como 'equipe médica' e 'os médicos que acompanham o presidente' (S3.2, confiança média). Não foram identificados enquadramento causal-moral, ausência de contraponto ou déficit de contextualização significativos para o gênero textual."
+  }
+}

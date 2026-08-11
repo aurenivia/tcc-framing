@@ -1,0 +1,20 @@
+{
+  "noticia_id": "N06",
+  "modelo": "openrouter/deepseek/deepseek-v4-pro",
+  "tokens_prompt": 4232,
+  "tokens_resposta": 4303,
+  "tempo_segundos": 137.29,
+  "erro": null,
+  "analise": {
+    "raciocinio": "A análise foi conduzida avaliando cada categoria (S1 a S5) independentemente, conforme o protocolo. Para cada subcritério, busquei trechos literais que evidenciassem os sinais. Não foram encontrados sinais em nenhuma categoria. O texto é predominantemente descritivo, com dados atribuídos a fontes identificadas (IBGE e seu coordenador), linguagem neutra e contextualização histórica. A seguir, o detalhamento:\n\nS1 – MARCAÇÃO LEXICAL AVALIATIVA: O texto não contém adjetivação avaliativa (S1.1), rótulos valorativos (S1.2), intensificação sensacionalista (S1.3) ou verbos de elocução carregados (S1.4). Adjetivos como 'leve' (em 'leve queda') são descritivos e ancorados em dados (0,1 p.p.). Os verbos de citação são neutros ('disse', 'afirmou', 'explicou').\n\nS2 – ENQUADRAMENTO CAUSAL-MORAL: A explicação causal para a queda do desemprego é atribuída ao coordenador do IBGE, que ressalva a necessidade de análise adicional ('A gente precisa analisar'). Não há responsabilização desproporcional (S2.2), avaliação moral implícita (S2.3), apelo ao medo (S2.4) ou falsa dicotomia (S2.5).\n\nS3 – SUPORTE EVIDENCIAL: As afirmações centrais estão baseadas em dados do IBGE ou em declarações de seu coordenador. A frase 'A expectativa é que ela seja substituída...' poderia ser considerada vaga, mas não é central para o argumento principal e não compromete a sustentação do texto. Não há fontes anônimas, opiniões sem atribuição, números sem origem ou generalizações infundadas.\n\nS4 – PLURALIDADE E CONTRAPONTO: O texto relata dados oficiais sem controvérsia, portanto não se aplicam os subcritérios de ausência de contraponto. A única fonte é o IBGE, adequada ao tipo de matéria.\n\nS5 – CONTEXTUALIZAÇÃO EPISÓDICA: O texto fornece série histórica ('menor desde 2002'), comparações mensais e anuais, e explica o contexto institucional da pesquisa (substituição pela Pnad Contínua). Não há foco em bastidores ou estratégia política.",
+    "achados": [],
+    "sinais_ausentes": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ],
+    "resumo": "O texto analisado é uma reportagem econômica baseada em dados oficiais do IBGE. A linguagem é neutra, as fontes são identificadas e o contexto histórico é apresentado. Não foram detectados sinais discursivos conforme os critérios do protocolo. A ausência de sinais é um resultado válido e esperado para este tipo de matéria."
+  }
+}

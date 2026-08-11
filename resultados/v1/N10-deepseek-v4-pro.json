@@ -1,0 +1,29 @@
+{
+  "noticia_id": "N10",
+  "modelo": "openrouter/deepseek/deepseek-v4-pro",
+  "tokens_prompt": 3229,
+  "tokens_resposta": 4745,
+  "tempo_segundos": 129.11,
+  "erro": null,
+  "analise": {
+    "raciocinio": "S1 — MARCAÇÃO LEXICAL AVALIATIVA: Percorri o texto em busca de adjetivos avaliativos, rótulos valorativos, intensificações sensacionalistas e verbos de elocução carregados. A linguagem é descritiva e neutra, utilizando termos do próprio projeto de lei (\"escuta especializada\", \"autoridade especial\") sem carga valorativa adicional. Não identifiquei nenhum sinal de S1.1, S1.2, S1.3 ou S1.4.\n\nS2 — ENQUADRAMENTO CAUSAL-MORAL: Analisei a construção narrativa. O texto relata a aprovação de um projeto de lei sem atribuir causas, culpas ou responsabilidades de forma unilateral. Não há justaposições que induzam julgamento moral implícito, apelo ao medo ou falsas dicotomias. Nenhum sinal de S2.1 a S2.5.\n\nS3 — SUPORTE EVIDENCIAL E ATRIBUIÇÃO: Verifiquei a sustentação das afirmações. Todas as informações sobre o conteúdo do projeto são atribuídas ao próprio texto legislativo (\"De acordo com o projeto\", \"Pelo texto da proposta\"), uma fonte pública e identificável. Não há claims sem evidência, fontes anônimas, opiniões travestidas de fato, números sem origem ou generalizações infundadas. Nenhum sinal de S3.1 a S3.5.\n\nS4 — PLURALIDADE E CONTRAPONTO INTERNO: O texto trata de uma aprovação legislativa sem controvérsia aparente (votação simbólica sugere consenso). Não há acusação, conflito ou disputa que exigisse contraponto. A ausência de vozes divergentes não configura sinal em uma nota curta sobre fato não controverso. Nenhum sinal de S4.1 a S4.4.\n\nS5 — CONTEXTUALIZAÇÃO EPISÓDICA: Avaliei a profundidade contextual. O texto fornece algum antecedente (\"Ainda não existia uma legislação específica sobre esse assunto\") e o percurso legislativo, mas carece completamente de dados comparativos (estatísticas, séries históricas, comparações) que dimensionem o problema ou o impacto da nova lei. Isso caracteriza o enquadramento episódico típico do noticiário diário. Detectado S5.2 com confiança baixa, pois a inclusão de tais dados não é obrigatória para a compreensão imediata do fato, mas sua ausência limita a análise. Os demais subcritérios (S5.1, S5.3, S5.4) não foram identificados, já que há algum antecedente, não há foco em bastidores e o contexto institucional básico está presente.",
+    "achados": [
+      {
+        "sinal": "S5",
+        "sub_sinal": "S5.2",
+        "sub_sinal_nome": "Ausência de dado comparativo",
+        "trecho": "O Senado aprovou nesta quarta-feira (29), em votação simbólica (sem contagem de votos), projeto que estabelece uma série de mecanismos para a proteção de crianças vítimas ou testemunhas de violência. [Em todo o texto, não há qualquer menção a dados comparativos, estatísticos ou séries históricas; a cobertura limita-se a descrever as disposições do projeto.]",
+        "justificativa": "O texto descreve o conteúdo do projeto de lei e seu trâmite, mas não fornece nenhum dado comparativo (como estatísticas de violência infantil, frequência de casos, comparações com legislações de outros países ou séries históricas) que permitam dimensionar a relevância ou o impacto da medida. Essa ausência é típica do jornalismo diário factual, mas limita a compreensão contextual do leitor.",
+        "confianca": "baixa",
+        "limitacao": "A ausência de dados comparativos pode ser justificada pelo formato de notícia curta e pelo foco no ato legislativo em si, não configurando necessariamente viés, mas reduzindo a profundidade informativa."
+      }
+    ],
+    "sinais_ausentes": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ],
+    "resumo": "Texto predominantemente descritivo e neutro, com ausência de sinais discursivos nas categorias S1 a S4. Detectado apenas S5.2 (ausência de dado comparativo) com confiança baixa, refletindo o padrão episódico do jornalismo diário."
+  }
+}

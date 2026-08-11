@@ -1,0 +1,29 @@
+{
+  "noticia_id": "N04",
+  "modelo": "openrouter/deepseek/deepseek-v4-pro",
+  "tokens_prompt": 3234,
+  "tokens_resposta": 1443,
+  "tempo_segundos": 44.48,
+  "erro": null,
+  "analise": {
+    "raciocinio": "Iniciando a análise do texto jornalístico do G1, aplicando o protocolo de forma independente para cada categoria.\n\n**S1 — MARCAÇÃO LEXICAL AVALIATIVA:**\nO texto relata declarações de Eduardo Cunha, que são carregadas de avaliação ('grosseira', 'absurda', 'falta de respeito'). No entanto, o texto do G1 as apresenta como citação direta ou indireta, atribuindo-as claramente a Cunha. O jornal não endossa esses termos, apenas os reporta. Não identifico adjetivação avaliativa, rotulação, intensificação ou verbo de elocução carregado partindo da voz do narrador/jornalista. A palavra 'suposta' em 'suposta oferta de cargo' é uma ressalva jornalística padrão para uma acusação não comprovada, não um sinal de avaliação. Portanto, S1 está ausente.\n\n**S2 — ENQUADRAMENTO CAUSAL-MORAL:**\nO texto estrutura uma disputa política, apresentando a acusação de Cunha e a defesa de Chinaglia. A causa do conflito é a eleição para a presidência da Câmara. O texto não atribui culpa unilateralmente; ele apresenta a versão de Cunha (oferta de cargos, crítica à comparação) e a justificativa de Chinaglia. Não há construção de um cenário catastrófico ou falsa dicotomia. A narrativa é de relato de um embate, sem que o jornalista enquadre moralmente um dos lados. S2 está ausente.\n\n**S3 — SUPORTE EVIDENCIAL E ATRIBUIÇÃO:**\nO texto é baseado em declarações públicas (Twitter de Cunha, fala de Chinaglia). As fontes são nomeadas e identificadas. A afirmação de Cunha sobre 'suposta oferta de cargo' é atribuída a ele e ao seu partido ('Peemedebistas têm reclamado'), e o texto usa o termo 'suposta', indicando que é uma alegação. Não há claims do jornalista sem evidência, fontes vagas, opiniões travestidas de fato, números sem origem ou generalizações infundadas. S3 está ausente.\n\n**S4 — PLURALIDADE E CONTRAPONTO INTERNO:**\nO texto trata de uma controvérsia entre Eduardo Cunha e Arlindo Chinaglia. Ambos os lados são ouvidos. Cunha é citado extensamente via Twitter. Chinaglia tem sua defesa reproduzida em discurso direto ('Você acha normal...'). Há um contraponto substancial, não apenas formal. O espaço é relativamente equilibrado, com a fala de Chinaglia sendo longa e central para explicar o ponto de discórdia. S4 está ausente.\n\n**S5 — CONTEXTUALIZAÇÃO EPISÓDICA:**\nO texto contextualiza o evento: é uma disputa pela presidência da Câmara, com eleição marcada. Menciona os candidatos. Explica o antecedente imediato da briga (reclamação de peemedebistas sobre oferta de cargos). No entanto, falta um contexto mais amplo: qual o histórico da relação entre PT e PMDB na Câmara? Qual a importância da presidência da Câmara? O foco é inteiramente no conflito pessoal e nas trocas de farpas ('quem ganhou/perdeu' na discussão), sem discutir o impacto substantivo da eleição ou as plataformas dos candidatos. Isso se encaixa em S5.3 (foco estratégico/bastidor). Também se pode argumentar que há ausência de antecedentes mais profundos (S5.1), mas o foco principal é o enquadramento de 'cavalo de corrida'. A confiança é alta para S5.3.",
+    "achados": [
+      {
+        "sinal": "S5",
+        "sub_sinal": "S5.3",
+        "sub_sinal_nome": "Foco estratégico / bastidor / cavalo de corrida",
+        "trecho": "Cunha e Chinaglia – além de Júlio Delgado (PSB) e Chico Alencar (PSOL) – disputam a presidência da Câmara, em eleição marcada para o próximo dia 1º. Peemedebistas têm reclamado da atuação de ministros do governo em favor da candidatura de Chinaglia, com suposta oferta de cargo de segundo escalão a deputados.",
+        "justificativa": "O texto enquadra a disputa eleitoral exclusivamente sob a ótica do conflito político, troca de acusações e articulações de bastidor ('suposta oferta de cargo'). Não há qualquer menção a propostas, plataformas, impacto legislativo ou função institucional da presidência da Câmara, focando apenas na dinâmica de poder e no embate pessoal entre os candidatos.",
+        "confianca": "alta",
+        "limitacao": "O texto é uma notícia factual sobre uma troca de declarações em uma disputa política. O foco no 'cavalo de corrida' é um padrão comum no jornalismo diário, que prioriza o conflito imediato em detrimento da análise temática, e não necessariamente indica viés intencional."
+      }
+    ],
+    "sinais_ausentes": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ],
+    "resumo": "O texto do G1 é um relato factual e equilibrado de uma troca de acusações entre dois candidatos à presidência da Câmara. Apresenta as declarações de ambos os lados com atribuição clara, sem emitir juízo de valor próprio (S1, S2, S3 ausentes) e garantindo contraponto interno (S4 ausente). O único sinal discursivo identificado é o enquadramento episódico com foco estratégico (S5.3), típico da cobertura política diária, que prioriza o conflito pessoal e os bastidores em detrimento de uma discussão sobre o impacto substantivo do cargo em disputa."
+  }
+}

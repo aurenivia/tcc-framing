@@ -1,0 +1,75 @@
+{
+  "noticia_id": "N04",
+  "modelo": "openrouter/openai/gpt-5.4",
+  "tokens_prompt": 3956,
+  "tokens_resposta": 1302,
+  "tempo_segundos": 18.32,
+  "erro": null,
+  "analise": {
+    "raciocinio": "Examinei o texto por categoria, separando linguagem do jornalista de dados atribuídos ao instituto. Em S1, não identifiquei adjetivação valorativa forte, rotulação carregada, hipérbole ou verbo de elocução claramente enviesado; termos como “petista”, “filho do ex-presidente” e “abriu quatro pontos de vantagem” funcionam mais como identificação política/genealógica e descrição do resultado da pesquisa do que como julgamento explícito. Em S2, busquei enquadramentos de causa, culpa ou juízo moral. Encontrei um ponto relevante na frase que apresenta a pesquisa como “a primeira” a mostrar “o impacto das revelações... na campanha”, pois o texto sugere relação causal entre as revelações e o desempenho eleitoral sem explicitar evidência causal no próprio texto. Em S3, verifiquei a sustentação das afirmações. Os números da pesquisa estão atribuídos ao Datafolha e acompanhados de metodologia básica, mas a afirmação sobre “impacto das revelações” aparece sem evidência explícita ou fonte metodológica no texto, configurando fragilidade de suporte. Em S4, avaliei pluralidade e contraponto interno; como se trata majoritariamente de nota factual sobre resultados de pesquisa, não há controvérsia desenvolvida nem acusação central exigindo múltiplas vozes, e o texto não depende de uma disputa de versões entre atores. Em S5, procurei lacunas de contextualização. Há algum contexto comparativo com a pesquisa anterior e dados metodológicos, mas a menção às “revelações das conversas” surge sem explicar minimamente o episódio nem seu enquadramento institucional ou histórico, o que limita a compreensão do leitor.",
+    "sinais": [
+      {
+        "sinal": "S1",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto usa linguagem predominantemente descritiva e ancorada em números da pesquisa. Não há trecho claro com adjetivação avaliativa, rótulo valorativo, sensacionalismo ou verbo de elocução carregado do jornalista."
+      },
+      {
+        "sinal": "S2",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S2.1",
+            "trecho": "Essa é a primeira pesquisa que mostra o impacto das revelações das conversas entre o senador e o banqueiro Daniel Vorcaro, do Banco Master, na campanha do filho do ex-presidente.",
+            "justificativa": "O texto atribui a mudança no cenário eleitoral ao “impacto das revelações”, sugerindo causalidade específica para a variação da pesquisa sem apresentar, no próprio texto, outras causas possíveis ou ressalvas sobre a natureza apenas correlacional do dado.",
+            "confianca": "media",
+            "limitacao": "A frase pode estar apenas resumindo uma interpretação jornalística do timing da pesquisa, e não afirmando causalidade definitiva; a ausência do texto completo da cobertura sobre as revelações limita a avaliação."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S3",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S3.1",
+            "trecho": "Essa é a primeira pesquisa que mostra o impacto das revelações das conversas entre o senador e o banqueiro Daniel Vorcaro, do Banco Master, na campanha do filho do ex-presidente.",
+            "justificativa": "A afirmação de que a pesquisa “mostra o impacto” das revelações é relevante para a interpretação do resultado, mas o texto não apresenta evidência explícita, cruzamento analítico, pergunta de pesquisa ou demonstração metodológica que sustente esse efeito.",
+            "confianca": "alta",
+            "limitacao": "É possível que o autor esteja usando “impacto” em sentido coloquial e temporal, e não como inferência estatística rigorosa; ainda assim, o texto não esclarece isso."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S4",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "A matéria é essencialmente uma nota sobre números de pesquisa com atribuição ao instituto e comparação temporal. O texto não desenvolve uma controvérsia entre versões opostas que exija contraponto interno robusto."
+      },
+      {
+        "sinal": "S5",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S5.1",
+            "trecho": "Essa é a primeira pesquisa que mostra o impacto das revelações das conversas entre o senador e o banqueiro Daniel Vorcaro, do Banco Master, na campanha do filho do ex-presidente.",
+            "justificativa": "O texto menciona um episódio anterior relevante — as “revelações das conversas” — mas não explica minimamente o que foi revelado, quando ocorreu ou por que isso seria relevante para a campanha, deixando o antecedente subentendido.",
+            "confianca": "alta",
+            "limitacao": "Como se trata de texto breve, algum grau de condensação é esperado; a omissão pode decorrer de formato enxuto, não necessariamente de escolha editorial forte."
+          },
+          {
+            "sub_sinal": "S5.4",
+            "trecho": "Essa é a primeira pesquisa que mostra o impacto das revelações das conversas entre o senador e o banqueiro Daniel Vorcaro, do Banco Master, na campanha do filho do ex-presidente.",
+            "justificativa": "Ao referir-se às “revelações” sem explicar o enquadramento do caso, o texto não oferece contexto institucional ou procedimental mínimo sobre o episódio citado, o que dificulta entender sua natureza pública, política ou eventualmente investigativa.",
+            "confianca": "media",
+            "limitacao": "O trecho não afirma explicitamente que haja processo formal, investigação ou regra institucional envolvida; por isso, a ausência de contexto institucional é inferida de modo moderado, não inequívoco."
+          }
+        ],
+        "justificativa_ausencia": ""
+      }
+    ],
+    "resumo": "A matéria é majoritariamente descritiva e baseada em números atribuídos ao Datafolha, sem sinais claros de marcação lexical avaliativa. Os principais pontos problemáticos estão na frase que associa o resultado ao “impacto” de revelações sobre Flávio Bolsonaro: ela sugere causalidade sem evidência explícita no texto e menciona um episódio sem contextualização suficiente."
+  }
+}

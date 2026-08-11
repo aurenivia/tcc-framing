@@ -1,0 +1,89 @@
+{
+  "noticia_id": "N04",
+  "modelo": "openrouter/anthropic/claude-sonnet-4.6",
+  "tokens_prompt": 5828,
+  "tokens_resposta": 2900,
+  "tempo_segundos": 54.9,
+  "erro": null,
+  "analise": {
+    "raciocinio": "Vou analisar cada categoria individualmente.\n\nS1 — MARCAÇÃO LEXICAL AVALIATIVA:\nO texto é predominantemente factual e descritivo, reportando números de pesquisa. Verifico os termos usados:\n- 'petista' é um rótulo partidário usado para se referir a Lula. É um termo comum no jornalismo brasileiro para identificar filiação partidária, mas pode ter conotação valorativa dependendo do contexto. Aqui é usado de forma descritiva/identificatória, sem carga avaliativa explícita.\n- 'filho do ex-presidente' é uma descrição factual.\n- 'revelações das conversas' — o termo 'revelações' pode ter leve carga dramática, mas é amplamente usado no jornalismo para indicar informações que vieram a público.\n- 'abriu quatro pontos de vantagem' — linguagem descritiva de resultado de pesquisa.\n- Não identifico adjetivação avaliativa, intensificação sensacionalista, verbos de elocução carregados ou rotulação valorativa significativa. O uso de 'petista' é recorrente no jornalismo e aqui serve como identificador, não como rótulo pejorativo ou elogioso. Não marco S1.\n\nS2 — ENQUADRAMENTO CAUSAL-MORAL:\n- O trecho 'Essa é a primeira pesquisa que mostra o impacto das revelações das conversas entre o senador e o banqueiro Daniel Vorcaro, do Banco Master, na campanha do filho do ex-presidente' atribui causalidade direta entre as 'revelações' e a mudança nos números de pesquisa. Isso é uma afirmação causal feita pelo texto (não por uma fonte citada), sem apresentar outras possíveis causas para a variação nos números (ex: outros eventos, margem de erro, outros fatores de campanha). A variação de 2 pontos (de 45% para 47% para Lula, e de 45% para 43% para Flávio) está dentro ou próxima da margem de erro de 2 pontos percentuais, o que torna a causalidade ainda mais questionável. Isso configura S2.1 (causalidade unilateral) com confiança média.\n\nS3 — SUPORTE EVIDENCIAL E ATRIBUIÇÃO:\n- A afirmação causal 'Essa é a primeira pesquisa que mostra o impacto das revelações das conversas...' é apresentada como fato pelo texto, sem evidência de que a variação se deve especificamente a esse fator. Isso configura S3.3 (opinião/interpretação apresentada como fato) e S3.1 (claim sem evidência explícita). A pesquisa em si tem metodologia descrita (2.004 pessoas, margem de erro, nível de confiança, registro no TSE), então os dados numéricos têm suporte. Mas a interpretação causal não tem.\n\nS4 — PLURALIDADE E CONTRAPONTO INTERNO:\nO texto reporta números de pesquisa de forma objetiva. Não há acusação, conflito ou disputa que exija contraponto. É uma nota informativa sobre resultados de pesquisa. Não há parte afetada que precise responder. Não marco S4.\n\nS5 — CONTEXTUALIZAÇÃO EPISÓDICA:\n- O texto menciona o levantamento anterior (12-14 de maio) como comparação, o que fornece algum contexto temporal.\n- Não há contexto sobre o que são as 'revelações das conversas entre o senador e o banqueiro Daniel Vorcaro, do Banco Master' — o texto assume que o leitor já sabe o que são essas revelações, sem explicar o conteúdo ou contexto delas. Isso configura S5.1 (ausência de antecedente relevante) e S5.4 (contexto institucional/factual ausente).\n- O texto também não contextualiza o que significa a variação dentro da margem de erro, o que seria relevante para o leitor dimensionar o fato (S5.2).\n- O foco em 'quem está ganhando' sem discutir propostas ou impactos configura S5.3, mas é padrão em cobertura de pesquisas eleitorais.",
+    "sinais": [
+      {
+        "sinal": "S1",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto usa linguagem predominantemente descritiva e factual para reportar números de pesquisa. O termo 'petista' funciona como identificador partidário sem carga avaliativa explícita no contexto. Não foram identificados adjetivos avaliativos, rótulos valorativos, hipérboles ou verbos de elocução carregados."
+      },
+      {
+        "sinal": "S2",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S2.1",
+            "trecho": "Essa é a primeira pesquisa que mostra o impacto das revelações das conversas entre o senador e o banqueiro Daniel Vorcaro, do Banco Master, na campanha do filho do ex-presidente.",
+            "justificativa": "O texto atribui diretamente a variação nos números da pesquisa às 'revelações das conversas', sem apresentar outras causas possíveis para a mudança (outros eventos de campanha, dinâmica natural de pesquisas, margem de erro). A variação de 2 pontos está dentro ou próxima da margem de erro declarada de 2 pontos percentuais, tornando a causalidade ainda mais questionável.",
+            "confianca": "media",
+            "limitacao": "É possível que o Datafolha tenha feito essa atribuição causal internamente e o texto esteja reproduzindo a interpretação do instituto, embora isso não esteja explicitado. A afirmação pode também ser lida como contextualização temporal ('primeira pesquisa após as revelações') e não necessariamente causal."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S3",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S3.3",
+            "trecho": "Essa é a primeira pesquisa que mostra o impacto das revelações das conversas entre o senador e o banqueiro Daniel Vorcaro, do Banco Master, na campanha do filho do ex-presidente.",
+            "justificativa": "A afirmação de que a pesquisa 'mostra o impacto' das revelações é uma interpretação causal apresentada como constatação objetiva, sem atribuição a fonte ou evidência metodológica que sustente essa conclusão. Não há dado, análise ou declaração de especialista que comprove que a variação nos números se deve especificamente a esse fator.",
+            "confianca": "media",
+            "limitacao": "O trecho pode ser lido como contextualização temporal ('esta é a primeira pesquisa realizada após as revelações') em vez de afirmação causal estrita. A ambiguidade da construção frasal limita a confiança na classificação."
+          },
+          {
+            "sub_sinal": "S3.1",
+            "trecho": "Essa é a primeira pesquisa que mostra o impacto das revelações das conversas entre o senador e o banqueiro Daniel Vorcaro, do Banco Master, na campanha do filho do ex-presidente.",
+            "justificativa": "A afirmação de que há um 'impacto' mensurável das revelações na campanha é um claim relevante para o argumento do texto, mas não é sustentado por dado, fonte ou evidência explícita. Não há citação do Datafolha ou de analista que fundamente essa interpretação.",
+            "confianca": "media",
+            "limitacao": "Mesma limitação do S3.3: a frase pode ser lida como contextualização temporal. Além disso, o próprio Datafolha pode ter feito essa afirmação no release da pesquisa, e o texto estaria reproduzindo-a sem atribuição explícita."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S4",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto é uma nota informativa sobre resultados de pesquisa eleitoral, sem acusação, conflito ou disputa que exija contraponto de partes afetadas. Não há contexto de controvérsia que demande pluralidade de vozes."
+      },
+      {
+        "sinal": "S5",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S5.1",
+            "trecho": "Essa é a primeira pesquisa que mostra o impacto das revelações das conversas entre o senador e o banqueiro Daniel Vorcaro, do Banco Master, na campanha do filho do ex-presidente.",
+            "justificativa": "O texto menciona 'revelações das conversas entre o senador e o banqueiro Daniel Vorcaro, do Banco Master' sem explicar o que são essas revelações, qual seu conteúdo, quando ocorreram ou por que seriam relevantes. O leitor que não acompanhou o noticiário anterior não tem contexto para compreender o antecedente mencionado.",
+            "confianca": "alta",
+            "limitacao": "Textos de nota sobre pesquisas frequentemente assumem que o leitor acompanha o noticiário recente. A ausência de contextualização pode ser uma escolha editorial de espaço, não necessariamente uma omissão significativa."
+          },
+          {
+            "sub_sinal": "S5.2",
+            "trecho": "A margem de erro é de dois pontos percentuais, para mais ou para menos",
+            "justificativa": "O texto reporta variação de 2 pontos percentuais (Flávio caiu de 45% para 43%) como indicativa de mudança de cenário, sem contextualizar que essa variação está dentro da margem de erro declarada. Isso impede o leitor de dimensionar adequadamente a significância estatística da mudança.",
+            "confianca": "alta",
+            "limitacao": "A margem de erro é mencionada no texto, cabendo ao leitor fazer a inferência. Não é obrigação do texto jornalístico fazer análise estatística completa, embora a contextualização enriqueceria a compreensão."
+          },
+          {
+            "sub_sinal": "S5.3",
+            "trecho": "No levantamento anterior, realizado entre 12 e 14 de maio, o petista e o senador apareciam empatados, com 45% no segundo turno.",
+            "justificativa": "O texto foca inteiramente na dinâmica de 'quem está à frente' na corrida eleitoral, sem mencionar propostas, políticas públicas ou impactos substantivos para a população. É cobertura centrada no 'cavalo de corrida' eleitoral.",
+            "confianca": "baixa",
+            "limitacao": "Textos sobre pesquisas eleitorais têm como objeto natural os números de intenção de voto. Seria incomum e fora do escopo de uma nota sobre pesquisa discutir propostas. O sinal é estrutural ao gênero textual, não necessariamente uma escolha editorial problemática."
+          }
+        ],
+        "justificativa_ausencia": ""
+      }
+    ],
+    "resumo": "O texto é predominantemente factual na apresentação dos dados da pesquisa Datafolha, com metodologia adequadamente descrita. O principal sinal identificado é a atribuição causal direta (S2.1/S3.1/S3.3) entre as 'revelações das conversas' do senador Flávio Bolsonaro com o banqueiro Daniel Vorcaro e a variação nos números da pesquisa, sem evidência explícita e sem considerar que a variação está dentro da margem de erro. Adicionalmente, o texto omite contexto sobre o que são essas revelações (S5.1) e não dimensiona a significância estatística da variação reportada (S5.2)."
+  }
+}

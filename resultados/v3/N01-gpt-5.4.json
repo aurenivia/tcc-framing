@@ -1,0 +1,59 @@
+{
+  "noticia_id": "N01",
+  "modelo": "openrouter/openai/gpt-5.4",
+  "tokens_prompt": 3872,
+  "tokens_resposta": 1042,
+  "tempo_segundos": 15.86,
+  "erro": null,
+  "analise": {
+    "raciocinio": "Examinei o texto por categoria, separando descrição factual de possíveis marcas discursivas. Em S1, busquei adjetivos avaliativos, rótulos, hipérboles e verbos de elocução carregados; não encontrei linguagem valorativa relevante do jornalista, apenas termos descritivos e eleitorais como 'presidente', 'senador', 'pré-candidato' e 'levaria a melhor', que aqui funcionam como descrição de desempenho na pesquisa. Em S2, verifiquei se havia atribuição causal, culpa, moralização, apelo ao medo ou lógica binária; o texto apenas reporta resultados segmentados por religião e metodologia, sem construir causalidade ou responsabilização.\n\nEm S3, avaliei se havia afirmações sem evidência, fontes vagas, opinião como fato, números sem origem ou generalizações sem base. Não detectei fragilidade relevante porque os números são atribuídos explicitamente à pesquisa Nexus/BTG Pactual e acompanhados de amostra, datas, margem de erro, confiança e registro no TSE. Em S4, observei se a matéria exigia contraponto interno por tratar de acusação, controvérsia ou conflito entre partes; como se trata de nota breve de divulgação de resultados de pesquisa, não há acusação nem disputa argumentativa que demande ouvir lados opostos, então não identifiquei ausência problemática de pluralidade. Em S5, analisei a contextualização: embora o texto seja factual e metodologicamente situado, ele apresenta os números de modo episódico, sem histórico de pesquisas anteriores, comparação temporal mais ampla ou contextualização substantiva sobre o significado político do recorte religioso; por isso detectei ausência de antecedente e de dado comparativo.",
+    "sinais": [
+      {
+        "sinal": "S1",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto usa linguagem predominantemente descritiva e informativa. Não há adjetivação avaliativa, rotulação valorativa, sensacionalismo ou verbo de elocução carregado claramente atribuíveis ao jornalista."
+      },
+      {
+        "sinal": "S2",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "A matéria não atribui causas, culpas ou juízos morais a atores. Ela apenas relata resultados de uma pesquisa com recorte religioso e informa seus parâmetros metodológicos."
+      },
+      {
+        "sinal": "S3",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "As afirmações numéricas e comparativas estão explicitamente atribuídas à pesquisa Nexus/BTG Pactual, com detalhes metodológicos e registro eleitoral. Não há fonte vaga nem opinião relevante apresentada como fato."
+      },
+      {
+        "sinal": "S4",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "Por ser uma nota curta sobre resultados de pesquisa, o texto não apresenta acusação ou controvérsia que exija contraponto entre partes. Não há indício de assimetria interna problemática nas vozes para este gênero de conteúdo."
+      },
+      {
+        "sinal": "S5",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S5.1",
+            "trecho": "Uma pesquisa Nexus/BTG Pactual publicada nesta segunda-feira 25 aponta que o presidente Lula (PT) venceria um eventual segundo turno contra Flávio Bolsonaro (PL) no eleitorado católico, enquanto o senador levaria a melhor entre evangélicos.",
+            "justificativa": "O texto introduz o resultado da pesquisa como fato pontual do dia, mas não oferece histórico mínimo sobre levantamentos anteriores, evolução desse recorte religioso ou contexto prévio que ajude a situar a mudança ou continuidade do cenário.",
+            "confianca": "media",
+            "limitacao": "Em notas breves de pesquisa, a ausência de retrospecto é comum; o trecho pode refletir concisão jornalística, não necessariamente omissão significativa."
+          },
+          {
+            "sub_sinal": "S5.2",
+            "trecho": "No geral, sem o recorte por religião, Lula tem 47%, ante 43% de Flávio.",
+            "justificativa": "Há apresentação de percentuais pontuais, mas sem comparação com séries anteriores, oscilações recentes ou referência a outros levantamentos que permitam dimensionar se os números indicam estabilidade, avanço ou recuo.",
+            "confianca": "alta",
+            "limitacao": "A matéria informa adequadamente os dados do levantamento específico; a limitação está na falta de comparação externa ou temporal, não na ausência de informação básica sobre esta pesquisa."
+          }
+        ],
+        "justificativa_ausencia": ""
+      }
+    ],
+    "resumo": "O texto é predominantemente informativo e atribui os dados de forma explícita à pesquisa Nexus/BTG Pactual, com detalhes metodológicos suficientes para sustentar os números apresentados. O principal sinal detectado está na contextualização episódica: a matéria traz percentuais pontuais, mas sem histórico ou comparação temporal mais ampla sobre o comportamento eleitoral dos grupos religiosos."
+  }
+}

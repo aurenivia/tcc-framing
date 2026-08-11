@@ -1,0 +1,650 @@
+[
+  {
+    "noticia_id": "N02",
+    "modelo": "openrouter/deepseek/deepseek-v4-pro",
+    "tokens_prompt": 3585,
+    "tokens_resposta": 5148,
+    "tempo_segundos": 207.17,
+    "erro": null,
+    "analise": {
+      "raciocinio": "Analisei cada categoria independentemente. S1: O texto é essencialmente uma lista de resultados de pesquisa, sem adjetivação avaliativa, rótulos carregados, intensificação ou verbos de elocução carregados. Termos como 'pior taxa de rejeição' são descritivos com base nos dados apresentados. S2: Não há construção de causalidade, atribuição de culpa, avaliação moral implícita, apelo ao medo ou falsa dicotomia. O texto apenas reporta percentuais de opinião, sem enquadrar narrativas. S3: Todas as afirmações são atribuídas à pesquisa Datafolha, com detalhes de amostra e datas. Não há claims sem evidência, fontes vagas, opiniões como fato, números sem origem ou generalizações infundadas. S4: O texto não trata de acusação, conflito ou disputa que exija contraponto; é um relato de survey. Não há partes afetadas a serem ouvidas, e a natureza do conteúdo não demanda pluralidade de vozes. S5: Embora seja um texto curto e sem contexto histórico amplo sobre o impeachment, ele fornece dado comparativo com pesquisa anterior (fevereiro), o que mitiga o enquadramento puramente episódico. Não há foco em bastidores ou estratégia, e a ausência de contexto institucional é esperada em notas de pesquisa. Assim, não identifiquei sinais discursivos relevantes em nenhuma categoria.",
+      "achados": [
+        {
+          "sinal": "S1",
+          "sub_sinal": "S1.1",
+          "sub_sinal_nome": "Adjetivação avaliativa",
+          "trecho": "Nenhum trecho identificado.",
+          "justificativa": "O texto não contém adjetivos que expressem juízo de valor sem base factual. 'Pior taxa de rejeição' está ancorado nos números apresentados (57% vs. 47% anterior).",
+          "confianca": "alta",
+          "limitacao": "A ausência é clara; o texto é descritivo e baseado em dados."
+        },
+        {
+          "sinal": "S1",
+          "sub_sinal": "S1.2",
+          "sub_sinal_nome": "Rotulação lexical",
+          "trecho": "Nenhum trecho identificado.",
+          "justificativa": "Não há rótulos valorativos como 'petista', 'golpista' ou equivalentes. As siglas partidárias (PT, PMDB) são usadas de forma neutra.",
+          "confianca": "alta",
+          "limitacao": "A ausência é inequívoca."
+        },
+        {
+          "sinal": "S1",
+          "sub_sinal": "S1.3",
+          "sub_sinal_nome": "Intensificação / sensacionalismo",
+          "trecho": "Nenhum trecho identificado.",
+          "justificativa": "Não há hipérboles, superlativos dramáticos ou termos como 'caos', 'colapso'.",
+          "confianca": "alta",
+          "limitacao": "A linguagem é sóbria e factual."
+        },
+        {
+          "sinal": "S1",
+          "sub_sinal": "S1.4",
+          "sub_sinal_nome": "Verbo de elocução carregado",
+          "trecho": "Nenhum trecho identificado.",
+          "justificativa": "Os verbos utilizados são neutros: 'indica', 'questionou', 'perguntou', 'respondeu'. Não há 'admitiu', 'alegou' ou similares.",
+          "confianca": "alta",
+          "limitacao": "A ausência é total."
+        },
+        {
+          "sinal": "S2",
+          "sub_sinal": "S2.1",
+          "sub_sinal_nome": "Causalidade unilateral",
+          "trecho": "Nenhum trecho identificado.",
+          "justificativa": "O texto não atribui causas ao apoio ao impeachment ou a qualquer outro fenômeno; apenas reporta opiniões.",
+          "confianca": "alta",
+          "limitacao": "Não há construção causal."
+        },
+        {
+          "sinal": "S2",
+          "sub_sinal": "S2.2",
+          "sub_sinal_nome": "Responsabilização desproporcional",
+          "trecho": "Nenhum trecho identificado.",
+          "justificativa": "Não há atribuição de culpa a qualquer ator. As perguntas da pesquisa são apresentadas sem endosso do texto.",
+          "confianca": "alta",
+          "limitacao": "Inexistente."
+        },
+        {
+          "sinal": "S2",
+          "sub_sinal": "S2.3",
+          "sub_sinal_nome": "Avaliação moral implícita",
+          "trecho": "Nenhum trecho identificado.",
+          "justificativa": "A justaposição de perguntas (ex.: rejeição a Lula, motivação para assumir ministério) não é acompanhada de narrativa que induza julgamento; são itens de survey listados sequencialmente.",
+          "confianca": "alta",
+          "limitacao": "A mera listagem de resultados não configura enquadramento moral implícito."
+        },
+        {
+          "sinal": "S2",
+          "sub_sinal": "S2.4",
+          "sub_sinal_nome": "Apelo ao medo / consequência extrema",
+          "trecho": "Nenhum trecho identificado.",
+          "justificativa": "Não há cenários catastróficos ou ameaças.",
+          "confianca": "alta",
+          "limitacao": "Ausente."
+        },
+        {
+          "sinal": "S2",
+          "sub_sinal": "S2.5",
+          "sub_sinal_nome": "Falsa dicotomia ou lógica falha",
+          "trecho": "Nenhum trecho identificado.",
+          "justificativa": "O texto não apresenta argumentação binária ou falaciosa; é uma exposição de dados.",
+          "confianca": "alta",
+          "limitacao": "Não se aplica."
+        },
+        {
+          "sinal": "S3",
+          "sub_sinal": "S3.1",
+          "sub_sinal_nome": "Claim sem evidência explícita",
+          "trecho": "Nenhum trecho identificado.",
+          "justificativa": "Todas as afirmações são resultados de pesquisa, com fonte clara (Datafolha).",
+          "confianca": "alta",
+          "limitacao": "O texto é inteiramente baseado na pesquisa citada."
+        },
+        {
+          "sinal": "S3",
+          "sub_sinal": "S3.2",
+          "sub_sinal_nome": "Fonte vaga ou anônima",
+          "trecho": "Nenhum trecho identificado.",
+          "justificativa": "A fonte é nomeada: Datafolha, com detalhes de metodologia (dias, amostra, municípios).",
+          "confianca": "alta",
+          "limitacao": "Fonte plenamente identificada."
+        },
+        {
+          "sinal": "S3",
+          "sub_sinal": "S3.3",
+          "sub_sinal_nome": "Opinião apresentada como fato",
+          "trecho": "Nenhum trecho identificado.",
+          "justificativa": "O texto distingue claramente entre os dados da pesquisa e a apresentação jornalística, usando 'segundo o Datafolha', 'indicou', etc.",
+          "confianca": "alta",
+          "limitacao": "Não há opiniões do jornalista."
+        },
+        {
+          "sinal": "S3",
+          "sub_sinal": "S3.4",
+          "sub_sinal_nome": "Número ou comparação sem origem",
+          "trecho": "Nenhum trecho identificado.",
+          "justificativa": "Todos os percentuais são atribuídos ao Datafolha, com informação de amostra e período.",
+          "confianca": "alta",
+          "limitacao": "Origem explícita."
+        },
+        {
+          "sinal": "S3",
+          "sub_sinal": "S3.5",
+          "sub_sinal_nome": "Generalização não fundamentada",
+          "trecho": "Nenhum trecho identificado.",
+          "justificativa": "O texto sempre se refere aos 'entrevistados' ou 'ouvidos', não a 'os brasileiros' de forma genérica.",
+          "confianca": "alta",
+          "limitacao": "A linguagem é precisa quanto à amostra."
+        },
+        {
+          "sinal": "S4",
+          "sub_sinal": "S4.1",
+          "sub_sinal_nome": "Parte diretamente afetada ausente",
+          "trecho": "Nenhum trecho identificado.",
+          "justificativa": "O texto não é sobre uma acusação ou disputa que exija ouvir partes; é um relato de opinião pública. Não há 'acusado' ou 'afetado' cuja voz seja necessária.",
+          "confianca": "alta",
+          "limitacao": "A natureza do conteúdo (pesquisa de opinião) não demanda contraponto."
+        },
+        {
+          "sinal": "S4",
+          "sub_sinal": "S4.2",
+          "sub_sinal_nome": "Contraponto formal / fraco",
+          "trecho": "Nenhum trecho identificado.",
+          "justificativa": "Não há contraponto porque não há tese sendo defendida; o texto apenas lista resultados.",
+          "confianca": "alta",
+          "limitacao": "Inexistente."
+        },
+        {
+          "sinal": "S4",
+          "sub_sinal": "S4.3",
+          "sub_sinal_nome": "Assimetria severa de espaço",
+          "trecho": "Nenhum trecho identificado.",
+          "justificativa": "Não há vozes em conflito; o espaço é dedicado integralmente aos dados.",
+          "confianca": "alta",
+          "limitacao": "Não se aplica."
+        },
+        {
+          "sinal": "S4",
+          "sub_sinal": "S4.4",
+          "sub_sinal_nome": "Fonte única para controvérsia",
+          "trecho": "Nenhum trecho identificado.",
+          "justificativa": "A única fonte é a pesquisa, o que é adequado para uma matéria que apenas divulga seus resultados.",
+          "confianca": "alta",
+          "limitacao": "A fonte única é a pesquisa, não um ator em controvérsia."
+        },
+        {
+          "sinal": "S5",
+          "sub_sinal": "S5.1",
+          "sub_sinal_nome": "Ausência de antecedente relevante",
+          "trecho": "Nenhum trecho identificado como sinal claro.",
+          "justificativa": "O texto menciona a pesquisa anterior de fevereiro, fornecendo um antecedente imediato. Embora não haja contexto histórico amplo sobre o impeachment, a nota é curta e o foco é o dado novo. A ausência de histórico mais profundo é esperada para o gênero.",
+          "confianca": "media",
+          "limitacao": "Pode-se argumentar que falta contexto sobre o processo de impeachment, mas o protocolo considera que o enquadramento episódico é padrão no jornalismo diário e não necessariamente um sinal discursivo intencional. A presença de dado comparativo reduz o isolamento."
+        },
+        {
+          "sinal": "S5",
+          "sub_sinal": "S5.2",
+          "sub_sinal_nome": "Ausência de dado comparativo",
+          "trecho": "Nenhum trecho identificado.",
+          "justificativa": "Há comparação explícita com a pesquisa de fevereiro: 'Na pesquisa anterior, de fevereiro, 60% se disseram a favor do impeachment, contra 33% que eram desfavoráveis.'",
+          "confianca": "alta",
+          "limitacao": "Dado comparativo presente."
+        },
+        {
+          "sinal": "S5",
+          "sub_sinal": "S5.3",
+          "sub_sinal_nome": "Foco estratégico / bastidor / cavalo de corrida",
+          "trecho": "Nenhum trecho identificado.",
+          "justificativa": "O texto não aborda cálculos políticos, estratégias ou disputas de poder; limita-se a apresentar percentuais.",
+          "confianca": "alta",
+          "limitacao": "Ausente."
+        },
+        {
+          "sinal": "S5",
+          "sub_sinal": "S5.4",
+          "sub_sinal_nome": "Contexto institucional ausente",
+          "trecho": "Nenhum trecho identificado como sinal claro.",
+          "justificativa": "O texto não explica as regras do impeachment, competências ou trâmites. Contudo, é uma nota de pesquisa, não uma reportagem explicativa. A ausência é típica do formato e não configura um enquadramento episódico forçado.",
+          "confianca": "baixa",
+          "limitacao": "A expectativa de contexto institucional pode ser desproporcional para um texto tão curto e focado em dados de opinião."
+        }
+      ],
+      "sinais_ausentes": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ],
+      "resumo": "O texto é um relato objetivo de resultados de pesquisa Datafolha, sem sinais discursivos de viés. Todas as categorias (S1 a S5) estão ausentes ou apresentam, no máximo, limitações contextuais inerentes ao jornalismo diário, sem configurar enquadramento intencional."
+    }
+  },
+  {
+    "noticia_id": "N03",
+    "modelo": "openrouter/deepseek/deepseek-v4-pro",
+    "tokens_prompt": 3186,
+    "tokens_resposta": 2123,
+    "tempo_segundos": 80.7,
+    "erro": null,
+    "analise": {
+      "raciocinio": "Iniciando a análise do texto jornalístico do G1, aplicando o protocolo de forma independente para cada categoria.\n\n**S1 — MARCAÇÃO LEXICAL AVALIATIVA:**\nO texto é majoritariamente construído com citações diretas de Fernando Henrique Cardoso. A maior parte da carga avaliativa está na fala do entrevistado, não na voz do jornalista. O jornalista usa verbos de elocução neutros ('disse', 'afirmou', 'ressaltou', 'lembrou', 'argumentou'). Não há adjetivação avaliativa, rotulação ou intensificação por parte do narrador. A única exceção é o verbo 'admitiu', que não aparece no texto. Portanto, não identifico sinais claros de S1 na voz do veículo. A citação 'incapacidade que se nota hoje de o governo funcionar' é uma avaliação de FHC, não do jornalista. O protocolo orienta a marcar citação de terceiros apenas se o texto endossa ou amplifica sem contraponto, o que não é o caso aqui, pois o texto apenas relata.\n\n**S2 — ENQUADRAMENTO CAUSAL-MORAL:**\nO texto relata a opinião de FHC sobre a crise e o impeachment. A causalidade ('crise' -> 'impeachment como caminho') é atribuída a FHC. O jornalista não faz essa atribuição em sua própria voz. A justaposição de frases como 'incapacidade de o governo funcionar' e 'desfalecimento da economia' com a solução do impeachment é uma construção da fala de FHC, não um enquadramento autoral do texto. O texto não apresenta uma falsa dicotomia ou apelo ao medo por conta própria. A estrutura é de relato de entrevista.\n\n**S3 — SUPORTE EVIDENCIAL E ATRIBUIÇÃO:**\nO texto é um relato de uma entrevista publicada em outro veículo ('O Estado de S.Paulo'). As afirmações são todas atribuídas a FHC ('disse', 'afirmou', 'segundo ele'). A fonte é clara e nomeada. Não há claims do jornalista sem evidência. A afirmação de FHC de que as manifestações 'mobilizaram milhões' é uma citação dele, e o jornalista não a endossa como fato, apenas a relata. Não há números ou comparações sem origem na voz do narrador. A fonte é o próprio entrevistado e o jornal que publicou a entrevista.\n\n**S4 — PLURALIDADE E CONTRAPONTO INTERNO:**\nO texto é um relato de uma entrevista com um ator específico (FHC) sobre um tema controverso (impeachment). Não há contraponto interno. A parte diretamente afetada (governo Dilma, base aliada) não é ouvida. Não há qualquer tentativa de buscar o outro lado. Isso configura uma ausência de pluralidade em um tema de disputa. O texto não é uma nota curta sobre um fato incontroverso; é a divulgação de uma posição política forte sobre um processo em andamento. A ausência de contraponto é notável.\n\n**S5 — CONTEXTUALIZAÇÃO EPISÓDICA:**\nO texto fornece algum contexto factual sobre o processo de impeachment ('Atualmente, tramita no Congresso... comissão especial... instalada na última quinta-feira'). No entanto, o foco principal é a opinião de um ator político (FHC) e suas justificativas, enquadrando o evento como uma disputa de poder e uma solução para uma 'crise'. Não há contextualização histórica mais ampla sobre as crises políticas brasileiras, os pedidos de impeachment anteriores, ou os argumentos jurídicos do pedido em si. O foco é na fala do ex-presidente, um enquadramento típico de 'cavalo de corrida' (quem apoia o quê). A ausência de dados comparativos sobre a economia ou a crise, para além da fala de FHC, também se encaixa.\n\nCom base nisso, os sinais mais claros estão em S4 (ausência de contraponto) e S5 (foco episódico e de bastidor). S1, S2 e S3 não apresentam sinais significativos na voz do jornalista.",
+      "achados": [
+        {
+          "sinal": "S4",
+          "sub_sinal": "S4.1",
+          "sub_sinal_nome": "Parte diretamente afetada ausente",
+          "trecho": "O ex-presidente Fernando Henrique Cardoso, em entrevista publicada neste domingo (20) no jornal 'O Estado de S.Paulo', disse que 'o caminho' para sair da crise pela qual passa o país é o impeachment da presidente Dilma Rousseff.",
+          "justificativa": "O texto inteiro é dedicado a repercutir a posição de FHC a favor do impeachment, um tema de intensa controvérsia política. A parte diretamente afetada pela acusação (a presidente Dilma Rousseff, seu partido ou sua defesa) não é consultada, citada ou mencionada em qualquer momento da matéria. Não há justificativa para essa ausência.",
+          "confianca": "alta",
+          "limitacao": "A matéria pode ter sido concebida como uma nota de repercussão de uma entrevista de um ex-presidente, e não como uma reportagem analítica sobre o impeachment. A ausência de contraponto pode ser uma limitação de escopo, não necessariamente uma omissão deliberada."
+        },
+        {
+          "sinal": "S5",
+          "sub_sinal": "S5.3",
+          "sub_sinal_nome": "Foco estratégico / bastidor / cavalo de corrida",
+          "trecho": "Para FHC, é 'natural' que o vice de Dilma, Michel Temer, seja o presidente em caso de impeachment. Segundo o ex-presidente, o próximo ocupante do Palácio do Planalto, caso haja a saída de Dilma, vai ter que levar em conta que o país 'quer a continuidade da Lava Jato, soluções para as questões econômicas prementes, respeito à institucionalidade'.",
+          "justificativa": "O texto foca na opinião de um ator político sobre a sucessão presidencial ('quem ganha'), nos cálculos políticos ('é natural que Temer seja o presidente') e nas demandas que o próximo governo terá que atender. Essa abordagem centrada na disputa de poder e nos bastidores da sucessão se sobrepõe a uma discussão sobre o impacto substantivo do impeachment, seus fundamentos legais ou as políticas em jogo.",
+          "confianca": "media",
+          "limitacao": "O foco em 'cavalo de corrida' é um enquadramento jornalístico comum. O texto também menciona, pela fala de FHC, questões substantivas como 'desfalecimento da economia', mas o enquadramento geral é o da disputa política e da opinião de uma figura de peso."
+        },
+        {
+          "sinal": "S5",
+          "sub_sinal": "S5.1",
+          "sub_sinal_nome": "Ausência de antecedente relevante",
+          "trecho": "Atualmente, tramita no Congresso Nacional um pedido de impeachment contra a presidente. A comissão especial que vai analisar o caso foi instalada na última quinta-feira (17). Após a comissão, o plenário da Casa deve se posicionar sobre o tema.",
+          "justificativa": "O texto fornece apenas o contexto processual imediato (a tramitação atual). Não há qualquer menção aos antecedentes do pedido de impeachment, como seus fundamentos jurídicos (as 'pedaladas fiscais'), o histórico de outros pedidos, ou o contexto político que levou à sua aceitação. O evento é tratado como um fato dado, sem a profundidade histórica que permitiria ao leitor entender a sua origem.",
+          "confianca": "media",
+          "limitacao": "O parágrafo cumpre a função de contextualizar o momento processual do pedido. A ausência de antecedentes históricos ou jurídicos pode ser uma limitação de espaço em uma notícia de repercussão, mas contribui para um enquadramento episódico."
+        }
+      ],
+      "sinais_ausentes": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "resumo": "O texto é um relato de entrevista que apresenta fortes sinais de falta de pluralidade (S4.1) ao repercutir uma posição controversa sem ouvir a parte contrária. Também exibe um enquadramento episódico (S5.3, S5.1) focado na disputa política e com pouca contextualização histórica ou jurídica. Não foram encontrados sinais significativos de marcação lexical avaliativa (S1), enquadramento causal-moral (S2) ou fragilidade evidencial (S3) na voz do jornalista, que mantém uma postura de relato neutro das declarações de FHC."
+    }
+  },
+  {
+    "noticia_id": "N04",
+    "modelo": "openrouter/deepseek/deepseek-v4-pro",
+    "tokens_prompt": 3234,
+    "tokens_resposta": 1443,
+    "tempo_segundos": 44.48,
+    "erro": null,
+    "analise": {
+      "raciocinio": "Iniciando a análise do texto jornalístico do G1, aplicando o protocolo de forma independente para cada categoria.\n\n**S1 — MARCAÇÃO LEXICAL AVALIATIVA:**\nO texto relata declarações de Eduardo Cunha, que são carregadas de avaliação ('grosseira', 'absurda', 'falta de respeito'). No entanto, o texto do G1 as apresenta como citação direta ou indireta, atribuindo-as claramente a Cunha. O jornal não endossa esses termos, apenas os reporta. Não identifico adjetivação avaliativa, rotulação, intensificação ou verbo de elocução carregado partindo da voz do narrador/jornalista. A palavra 'suposta' em 'suposta oferta de cargo' é uma ressalva jornalística padrão para uma acusação não comprovada, não um sinal de avaliação. Portanto, S1 está ausente.\n\n**S2 — ENQUADRAMENTO CAUSAL-MORAL:**\nO texto estrutura uma disputa política, apresentando a acusação de Cunha e a defesa de Chinaglia. A causa do conflito é a eleição para a presidência da Câmara. O texto não atribui culpa unilateralmente; ele apresenta a versão de Cunha (oferta de cargos, crítica à comparação) e a justificativa de Chinaglia. Não há construção de um cenário catastrófico ou falsa dicotomia. A narrativa é de relato de um embate, sem que o jornalista enquadre moralmente um dos lados. S2 está ausente.\n\n**S3 — SUPORTE EVIDENCIAL E ATRIBUIÇÃO:**\nO texto é baseado em declarações públicas (Twitter de Cunha, fala de Chinaglia). As fontes são nomeadas e identificadas. A afirmação de Cunha sobre 'suposta oferta de cargo' é atribuída a ele e ao seu partido ('Peemedebistas têm reclamado'), e o texto usa o termo 'suposta', indicando que é uma alegação. Não há claims do jornalista sem evidência, fontes vagas, opiniões travestidas de fato, números sem origem ou generalizações infundadas. S3 está ausente.\n\n**S4 — PLURALIDADE E CONTRAPONTO INTERNO:**\nO texto trata de uma controvérsia entre Eduardo Cunha e Arlindo Chinaglia. Ambos os lados são ouvidos. Cunha é citado extensamente via Twitter. Chinaglia tem sua defesa reproduzida em discurso direto ('Você acha normal...'). Há um contraponto substancial, não apenas formal. O espaço é relativamente equilibrado, com a fala de Chinaglia sendo longa e central para explicar o ponto de discórdia. S4 está ausente.\n\n**S5 — CONTEXTUALIZAÇÃO EPISÓDICA:**\nO texto contextualiza o evento: é uma disputa pela presidência da Câmara, com eleição marcada. Menciona os candidatos. Explica o antecedente imediato da briga (reclamação de peemedebistas sobre oferta de cargos). No entanto, falta um contexto mais amplo: qual o histórico da relação entre PT e PMDB na Câmara? Qual a importância da presidência da Câmara? O foco é inteiramente no conflito pessoal e nas trocas de farpas ('quem ganhou/perdeu' na discussão), sem discutir o impacto substantivo da eleição ou as plataformas dos candidatos. Isso se encaixa em S5.3 (foco estratégico/bastidor). Também se pode argumentar que há ausência de antecedentes mais profundos (S5.1), mas o foco principal é o enquadramento de 'cavalo de corrida'. A confiança é alta para S5.3.",
+      "achados": [
+        {
+          "sinal": "S5",
+          "sub_sinal": "S5.3",
+          "sub_sinal_nome": "Foco estratégico / bastidor / cavalo de corrida",
+          "trecho": "Cunha e Chinaglia – além de Júlio Delgado (PSB) e Chico Alencar (PSOL) – disputam a presidência da Câmara, em eleição marcada para o próximo dia 1º. Peemedebistas têm reclamado da atuação de ministros do governo em favor da candidatura de Chinaglia, com suposta oferta de cargo de segundo escalão a deputados.",
+          "justificativa": "O texto enquadra a disputa eleitoral exclusivamente sob a ótica do conflito político, troca de acusações e articulações de bastidor ('suposta oferta de cargo'). Não há qualquer menção a propostas, plataformas, impacto legislativo ou função institucional da presidência da Câmara, focando apenas na dinâmica de poder e no embate pessoal entre os candidatos.",
+          "confianca": "alta",
+          "limitacao": "O texto é uma notícia factual sobre uma troca de declarações em uma disputa política. O foco no 'cavalo de corrida' é um padrão comum no jornalismo diário, que prioriza o conflito imediato em detrimento da análise temática, e não necessariamente indica viés intencional."
+        }
+      ],
+      "sinais_ausentes": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "resumo": "O texto do G1 é um relato factual e equilibrado de uma troca de acusações entre dois candidatos à presidência da Câmara. Apresenta as declarações de ambos os lados com atribuição clara, sem emitir juízo de valor próprio (S1, S2, S3 ausentes) e garantindo contraponto interno (S4 ausente). O único sinal discursivo identificado é o enquadramento episódico com foco estratégico (S5.3), típico da cobertura política diária, que prioriza o conflito pessoal e os bastidores em detrimento de uma discussão sobre o impacto substantivo do cargo em disputa."
+    }
+  },
+  {
+    "noticia_id": "N05",
+    "modelo": "openrouter/deepseek/deepseek-v4-pro",
+    "tokens_prompt": 3513,
+    "tokens_resposta": 5969,
+    "tempo_segundos": 137.44,
+    "erro": null,
+    "analise": {
+      "raciocinio": "Análise independente de cada categoria:\n\n**S1 — MARCAÇÃO LEXICAL AVALIATIVA:**\n- O texto é majoritariamente descritivo e neutro. Há uma citação direta de Collor contendo palavras com carga avaliativa, como 'inconformados' e 'desiludidos', mas isso é atribuído a um ator (Collor) e relatado como discurso dele, não endossado pelo veículo. O texto não adjetiva, não rotula, não usa verbos de elocução carregados. Apenas o trecho 'desbaratou o esquema' merece atenção: 'desbaratou' é um verbo do próprio texto (não citação) que pode ter uma leve carga de intensificação positiva para a ação policial, mas é muito sutil e comum em coberturas policiais. Considerarei S1.1 ou S1.3? É um verbo, não se encaixa perfeitamente. Não é um achado forte. No geral, ausência de sinais S1.\n\n**S2 — ENQUADRAMENTO CAUSAL-MORAL:**\n- O texto é uma matéria sobre uma negação. Não há construção de causalidade unilateral (não atribui culpa pelo esquema a um único ator no texto). Não há responsabilização desproporcional pelo próprio veículo. Não há avaliação moral implícita induzida pelo jornalista. O texto cita as suspeitas, mas as equilibra imediatamente com a ressalva do juiz. Não há apelo ao medo ou falsa dicotomia. O texto relata a defesa de Collor e contextualiza com a informação judicial. Isso parece ser um texto com enquadramento relativamente equilibrado. Ausência de sinais S2.\n\n**S3 — SUPORTE EVIDENCIAL E ATRIBUIÇÃO:**\n- Todas as informações relevantes estão atribuídas. A suspeita, os depósitos, a ressalva judicial vêm de Moro. A negação é de Collor. As datas das notícias são atribuídas a Collor. As fontes são nomeadas (juiz Sérgio Moro, ministro Teori Zavascki). Não há claims sem evidência. Os números citados (R$ 10 bilhões, oito comprovantes) vêm de fontes oficiais (Lava Jato). Não há fonte vaga ou anônima. Não há opinião como fato. Ausência de sinais S3.\n\n**S4 — PLURALIDADE E CONTRAPONTO INTERNO:**\n- O texto trata de uma acusação (suspeita de envolvimento). O principal ator é Collor, que está se defendendo. A voz da acusação aparece indiretamente através do relato do ofício judicial e da apreensão dos comprovantes. O juiz Moro é citado como fonte que contém tanto a suspeita (apreensão de depósitos) quanto a ressalva (sem indícios de envolvimento). O texto não inclui uma voz independente acusando Collor. A suspeita é um fato (depósitos encontrados), não uma declaração de um acusador. O doleiro Youssef não é ouvido. O Ministério Público não é citado. A parte 'acusadora' é institucional (documentos, ofícios) e está presente. Note-se que a ressalva \"não há qualquer indício\" de Moro está no texto, mas é o que Collor usa em sua defesa. O contraponto à defesa de Collor existe na forma da evidência documental (apreensão dos comprovantes). É uma matéria que relata uma negação, mas há evidência contrária? A evidência é de que depósitos foram achados. A matéria não conclui. Ela apresenta os dois lados do mesmo ator judicial (Moro), mas não busca a versão de outros envolvidos. Youssef, por exemplo. Considerando que há uma controvérsia (Collor vs. suspeita), a ausência de outras fontes pode ser um S4.1 (Youssef ausente) ou S4.4 (fonte única para controvérsia). A fonte é basicamente o sistema judicial (Moro, Teori) e Collor. É uma fonte única para o lado da acusação (Judiciário) e uma para a defesa (Collor). Isso é comum. Mas a acusação é um fato investigativo, não uma opinião. Não parece haver assimetria severa nem contraponto fraco. O texto apresenta as informações de forma equilibrada. A ausência de Youssef ou MP pode ser justificada pelo escopo da matéria (pronunciamento de Collor). Ausência de sinais S4. O texto não ignora a acusação, pelo contrário.\n\n**S5 — CONTEXTUALIZAÇÃO EPISÓDICA:**\n- A matéria contextualiza: menciona a prisão de Youssef, o valor movimentado, o ofício ao STF, a menção a outros deputados, e a absolvição anterior de Collor pelo STF. Isso fornece antecedentes e contexto institucional. Não é um fato isolado. Há comparação implícita com as acusações anteriores. O texto não foca em bastidores ou cavalo de corrida, mas em informações factuais. Não é puramente episódico. Ausência de sinais S5.\n\nConclusão do raciocínio: Nenhum sinal discursivo claro conforme os subcritérios foi identificado. A suposta carga de 'desbaratou' é muito fraca e o verbo é comum em textos jornalísticos, não caracteriza sensacionalismo ou adjetivação avaliativa sem base. A matéria é equilibrada e atribuída. Ausência total de sinais.",
+      "achados": [
+        {
+          "sinal": "S1",
+          "sub_sinal": "S1.3",
+          "sub_sinal_nome": "Intensificação / sensacionalismo",
+          "trecho": "que desbaratou o esquema de lavagem de dinheiro de Youssef",
+          "justificativa": "O verbo 'desbaratou' confere uma carga de sucesso e impacto à ação policial, sugerindo desmantelamento total, sem que o texto apresente evidências de que o esquema foi efetivamente desarticulado por completo naquele momento. É um termo com leve intensificação.",
+          "confianca": "baixa",
+          "limitacao": "O termo 'desbaratou' é amplamente utilizado em textos jornalísticos para descrever operações policiais e pode ser considerado linguagem descritiva padrão, não necessariamente sensacionalista. A Lava Jato de fato prendeu o doleiro, o que configura uma ação de desbaratamento."
+        }
+      ],
+      "sinais_ausentes": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ],
+      "resumo": "O texto é majoritariamente descritivo e equilibrado, com raríssimos sinais discursivos. O único ponto identificável é o uso do verbo 'desbaratou', que carrega uma leve carga de intensificação positiva para a ação policial, mas com confiança baixa. Todas as demais categorias e subcritérios não apresentam achados relevantes."
+    }
+  },
+  {
+    "noticia_id": "N06",
+    "modelo": "openrouter/deepseek/deepseek-v4-pro",
+    "tokens_prompt": 4232,
+    "tokens_resposta": 4303,
+    "tempo_segundos": 137.29,
+    "erro": null,
+    "analise": {
+      "raciocinio": "A análise foi conduzida avaliando cada categoria (S1 a S5) independentemente, conforme o protocolo. Para cada subcritério, busquei trechos literais que evidenciassem os sinais. Não foram encontrados sinais em nenhuma categoria. O texto é predominantemente descritivo, com dados atribuídos a fontes identificadas (IBGE e seu coordenador), linguagem neutra e contextualização histórica. A seguir, o detalhamento:\n\nS1 – MARCAÇÃO LEXICAL AVALIATIVA: O texto não contém adjetivação avaliativa (S1.1), rótulos valorativos (S1.2), intensificação sensacionalista (S1.3) ou verbos de elocução carregados (S1.4). Adjetivos como 'leve' (em 'leve queda') são descritivos e ancorados em dados (0,1 p.p.). Os verbos de citação são neutros ('disse', 'afirmou', 'explicou').\n\nS2 – ENQUADRAMENTO CAUSAL-MORAL: A explicação causal para a queda do desemprego é atribuída ao coordenador do IBGE, que ressalva a necessidade de análise adicional ('A gente precisa analisar'). Não há responsabilização desproporcional (S2.2), avaliação moral implícita (S2.3), apelo ao medo (S2.4) ou falsa dicotomia (S2.5).\n\nS3 – SUPORTE EVIDENCIAL: As afirmações centrais estão baseadas em dados do IBGE ou em declarações de seu coordenador. A frase 'A expectativa é que ela seja substituída...' poderia ser considerada vaga, mas não é central para o argumento principal e não compromete a sustentação do texto. Não há fontes anônimas, opiniões sem atribuição, números sem origem ou generalizações infundadas.\n\nS4 – PLURALIDADE E CONTRAPONTO: O texto relata dados oficiais sem controvérsia, portanto não se aplicam os subcritérios de ausência de contraponto. A única fonte é o IBGE, adequada ao tipo de matéria.\n\nS5 – CONTEXTUALIZAÇÃO EPISÓDICA: O texto fornece série histórica ('menor desde 2002'), comparações mensais e anuais, e explica o contexto institucional da pesquisa (substituição pela Pnad Contínua). Não há foco em bastidores ou estratégia política.",
+      "achados": [],
+      "sinais_ausentes": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ],
+      "resumo": "O texto analisado é uma reportagem econômica baseada em dados oficiais do IBGE. A linguagem é neutra, as fontes são identificadas e o contexto histórico é apresentado. Não foram detectados sinais discursivos conforme os critérios do protocolo. A ausência de sinais é um resultado válido e esperado para este tipo de matéria."
+    }
+  },
+  {
+    "noticia_id": "N07",
+    "modelo": "openrouter/deepseek/deepseek-v4-pro",
+    "tokens_prompt": 4225,
+    "tokens_resposta": 7766,
+    "tempo_segundos": 155.85,
+    "erro": null,
+    "analise": {
+      "raciocinio": "Analisei cada categoria independentemente, percorrendo o texto em busca de sinais conforme os subcritérios. Para S1, identifiquei termos avaliativos na abertura do texto, como 'infesta' e 'pragas', que introduzem julgamento sem base factual própria, configurando marcação lexical avaliativa. Não encontrei verbos de elocução carregados. Para S2, o texto apresenta múltiplas causas para a indexação (herança histórica, política governamental, inércia) e não constrói enquadramento causal unilateral ou moral; não há sinais. Para S3, a introdução usa fonte vaga ('economistas ouvidos pelo G1') e apresenta número sem origem documentada, fragilizando a evidência. As demais afirmações são bem atribuídas. Para S4, o texto não trata de controvérsia entre partes; as fontes são economistas com visões complementares, não havendo exigência de contraponto. Para S5, o texto é rico em contextualização histórica e institucional, afastando o enquadramento episódico.",
+      "achados": [
+        {
+          "sinal": "S1",
+          "sub_sinal": "S1.1",
+          "sub_sinal_nome": "Adjetivação avaliativa",
+          "trecho": "a indexação, ainda infesta boa parte da economia brasileira",
+          "justificativa": "O verbo 'infesta' constitui metáfora com forte carga negativa, qualificando a indexação como praga ou invasão daninha, sem que essa avaliação decorra de evidência factual apresentada no próprio período.",
+          "confianca": "media",
+          "limitacao": "O termo pode ser interpretado como figura de linguagem comum em análises econômicas, e o texto subsequentemente fornece dados que embasam a ideia de persistência nociva, reduzindo a carga avaliativa."
+        },
+        {
+          "sinal": "S1",
+          "sub_sinal": "S1.2",
+          "sub_sinal_nome": "Rotulação lexical",
+          "trecho": "uma das “pragas” da hiperinflação",
+          "justificativa": "O substantivo 'pragas' (mesmo entre aspas) rotula a indexação com termo fortemente negativo, enquadrando-a como flagelo, sem que o texto justifique esse enquadramento com evidência direta.",
+          "confianca": "media",
+          "limitacao": "As aspas podem indicar que o jornalista está reproduzindo expressão de uso corrente ou citação indireta, e não necessariamente endossando o rótulo; além disso, o texto desenvolve argumentos que sustentam a ideia de dano."
+        },
+        {
+          "sinal": "S3",
+          "sub_sinal": "S3.2",
+          "sub_sinal_nome": "Fonte vaga ou anônima",
+          "trecho": "Segundo economistas ouvidos pelo G1, os preços indexados no Brasil têm peso de cerca de 30% no índice oficial de inflação",
+          "justificativa": "A atribuição a 'economistas ouvidos pelo G1' não identifica os profissionais nem a instituição, constituindo fonte vaga para uma afirmação quantitativa relevante.",
+          "confianca": "alta",
+          "limitacao": "O texto posteriormente nomeia economistas (Patrícia Pereira, Alcides Leite) que podem ser a origem da informação, mas a atribuição inicial permanece genérica, e não há menção a estudo ou metodologia."
+        },
+        {
+          "sinal": "S3",
+          "sub_sinal": "S3.4",
+          "sub_sinal_nome": "Número ou comparação sem origem",
+          "trecho": "os preços indexados no Brasil têm peso de cerca de 30% no índice oficial de inflação",
+          "justificativa": "O percentual de 30% é apresentado sem referência a pesquisa, instituto ou metodologia que o sustente, fragilizando a evidência do dado.",
+          "confianca": "alta",
+          "limitacao": "O número pode ter sido extraído das declarações dos economistas citados adiante, mas o texto não vincula explicitamente o dado a uma fonte documentada, e a expressão 'cerca de' indica estimativa sem origem precisa."
+        }
+      ],
+      "sinais_ausentes": [
+        "S2",
+        "S4",
+        "S5"
+      ],
+      "resumo": "O texto apresenta marcação lexical avaliativa na abertura (S1.1 e S1.2) e fragilidade evidencial na atribuição de dado quantitativo (S3.2 e S3.4). As demais categorias (enquadramento causal‑moral, pluralidade e contextualização) não exibem sinais conforme os critérios do protocolo."
+    }
+  },
+  {
+    "noticia_id": "N08",
+    "modelo": "openrouter/deepseek/deepseek-v4-pro",
+    "tokens_prompt": 3461,
+    "tokens_resposta": 1291,
+    "tempo_segundos": 24.66,
+    "erro": null,
+    "analise": {
+      "raciocinio": "Iniciando análise do texto jornalístico do G1 sobre alerta da diretora do FMI. Avaliarei cada categoria (S1 a S5) individualmente, verificando a presença de sinais discursivos com base nos subcritérios definidos.\n\n**S1 - Marcação Lexical Avaliativa:**\nO texto é predominantemente descritivo e baseado em citações diretas de Christine Lagarde e do FMI. Termos como \"sérios riscos\", \"fraco crescimento\", \"recuperação frágil e desigual\" são atribuídos diretamente a Lagarde ou ao FMI, não sendo juízos do jornalista. Não identifiquei adjetivação avaliativa (S1.1) ou rotulação lexical (S1.2) por parte do veículo. A expressão \"marasmo de baixo crescimento\" no último parágrafo é uma paráfrase do alerta do FMI, não um juízo autoral. Verbos de elocução são neutros (\"afirmou\", \"disse\", \"complementou\"). Não há intensificação sensacionalista (S1.3) ou verbos carregados (S1.4). Portanto, nenhum sinal S1 detectado.\n\n**S2 - Enquadramento Causal-Moral:**\nO texto relata o alerta do FMI sobre riscos de recessão, atribuindo a causa à falta de medidas para impulsionar o crescimento, conforme declaração de Lagarde. Não há construção de causalidade unilateral (S2.1) pelo jornalista, pois o texto cita múltiplos fatores mencionados pelo FMI: fraco crescimento, necessidade de reformas, impacto modesto da crise na Ucrânia, riscos de deflação. Não há responsabilização desproporcional (S2.2) ou avaliação moral implícita (S2.3). O apelo ao medo (S2.4) está presente nas declarações do FMI, mas o texto as reporta sem endosso explícito. Não há falsa dicotomia (S2.5). Nenhum sinal S2 detectado.\n\n**S3 - Suporte Evidencial e Atribuição:**\nO texto é rico em atribuições: cita Christine Lagarde, Olivier Blanchard, relatórios do FMI (\"Perspectiva Econômica Global\"), agências (France Presse, Reuters). As afirmações são todas atribuídas a fontes nomeadas. Não há claims sem evidência (S3.1), fontes vagas (S3.2), opinião como fato (S3.3), números sem origem (S3.4) ou generalizações não fundamentadas (S3.5). A probabilidade de recessão (35-40%) é atribuída ao FMI. As projeções de crescimento são do relatório do FMI. Nenhum sinal S3 detectado.\n\n**S4 - Pluralidade e Contraponto Interno:**\nO texto é uma reportagem sobre declarações do FMI. Não há acusação ou disputa que exija contraponto. O FMI é a fonte central, mas não há parte afetada ausente (S4.1), pois o texto não trata de conflito entre atores. Não há necessidade de contraponto (S4.2) ou assimetria (S4.3), pois é um relato de alerta institucional. A fonte é única (FMI), mas não se trata de controvérsia (S4.4), e sim de divulgação de análise econômica. Nenhum sinal S4 detectado.\n\n**S5 - Contextualização Episódica:**\nO texto fornece contexto: menciona revisão de previsões em julho, assembleia anual do FMI, relatório \"Perspectiva Econômica Global\", comparação com seis meses atrás, e cita países específicos (zona do euro, Japão, Brasil). Há antecedentes (S5.1) e dados comparativos (S5.2). O foco não é em bastidores ou disputas pessoais (S5.3), mas em análises econômicas. O contexto institucional do FMI está presente (S5.4). Nenhum sinal S5 detectado.\n\nConclusão: Após análise independente de cada categoria, não foram identificados sinais discursivos conforme os subcritérios do protocolo. O texto é um relato jornalístico padrão, baseado em fontes nomeadas e citações diretas, sem marcação avaliativa do autor, enquadramento causal seletivo, fragilidade evidencial, ausência de contraponto (pois não há controvérsia) ou contextualização episódica deficiente.",
+      "achados": [],
+      "sinais_ausentes": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ],
+      "resumo": "Nenhum sinal discursivo detectado em nenhuma das cinco categorias. O texto é um relato jornalístico baseado em fontes nomeadas (Christine Lagarde, Olivier Blanchard, relatórios do FMI, agências de notícias), com citações diretas e atribuições claras. Não apresenta marcação lexical avaliativa do autor, enquadramento causal seletivo, fragilidade evidencial, ausência de contraponto (pois não há controvérsia) ou contextualização episódica deficiente. A análise indica um texto informativo padrão, sem sinais de viés discursivo conforme os critérios do protocolo."
+    }
+  },
+  {
+    "noticia_id": "N09",
+    "modelo": "openrouter/deepseek/deepseek-v4-pro",
+    "tokens_prompt": 4292,
+    "tokens_resposta": 4751,
+    "tempo_segundos": 134.38,
+    "erro": null,
+    "analise": {
+      "raciocinio": "S1 – MARCAÇÃO LEXICAL AVALIATIVA: A linguagem do jornalista é descritiva e neutra. As expressões avaliativas presentes ('grande e importante mudança', 'êxito', 'importante etapa') estão em citações diretas de atores governamentais, sem endosso explícito do texto. Verbos de elocução são neutros ('afirmou', 'disse'). Não há adjetivação, rotulação, intensificação ou verbos carregados por parte do narrador. Ausência de sinais.\n\nS2 – ENQUADRAMENTO CAUSAL-MORAL: O texto relata a aprovação e explica o conteúdo da MP. Não atribui culpa, não constrói julgamento moral implícito, não recorre a apelo ao medo ou falsas dicotomias. A nota da Presidência contém enquadramentos causais ('faltava vontade política'), mas é uma peça citada, não uma construção do jornalista. Ausência de sinais.\n\nS3 – SUPORTE EVIDENCIAL E ATRIBUIÇÃO: As informações factuais (carga horária, itinerários, vagas) são apresentadas como parte do texto da MP, sem necessidade de fonte externa. Números como 800 horas e 1.400 horas são de domínio público ou extraídos do próprio documento legal. Todas as fontes citadas são nomeadas (Temer, Mendonça Filho, Secom). Não há opinião do jornalista travestida de fato. Ausência de sinais.\n\nS4 – PLURALIDADE E CONTRAPONTO INTERNO: A matéria trata de uma reforma controversa, com menção a protestos e rejeição de destaques da oposição. No entanto, não há uma única fala de opositores, estudantes, professores ou especialistas críticos. O contraponto se limita a duas frases genéricas. O espaço é amplamente dominado pelo governo (nota oficial na íntegra, declarações do presidente e do ministro). Configura-se ausência da parte afetada, contraponto fraco, assimetria severa e dependência de fonte única. Presença de sinais S4.1, S4.2, S4.3, S4.4.\n\nS5 – CONTEXTUALIZAÇÃO EPISÓDICA: O texto oferece algum contexto: menciona a LDB, a carga horária atual, a BNCC, o histórico da MP desde setembro e os protestos. Há dados comparativos (800h vs 1400h). O foco não é excessivamente estratégico ou de bastidor; a maior parte é explicativa. Embora seja uma notícia diária, o nível de contextualização é razoável. Ausência de sinais fortes de enquadramento episódico.",
+      "achados": [
+        {
+          "sinal": "S4",
+          "sub_sinal": "S4.1",
+          "sub_sinal_nome": "Parte diretamente afetada ausente",
+          "trecho": "Desde que foi apresentada pelo governo, em setembro, a reforma se tornou alvo de protestos pelo país. Nos últimos meses de 2016, estudantes chegaram a ocupar escolas para se manifestar contra a MP.",
+          "justificativa": "O texto menciona protestos e a oposição, mas não inclui nenhuma citação direta de estudantes, professores, sindicatos ou parlamentares contrários à reforma. A única voz presente é a do governo.",
+          "confianca": "alta",
+          "limitacao": "A ausência pode refletir o foco da matéria na aprovação oficial, mas limita a pluralidade ao não dar espaço a quem será diretamente impactado ou discorda da medida."
+        },
+        {
+          "sinal": "S4",
+          "sub_sinal": "S4.2",
+          "sub_sinal_nome": "Contraponto formal / fraco",
+          "trecho": "Isso gerou a principal polêmica em torno do texto.",
+          "justificativa": "A única referência ao contraditório é uma menção genérica à polêmica e aos protestos, sem desenvolvimento, sem argumentos da oposição e sem citação direta. O contraponto é meramente formal.",
+          "confianca": "alta",
+          "limitacao": "Pode ser uma escolha editorial para manter o foco no trâmite legislativo, mas enfraquece o debate ao não apresentar os fundamentos da crítica."
+        },
+        {
+          "sinal": "S4",
+          "sub_sinal": "S4.3",
+          "sub_sinal_nome": "Assimetria severa de espaço",
+          "trecho": "Nota à imprensa O Presidente da República acompanhou a votação... [4 parágrafos] vs. 'Isso gerou a principal polêmica...' e 'estudantes chegaram a ocupar escolas...'",
+          "justificativa": "A perspectiva governamental domina o texto: há falas do presidente, do ministro e a íntegra da nota oficial (4 parágrafos). A oposição e os críticos aparecem apenas em duas frases curtas, sem qualquer citação.",
+          "confianca": "alta",
+          "limitacao": "A assimetria pode decorrer da natureza da pauta (aprovação no Senado), mas ainda assim configura desequilíbrio significativo na representação de vozes."
+        },
+        {
+          "sinal": "S4",
+          "sub_sinal": "S4.4",
+          "sub_sinal_nome": "Fonte única para controvérsia",
+          "trecho": "O ministro da Educação, Mendonça Filho, assistiu à votação... comemorou a aprovação. 'Trata-se de uma grande e importante mudança...'",
+          "justificativa": "Toda a matéria se apoia em fontes do governo (Temer, Mendonça Filho, nota da Secom). Não há qualquer fonte alternativa, mesmo tratando de tema controverso com protestos e rejeição de destaques da oposição.",
+          "confianca": "alta",
+          "limitacao": "A dependência de fonte única é comum em coberturas institucionais, mas reduz a capacidade do leitor de avaliar a controvérsia de forma informada."
+        }
+      ],
+      "sinais_ausentes": [
+        "S1",
+        "S2",
+        "S3",
+        "S5"
+      ],
+      "resumo": "Foram identificados 4 sinais discursivos, todos na categoria S4 (Pluralidade e Contraponto Interno). A matéria apresenta ausência de vozes contrárias, contraponto meramente formal, assimetria severa de espaço e dependência de fonte única governamental, apesar de tratar de tema controverso. As demais categorias (S1, S2, S3, S5) não apresentaram sinais relevantes."
+    }
+  },
+  {
+    "noticia_id": "N10",
+    "modelo": "openrouter/deepseek/deepseek-v4-pro",
+    "tokens_prompt": 3229,
+    "tokens_resposta": 4745,
+    "tempo_segundos": 129.11,
+    "erro": null,
+    "analise": {
+      "raciocinio": "S1 — MARCAÇÃO LEXICAL AVALIATIVA: Percorri o texto em busca de adjetivos avaliativos, rótulos valorativos, intensificações sensacionalistas e verbos de elocução carregados. A linguagem é descritiva e neutra, utilizando termos do próprio projeto de lei (\"escuta especializada\", \"autoridade especial\") sem carga valorativa adicional. Não identifiquei nenhum sinal de S1.1, S1.2, S1.3 ou S1.4.\n\nS2 — ENQUADRAMENTO CAUSAL-MORAL: Analisei a construção narrativa. O texto relata a aprovação de um projeto de lei sem atribuir causas, culpas ou responsabilidades de forma unilateral. Não há justaposições que induzam julgamento moral implícito, apelo ao medo ou falsas dicotomias. Nenhum sinal de S2.1 a S2.5.\n\nS3 — SUPORTE EVIDENCIAL E ATRIBUIÇÃO: Verifiquei a sustentação das afirmações. Todas as informações sobre o conteúdo do projeto são atribuídas ao próprio texto legislativo (\"De acordo com o projeto\", \"Pelo texto da proposta\"), uma fonte pública e identificável. Não há claims sem evidência, fontes anônimas, opiniões travestidas de fato, números sem origem ou generalizações infundadas. Nenhum sinal de S3.1 a S3.5.\n\nS4 — PLURALIDADE E CONTRAPONTO INTERNO: O texto trata de uma aprovação legislativa sem controvérsia aparente (votação simbólica sugere consenso). Não há acusação, conflito ou disputa que exigisse contraponto. A ausência de vozes divergentes não configura sinal em uma nota curta sobre fato não controverso. Nenhum sinal de S4.1 a S4.4.\n\nS5 — CONTEXTUALIZAÇÃO EPISÓDICA: Avaliei a profundidade contextual. O texto fornece algum antecedente (\"Ainda não existia uma legislação específica sobre esse assunto\") e o percurso legislativo, mas carece completamente de dados comparativos (estatísticas, séries históricas, comparações) que dimensionem o problema ou o impacto da nova lei. Isso caracteriza o enquadramento episódico típico do noticiário diário. Detectado S5.2 com confiança baixa, pois a inclusão de tais dados não é obrigatória para a compreensão imediata do fato, mas sua ausência limita a análise. Os demais subcritérios (S5.1, S5.3, S5.4) não foram identificados, já que há algum antecedente, não há foco em bastidores e o contexto institucional básico está presente.",
+      "achados": [
+        {
+          "sinal": "S5",
+          "sub_sinal": "S5.2",
+          "sub_sinal_nome": "Ausência de dado comparativo",
+          "trecho": "O Senado aprovou nesta quarta-feira (29), em votação simbólica (sem contagem de votos), projeto que estabelece uma série de mecanismos para a proteção de crianças vítimas ou testemunhas de violência. [Em todo o texto, não há qualquer menção a dados comparativos, estatísticos ou séries históricas; a cobertura limita-se a descrever as disposições do projeto.]",
+          "justificativa": "O texto descreve o conteúdo do projeto de lei e seu trâmite, mas não fornece nenhum dado comparativo (como estatísticas de violência infantil, frequência de casos, comparações com legislações de outros países ou séries históricas) que permitam dimensionar a relevância ou o impacto da medida. Essa ausência é típica do jornalismo diário factual, mas limita a compreensão contextual do leitor.",
+          "confianca": "baixa",
+          "limitacao": "A ausência de dados comparativos pode ser justificada pelo formato de notícia curta e pelo foco no ato legislativo em si, não configurando necessariamente viés, mas reduzindo a profundidade informativa."
+        }
+      ],
+      "sinais_ausentes": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "resumo": "Texto predominantemente descritivo e neutro, com ausência de sinais discursivos nas categorias S1 a S4. Detectado apenas S5.2 (ausência de dado comparativo) com confiança baixa, refletindo o padrão episódico do jornalismo diário."
+    }
+  },
+  {
+    "noticia_id": "N11",
+    "modelo": "openrouter/deepseek/deepseek-v4-pro",
+    "tokens_prompt": 3401,
+    "tokens_resposta": 6484,
+    "tempo_segundos": 243.86,
+    "erro": null,
+    "analise": {
+      "raciocinio": "Vou analisar cada categoria sistematicamente com base exclusivamente no texto fornecido.\n\n**S1 — MARCAÇÃO LEXICAL AVALIATIVA**: O texto é majoritariamente descritivo e informativo. Há dois elementos que merecem atenção: (1) Uso de 'salta aos olhos' por Gilmar Mendes — é uma expressão intensificadora, mas está em citação direta e o ministro a fundamenta com o raciocínio da proporcionalidade. O texto apenas reproduz a fala, não endossa. (2) O título usa 'quase 7 anos' e 'um grama' — descrição factual, sem adjetivação avaliativa. Não encontro adjetivação avaliativa (S1.1) feita pelo jornalista. Não há rotulação lexical (S1.2) como 'traficante' ou outros rótulos — o texto usa 'mulher', 'condenada'. Não há intensificação/sensacionalismo (S1.3) autoral — o 'salta aos olhos' é do ministro, não do veículo. Os verbos de elocução (S1.4) são neutros: 'destacou', 'escreveu', 'afirmou' — nenhum carregado como 'admitiu' ou 'alegou'. Portanto, S1 está ausente.\n\n**S2 — ENQUADRAMENTO CAUSAL-MORAL**: O texto narra um percurso judicial. Não há atribuição de causa do problema (tráfico, condenação desproporcional) a um ator único (S2.1) — menciona condenação em primeira instância e manutenção pelo TJ-SP, mas não explora causas da desproporção (lei, interpretação judicial). O foco é a decisão do STF. Não há responsabilização desproporcional (S2.2) — não aponta culpados específicos pela pena elevada. Não detecto avaliação moral implícita (S2.3) na construção narrativa. O texto não apela ao medo (S2.4). Não há falsa dicotomia ou lógica falha (S2.5). A estrutura é linear e descritiva. Entretanto, há uma possível construção de contraste entre o pequeno volume (1g) e a pena elevada (quase 7 anos) que pode sugerir desproporção — mas isso é o cerne do fato noticiado (a decisão do STF que reconhece a desproporção). O texto relata o argumento do ministro e da PGR, não o constrói autoralmente. Considero S2 ausente.\n\n**S3 — SUPORTE EVIDENCIAL E ATRIBUIÇÃO**: O texto cita 'Conforme o processo' e 'Ainda segundo o processo' para os fatos — fonte documental genérica, mas identificável (processo judicial). Afirmações relevantes estão apoiadas em citações diretas do ministro Gilmar Mendes e da subprocuradora Deborah Duprat, ambos nomeados. Não há 'claim sem evidência explícita' (S3.1) relevante. Não há fonte vaga ou anônima (S3.2) — 'processo' não é anônimo, é o processo judicial referenciado. Não há opinião apresentada como fato (S3.3) pelo jornalista. Dados como 'quase sete anos', 'um grama', datas estão no relato do caso. Não há número ou comparação sem origem (S3.4). Não há generalização não fundamentada (S3.5). S3 está ausente.\n\n**S4 — PLURALIDADE E CONTRAPONTO INTERNO**: O texto cita a decisão da Segunda Turma do STF (Gilmar Mendes como relator) e a PGR (Deborah Duprat). Ambos são favoráveis à absolvição. A parte 'acusadora' original (Ministério Público estadual de SP, juiz de primeira instância, TJ-SP) não é ouvida diretamente — o texto apenas menciona que houve condenação e manutenção. Isso poderia configurar S4.1 (parte diretamente afetada ausente), pois o texto trata de uma decisão que reverte condenações anteriores, mas não apresenta o argumento de quem condenou. No entanto, a matéria é sobre uma decisão do STF anulando uma condenação — ela relata o resultado e o fundamento. Não é uma reportagem investigativa sobre a desproporção. Ainda assim, a ausência de contraponto (por que a condenação foi aplicada e mantida? qual o argumento do TJ-SP?) poderia ser considerada S4.2 ou S4.1, mas é uma limitação típica de nota sobre decisão judicial. Vou registrar S4.1 com confiança baixa, pois a matéria é factual sobre a decisão e não necessariamente exige o contraditório do juízo anterior, mas a ausência de qualquer explicação do fundamento da condenação limita o contexto.\n\n**S5 — CONTEXTUALIZAÇÃO EPISÓDICA**: O texto fornece um breve histórico: prisão em 2012, condenação em 2013, manutenção pelo TJ-SP em 2014, pedido ao STF em 2015, liminar, julgamento definitivo. Há um encadeamento cronológico (S5.1 parcialmente atendido). Não há dado comparativo (S5.2) — quantas pessoas são condenadas por quantidades ínfimas? Qual a frequência? Não há. O foco é no caso individual, sem ampliar para política de drogas ou impacto (S5.3 — foco estratégico? Não exatamente, mas é um caso isolado sem contexto de 'guerra às drogas', encarceramento em massa etc.). O contexto institucional (S5.4) é parcialmente presente: menciona o STF, Segunda Turma, princípio da insignificância, proporcionalidade. Mas não explica a lei de drogas, a tipificação, a margem judicial etc. Considero S5.2 (ausência de dado comparativo) e S5.1 (falta de antecedentes sobre a política de drogas e o encarceramento por pequenas quantidades) como presentes, mas a confiança é média, pois a matéria tem algum contexto processual.",
+      "achados": [
+        {
+          "sinal": "S4",
+          "sub_sinal": "S4.1",
+          "sub_sinal_nome": "Parte diretamente afetada ausente",
+          "trecho": "Em janeiro de 2013, essa mulher foi condenada em primeira instância. Um ano depois, o Tribunal de Justiça do Estado de São Paulo (TJ-SP) manteve a condenação.",
+          "justificativa": "O texto menciona a condenação em primeira instância e sua manutenção pelo TJ-SP, mas não apresenta o fundamento dessas decisões. Apenas a perspectiva do STF (que anulou a condenação) e da PGR (favorável à absolvição) são expostas com argumentos. A parte que condenou não é ouvida diretamente nem tem seus argumentos citados, configurando ausência de contraponto da parte cuja decisão foi revertida.",
+          "confianca": "baixa",
+          "limitacao": "A matéria não é uma reportagem sobre a controvérsia da condenação, mas sim uma nota sobre a decisão do STF. A ausência de contraponto pode ser considerada natural em uma notícia que relata uma decisão judicial de instância superior, sem a obrigação de entrevistar o juízo de primeira instância ou o tribunal estadual. O foco está no resultado do julgamento e seus fundamentos."
+        },
+        {
+          "sinal": "S5",
+          "sub_sinal": "S5.2",
+          "sub_sinal_nome": "Ausência de dado comparativo",
+          "trecho": "A Segunda Turma do Supremo Tribunal Federal (STF) anulou a condenação de uma mulher condenada em São Paulo a quase sete anos de prisão por traficar um grama de maconha.",
+          "justificativa": "O texto trata de um caso individual de desproporcionalidade da pena, mas não fornece dados comparativos que permitam dimensionar o fenômeno (ex.: quantas pessoas no Brasil estão presas por tráfico de pequenas quantidades, qual a média de penas, comparativo com outros casos similares). O fato é apresentado como evento isolado, sem série histórica ou base de comparação.",
+          "confianca": "media",
+          "limitacao": "O texto tem caráter de nota sobre uma decisão judicial específica, e a ausência de dados comparativos não invalida a informação central. A limitação é própria do formato de 'hard news' diária, que prioriza o caso concreto em detrimento de contexto estatístico amplo."
+        },
+        {
+          "sinal": "S5",
+          "sub_sinal": "S5.1",
+          "sub_sinal_nome": "Ausência de antecedente relevante",
+          "trecho": "Conforme o processo, a mulher foi presa em 2012 em flagrante por vender um grama de maconha a um homem.",
+          "justificativa": "O texto apresenta um breve histórico cronológico do processo (prisão, condenações, liminar, decisão final), mas não fornece antecedentes sobre a política de drogas, a legislação que permite penas elevadas para pequenas quantidades ou o debate jurídico sobre o princípio da insignificância em casos de tráfico. O leitor não obtém elementos para entender por que uma pena tão elevada foi inicialmente aplicada e mantida.",
+          "confianca": "media",
+          "limitacao": "O texto menciona a aplicação do princípio da insignificância pelo ministro, o que pressupõe algum conhecimento jurídico prévio do leitor. A ausência de contextualização mais ampla é típica do jornalismo diário, que muitas vezes não recapitula todo o debate legal precedente."
+        }
+      ],
+      "sinais_ausentes": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "resumo": "A matéria é predominantemente descritiva e reproduz decisão judicial com citações diretas dos ministros. Não apresenta marcação lexical avaliativa autoral (S1) nem enquadramento causal-moral (S2). O suporte evidencial (S3) é adequado, com fontes nomeadas (Gilmar Mendes, Deborah Duprat) e referência ao processo judicial. Foi detectada ausência de contraponto do juízo condenatório (S4.1), com baixa confiança por se tratar de nota sobre decisão de instância superior. Também foi identificada contextualização episódica (S5.1 e S5.2) pela falta de dados comparativos e antecedentes sobre a política de drogas, típica do jornalismo diário."
+    }
+  },
+  {
+    "noticia_id": "N12",
+    "modelo": "openrouter/deepseek/deepseek-v4-pro",
+    "tokens_prompt": 3586,
+    "tokens_resposta": 6984,
+    "tempo_segundos": 146.46,
+    "erro": null,
+    "analise": {
+      "raciocinio": "Analisei cada categoria independentemente, examinando o texto em busca dos 22 subcritérios. Para cada sinal detectado, associei um trecho literal e avaliei a confiança. Para categorias sem sinais, registrei a ausência explicitamente. A análise considerou apenas o conteúdo textual, sem conhecimento externo.",
+      "achados": [
+        {
+          "sinal": "S2",
+          "sub_sinal": "S2.3",
+          "sub_sinal_nome": "Avaliação moral implícita",
+          "trecho": "Após chamar massacre de acidente, Temer fala em 'pavorosa matança' (título) e 'Após se referir ao massacre em um presídio de Manaus de 'acidente', o presidente Michel Temer voltou a falar da crise no sistema penitenciário no país e se referiu ao episódio como 'pavorosa matança'' (lead).",
+          "justificativa": "A justaposição entre o termo 'acidente' (supostamente minimizador) e 'pavorosa matança' (supostamente mais adequado) constrói uma narrativa que induz o julgamento de que Temer inicialmente tratou o evento com descaso. O texto não explicita essa avaliação, mas a estrutura sequencial e a escolha lexical no título sugerem uma crítica moral implícita.",
+          "confianca": "media",
+          "limitacao": "O texto relata uma mudança factual na fala do presidente; a avaliação moral pode ser uma inferência do leitor, não necessariamente uma intenção do jornalista. A ausência de adjetivos avaliativos explícitos torna o enquadramento ambíguo."
+        },
+        {
+          "sinal": "S3",
+          "sub_sinal": "S3.1",
+          "sub_sinal_nome": "Claim sem evidência explícita",
+          "trecho": "Manaus registrou a morte de cerca de 60 presos na semana passada, durante rebeliões em presídios. Já em Roraima, mais de 30 presidiários foram mortos em outro massacre.",
+          "justificativa": "Os números de mortos ('cerca de 60' e 'mais de 30') são apresentados como fatos, mas o texto não cita a fonte desses dados (ex.: secretaria de segurança, boletim oficial, etc.). Apenas a identidade dos mortos é atribuída ao 'governo amazonense'.",
+          "confianca": "media",
+          "limitacao": "Os números podem ser de conhecimento público amplamente divulgado; a omissão da fonte pode ser um recurso de concisão jornalística. A ausência de atribuição não implica falsidade, mas fragiliza a verificabilidade interna do texto."
+        },
+        {
+          "sinal": "S3",
+          "sub_sinal": "S3.4",
+          "sub_sinal_nome": "Número ou comparação sem origem",
+          "trecho": "Manaus registrou a morte de cerca de 60 presos na semana passada, durante rebeliões em presídios. Já em Roraima, mais de 30 presidiários foram mortos em outro massacre.",
+          "justificativa": "Os quantitativos de vítimas não estão vinculados a nenhuma pesquisa, instituto ou fonte oficial no texto. Apenas a filiação criminosa dos mortos é atribuída ('De acordo com o governo amazonense').",
+          "confianca": "media",
+          "limitacao": "O texto pode pressupor que o leitor já conhece a origem dos números (ex.: notícias anteriores). A falta de referência direta, porém, reduz a transparência da evidência."
+        },
+        {
+          "sinal": "S4",
+          "sub_sinal": "S4.1",
+          "sub_sinal_nome": "Parte diretamente afetada ausente",
+          "trecho": "O texto cita apenas falas do presidente Michel Temer e dados do governo federal/amazonense. Não há falas de presos, familiares de vítimas, advogados, defensores de direitos humanos ou especialistas independentes.",
+          "justificativa": "A matéria aborda uma controvérsia (a fala inicial de Temer minimizando o massacre) e a crise penitenciária, mas não inclui nenhuma voz diretamente afetada ou contrária à posição oficial. A ausência desses atores limita a pluralidade interna.",
+          "confianca": "alta",
+          "limitacao": "O texto é uma nota curta sobre uma fala presidencial; a inclusão de contrapontos pode não ser o objetivo. A ausência de outras fontes pode ser justificada pelo formato, mas o protocolo sinaliza a falta de pluralidade."
+        },
+        {
+          "sinal": "S4",
+          "sub_sinal": "S4.4",
+          "sub_sinal_nome": "Fonte única para controvérsia",
+          "trecho": "Toda a matéria se baseia em declarações de Michel Temer e informações do governo (federal e amazonense). Não há fontes externas ao campo governista.",
+          "justificativa": "O texto trata de um tema controverso (a resposta do governo à crise penitenciária e a mudança de discurso de Temer) utilizando apenas fontes oficiais. Isso configura dependência de um único campo de atores.",
+          "confianca": "alta",
+          "limitacao": "Reportagens sobre pronunciamentos oficiais frequentemente focam na fala do governante. A ausência de outras fontes pode ser uma limitação do gênero, mas o protocolo a identifica como fragilidade de pluralidade."
+        },
+        {
+          "sinal": "S5",
+          "sub_sinal": "S5.1",
+          "sub_sinal_nome": "Ausência de antecedente relevante",
+          "trecho": "O texto menciona a crise penitenciária e os massacres, mas não apresenta o histórico da crise, as causas estruturais da superlotação ou o contexto das facções (PCC, FDN) antes dos eventos.",
+          "justificativa": "A narrativa começa com a fala de Temer e os massacres recentes, sem recuperar a evolução do sistema penitenciário, políticas anteriores ou a cronologia da violência entre facções. Isso isola o episódio de seu contexto histórico.",
+          "confianca": "media",
+          "limitacao": "O jornalismo diário frequentemente adota o enquadramento episódico por restrições de espaço e tempo. A ausência de antecedentes não indica viés, mas limita a compreensão do leitor."
+        },
+        {
+          "sinal": "S5",
+          "sub_sinal": "S5.2",
+          "sub_sinal_nome": "Ausência de dado comparativo",
+          "trecho": "O texto informa que 'cerca de 60 presos' morreram em Manaus e 'mais de 30' em Roraima, mas não compara esses números com estatísticas de anos anteriores, médias nacionais ou outros massacres prisionais.",
+          "justificativa": "Sem uma série histórica ou referência comparativa, o leitor não consegue dimensionar se esses números representam um agravamento excepcional ou estão dentro de um padrão. A falta de contexto comparativo enfraquece a análise da gravidade.",
+          "confianca": "media",
+          "limitacao": "A inclusão de dados comparativos pode não ser viável em uma nota curta. A ausência é típica do jornalismo factual imediato, mas o protocolo a registra como limitação contextual."
+        },
+        {
+          "sinal": "S5",
+          "sub_sinal": "S5.3",
+          "sub_sinal_nome": "Foco estratégico / bastidor / cavalo de corrida",
+          "trecho": "O título e o lead destacam a mudança de discurso de Temer ('Após chamar massacre de acidente, Temer fala em 'pavorosa matança''), centrando a narrativa na figura política e em sua retórica, em vez de aprofundar as causas ou impactos da crise penitenciária.",
+          "justificativa": "A matéria enfatiza o comportamento verbal do presidente (o 'antes' e 'depois') e a reunião ministerial, enquadrando o evento como uma disputa de imagem ou posicionamento político, e não como um problema substantivo de segurança pública.",
+          "confianca": "media",
+          "limitacao": "O foco em personagens e estratégias é uma característica do jornalismo político. A crítica aqui é sobre a predominância desse enquadramento, não sobre sua existência."
+        }
+      ],
+      "sinais_ausentes": [
+        "S1",
+        "S2",
+        "S2",
+        "S2",
+        "S2",
+        "S3",
+        "S3",
+        "S4",
+        "S4",
+        "S5"
+      ],
+      "resumo": "Foram detectados sinais em S2 (avaliação moral implícita), S3 (falta de evidência e números sem fonte), S4 (ausência de contraponto e fonte única) e S5 (contextualização episódica). Nenhum sinal foi encontrado em S1 (marcação lexical avaliativa)."
+    }
+  }
+]

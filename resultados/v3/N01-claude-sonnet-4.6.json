@@ -1,0 +1,59 @@
+{
+  "noticia_id": "N01",
+  "modelo": "openrouter/anthropic/claude-sonnet-4.6",
+  "tokens_prompt": 5703,
+  "tokens_resposta": 1547,
+  "tempo_segundos": 35.54,
+  "erro": null,
+  "analise": {
+    "raciocinio": "Analisando o texto categoria por categoria:\n\nS1 — MARCAÇÃO LEXICAL AVALIATIVA: O texto é predominantemente factual e descritivo. Apresenta dados de pesquisa com linguagem neutra. A expressão 'levaria a melhor' é uma construção coloquial para descrever vantagem eleitoral, mas é de uso corrente em jornalismo esportivo/eleitoral e não carrega julgamento moral. Verbos de elocução são neutros ('aponta'). Não identifico adjetivação avaliativa, rotulação lexical carregada, intensificação sensacionalista ou verbos de elocução carregados.\n\nS2 — ENQUADRAMENTO CAUSAL-MORAL: O texto não atribui causas, culpas ou responsabilidades. Apenas descreve resultados de pesquisa eleitoral. Não há cenários catastróficos, dicotomias falsas ou avaliações morais implícitas. O texto é descritivo, não interpretativo.\n\nS3 — SUPORTE EVIDENCIAL E ATRIBUIÇÃO: O texto cita explicitamente a pesquisa Nexus/BTG Pactual, data de realização (22-24 de maio), número de entrevistas (2.045), metodologia (telefone), margem de erro (2 pontos percentuais), nível de confiança (95%) e registro no TSE (BR-04193/2026). A atribuição é completa e verificável. Não há afirmações sem evidência, fontes vagas ou números sem origem.\n\nS4 — PLURALIDADE E CONTRAPONTO INTERNO: O texto não trata de acusação, conflito ou disputa que exija contraponto. É uma nota informativa sobre dados de pesquisa. Ambos os candidatos mencionados têm seus números apresentados. Não há parte afetada ausente nem assimetria relevante.\n\nS5 — CONTEXTUALIZAÇÃO EPISÓDICA: O texto é uma nota curta sobre dados de pesquisa eleitoral. Não apresenta antecedentes históricos, séries comparativas ou contexto institucional mais amplo. Foca em números pontuais sem comparação com pesquisas anteriores ou tendências. Há ausência de dado comparativo (S5.2) — não há referência a pesquisas anteriores para dimensionar se os números representam mudança ou estabilidade. Também há foco em 'quem está ganhando' sem discussão de impacto substantivo (S5.3), embora isso seja inerente ao gênero de nota sobre pesquisa eleitoral.",
+    "sinais": [
+      {
+        "sinal": "S1",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto utiliza linguagem neutra e descritiva ao apresentar dados de pesquisa. Não há adjetivação avaliativa, rotulação carregada, hipérboles ou verbos de elocução que impliquem julgamento."
+      },
+      {
+        "sinal": "S2",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto não atribui causas, culpas ou responsabilidades, limitando-se a descrever resultados numéricos de pesquisa eleitoral sem construção narrativa moral ou causal."
+      },
+      {
+        "sinal": "S3",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "A pesquisa é devidamente identificada com instituto, data, tamanho amostral, metodologia, margem de erro, nível de confiança e registro no TSE. A atribuição evidencial é completa."
+      },
+      {
+        "sinal": "S4",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto é uma nota informativa sobre dados de pesquisa, não uma matéria sobre conflito ou acusação. Os números de ambos os candidatos são apresentados simetricamente."
+      },
+      {
+        "sinal": "S5",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S5.2",
+            "trecho": "No geral, sem o recorte por religião, Lula tem 47%, ante 43% de Flávio. Brancos e nulos somam 9%, e 1% não sabe ou não respondeu.",
+            "justificativa": "Os números são apresentados de forma pontual, sem qualquer referência a pesquisas anteriores, tendências ou série histórica que permita ao leitor dimensionar se representam avanço, recuo ou estabilidade para cada candidato.",
+            "confianca": "media",
+            "limitacao": "Notas curtas sobre pesquisas eleitorais frequentemente omitem comparativos por limitação de espaço. A ausência pode ser uma escolha editorial de síntese, não necessariamente um sinal discursivo intencional."
+          },
+          {
+            "sub_sinal": "S5.3",
+            "trecho": "Uma pesquisa Nexus/BTG Pactual publicada nesta segunda-feira 25 aponta que o presidente Lula (PT) venceria um eventual segundo turno contra Flávio Bolsonaro (PL) no eleitorado católico, enquanto o senador levaria a melhor entre evangélicos.",
+            "justificativa": "O texto centra-se inteiramente na lógica de 'quem está ganhando' por segmento religioso, sem discutir propostas, políticas públicas ou impacto substantivo para esses grupos eleitorais.",
+            "confianca": "baixa",
+            "limitacao": "O gênero textual — nota sobre pesquisa eleitoral — tem como função primária reportar intenções de voto. O foco em 'quem vence' é inerente ao formato, não necessariamente uma escolha editorial problemática."
+          }
+        ],
+        "justificativa_ausencia": ""
+      }
+    ],
+    "resumo": "O texto é uma nota informativa sobre pesquisa eleitoral com atribuição evidencial completa e linguagem neutra, sem sinais relevantes nas categorias S1 a S4. O único sinal detectado é em S5, com confiança média/baixa: ausência de dados comparativos com pesquisas anteriores (S5.2) e foco em intenção de voto sem contextualização substantiva (S5.3), ambos típicos do gênero jornalístico de nota sobre pesquisa."
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "noticia_id": "N05",
+  "modelo": "openrouter/anthropic/claude-sonnet-4.6",
+  "tokens_prompt": 5620,
+  "tokens_resposta": 2303,
+  "tempo_segundos": 42.46,
+  "erro": null,
+  "analise": {
+    "raciocinio": "Analisando o texto categoria por categoria:\n\nS1 — MARCAÇÃO LEXICAL AVALIATIVA:\nO texto usa 'grupo terrorista Hamas' e 'grupo terrorista palestino' — esses são rótulos valorativos aplicados pelo jornalista (não em citação direta). 'Terrorista' é um rótulo carregado que enquadra o ator de forma avaliativa. Também há 'inegociável' mas esse termo está entre aspas, sendo citação direta de Mladenov. O verbo 'classificando' é neutro. Não há verbos de elocução carregados, hipérboles marcantes ou adjetivação avaliativa além dos rótulos mencionados.\n\nS2 — ENQUADRAMENTO CAUSAL-MORAL:\nO título 'Plano de Trump em Gaza trava por recusa do Hamas em se desarmar' atribui a causa do travamento exclusivamente ao Hamas, sem mencionar outras causas possíveis (como a continuidade da ocupação israelense, que é mencionada no corpo do texto mas não como causa do travamento). O corpo do texto apresenta a posição do Hamas (condicionar desmilitarização à retirada israelense) mas o enquadramento geral responsabiliza o Hamas. Há alguma causalidade unilateral no título e no enquadramento geral. Não há apelo ao medo explícito nem falsa dicotomia clara.\n\nS3 — SUPORTE EVIDENCIAL E ATRIBUIÇÃO:\n'Mediadores internacionais afirmam há muito tempo que o desarmamento é fundamental' — fonte vaga, sem identificação. 'nenhum progresso significativo foi feito nesse sentido' — afirmação sem evidência explícita ou dado. O texto tem uma fonte identificada (Mladenov) mas também usa fontes vagas.\n\nS4 — PLURALIDADE E CONTRAPONTO INTERNO:\nO texto apresenta a posição do Hamas (condicionar desmilitarização à retirada israelense) e menciona a presença do exército israelense. No entanto, não há voz direta do Hamas nem de representantes israelenses. A perspectiva dominante é a do mediador americano/ocidental. Há assimetria: a posição do Hamas é descrita em terceira pessoa sem citação direta, enquanto Mladenov tem citação direta. Não há porta-voz israelense ou do Hamas citado diretamente.\n\nS5 — CONTEXTUALIZAÇÃO EPISÓDICA:\nO texto não fornece histórico do conflito, dados sobre destruição de Gaza, número de vítimas, histórico das negociações ou contexto sobre o que levou ao conflito atual. Foca no estado atual das negociações sem antecedentes relevantes. Não há dados comparativos sobre o processo de paz ou sobre o desarmamento. O texto é curto e episódico.",
+    "sinais": [
+      {
+        "sinal": "S1",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S1.2",
+            "trecho": "grupo terrorista Hamas",
+            "justificativa": "O rótulo 'terrorista' é aplicado pelo jornalista fora de qualquer citação direta, enquadrando o Hamas em categoria valorativa e moral sem qualificação contextual no texto.",
+            "confianca": "alta",
+            "limitacao": "O termo 'terrorista' é classificação oficial de alguns governos e organizações internacionais, o que pode torná-lo descritivo em certos contextos. O texto não explicita se segue classificação oficial."
+          },
+          {
+            "sub_sinal": "S1.2",
+            "trecho": "O grupo terrorista palestino tem procurado condicionar qualquer desmilitarização à retirada das tropas israelenses.",
+            "justificativa": "Repetição do rótulo 'terrorista' pelo jornalista fora de citação direta, reforçando o enquadramento valorativo do ator.",
+            "confianca": "alta",
+            "limitacao": "Mesma ressalva anterior: pode refletir classificação oficial adotada pelo veículo como política editorial."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S2",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S2.1",
+            "trecho": "Plano de Trump em Gaza trava por recusa do Hamas em se desarmar",
+            "justificativa": "O título atribui o travamento do plano exclusivamente à recusa do Hamas, sem mencionar outras causas possíveis como a continuidade da ocupação israelense ou divergências entre mediadores.",
+            "confianca": "media",
+            "limitacao": "O corpo do texto menciona a posição do Hamas de condicionar o desarmamento à retirada israelense, o que oferece algum contexto multicausal, mas o enquadramento do título permanece unilateral."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S3",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S3.2",
+            "trecho": "Mediadores internacionais afirmam há muito tempo que o desarmamento é fundamental para o cessar-fogo",
+            "justificativa": "'Mediadores internacionais' é fonte vaga e coletiva, sem identificação de quais mediadores, em que contexto ou quando fizeram tais afirmações.",
+            "confianca": "alta",
+            "limitacao": "Pode ser referência a declarações públicas amplamente conhecidas no contexto do conflito, mas o texto não as especifica."
+          },
+          {
+            "sub_sinal": "S3.1",
+            "trecho": "nenhum progresso significativo foi feito nesse sentido",
+            "justificativa": "Afirmação relevante sobre o estado das negociações apresentada sem dado, documento ou evidência que a sustente.",
+            "confianca": "media",
+            "limitacao": "Pode ser inferência razoável a partir das declarações de Mladenov citadas anteriormente no texto, mas não é explicitamente fundamentada."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S4",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S4.1",
+            "trecho": "O grupo terrorista palestino tem procurado condicionar qualquer desmilitarização à retirada das tropas israelenses. O exército israelense continua a controlar mais da metade da Faixa de Gaza.",
+            "justificativa": "A posição do Hamas e a presença israelense são mencionadas, mas nem o Hamas nem representantes israelenses têm voz direta no texto. Apenas o mediador Mladenov é citado diretamente, deixando as partes centrais do conflito sem representação direta.",
+            "confianca": "media",
+            "limitacao": "O texto é curto e pode ser um resumo de declaração de Mladenov, contexto em que a ausência das partes é esperada. Não há indicação de que tentativas de contato foram feitas."
+          },
+          {
+            "sub_sinal": "S4.3",
+            "trecho": "Nickolay Mladenov, o principal diplomata responsável pelo cessar-fogo mediado pelos EUA em Gaza, disse... Mladenov afirmou ainda...",
+            "justificativa": "A perspectiva de Mladenov domina o texto com múltiplas citações e parágrafos, enquanto as posições do Hamas e de Israel aparecem apenas em descrições de terceira pessoa sem citação direta ou espaço comparável.",
+            "confianca": "media",
+            "limitacao": "Texto curto com foco declarado na fala de um diplomata específico; a assimetria pode refletir o escopo editorial da matéria."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S5",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S5.1",
+            "trecho": "Nickolay Mladenov, o principal diplomata responsável pelo cessar-fogo mediado pelos EUA em Gaza, disse nesta quarta-feira (13) que a trégua depende do desarmamento do grupo terrorista Hamas",
+            "justificativa": "O texto não fornece antecedentes sobre o conflito, o histórico das negociações, quando o cessar-fogo foi estabelecido ou o que levou à situação atual, tratando o evento como ocorrência isolada.",
+            "confianca": "media",
+            "limitacao": "Texto curto e factual pode pressupor conhecimento prévio do leitor sobre o conflito em Gaza, o que é comum em cobertura jornalística contínua."
+          },
+          {
+            "sub_sinal": "S5.2",
+            "trecho": "em grande parte destruído",
+            "justificativa": "A destruição de Gaza é mencionada sem qualquer dado comparativo, percentual, número de edificações, vítimas ou referência que permita dimensionar o impacto.",
+            "confianca": "baixa",
+            "limitacao": "A expressão pode ser considerada de domínio público dado o nível de cobertura do conflito; a ausência de dado pode refletir o escopo limitado da matéria."
+          }
+        ],
+        "justificativa_ausencia": ""
+      }
+    ],
+    "resumo": "O texto apresenta marcação lexical avaliativa ao rotular o Hamas como 'grupo terrorista' fora de citações diretas, e enquadramento causal que atribui o travamento das negociações predominantemente à recusa do Hamas. Há fragilidade evidencial com uso de fontes vagas ('mediadores internacionais') e afirmações sem sustentação explícita, além de assimetria de vozes, com apenas o mediador americano citado diretamente. O texto é episódico, sem antecedentes históricos ou dados que contextualizem o conflito."
+  }
+}

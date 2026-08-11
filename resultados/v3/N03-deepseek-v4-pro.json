@@ -1,0 +1,52 @@
+{
+  "noticia_id": "N03",
+  "modelo": "openrouter/deepseek/deepseek-v4-pro",
+  "tokens_prompt": 4802,
+  "tokens_resposta": 3649,
+  "tempo_segundos": 86.98,
+  "erro": null,
+  "analise": {
+    "raciocinio": "Analisando o texto, que é uma notícia curta sobre uma pesquisa Datafolha. S1: Não há adjetivos avaliativos sem base factual, rótulos, intensificações ou verbos de elocução carregados. 'Impacto negativo' é uma descrição baseada nos números apresentados. S2: A menção ao vazamento de áudio e o impacto negativo é uma justaposição temporal, não uma atribuição causal explícita. Não há enquadramento moral, apelo ao medo ou falsa dicotomia. S3: A fonte (Datafolha) é clara, os números são atribuídos, não há afirmações sem evidência ou generalizações. S4: O texto não trata de controvérsia que exija contraponto; é um relato de pesquisa. S5: O texto foca na disputa eleitoral ('lidera', 'vantagem', 'impacto negativo para o senador'), caracterizando enquadramento de corrida de cavalos (S5.3). Há alguma comparação com pesquisa anterior, mas o foco é estratégico, sem discutir propostas ou impactos substantivos.",
+    "sinais": [
+      {
+        "sinal": "S1",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto não contém adjetivação avaliativa sem base factual, rotulação lexical, intensificação sensacionalista ou verbos de elocução carregados. 'Impacto negativo' é uma constatação apoiada nos números da pesquisa."
+      },
+      {
+        "sinal": "S2",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "Não há atribuição causal explícita; a menção ao vazamento é apenas uma referência temporal ('após'). O texto não constrói enquadramento moral, apelo ao medo ou falsa dicotomia."
+      },
+      {
+        "sinal": "S3",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "Todas as afirmações relevantes estão baseadas na pesquisa Datafolha, fonte nomeada. Os números são apresentados com origem clara, sem generalizações infundadas ou opiniões travestidas de fato."
+      },
+      {
+        "sinal": "S4",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto relata resultados de uma pesquisa, sem envolver acusações ou controvérsias que demandem contraponto. Não há parte afetada a ser ouvida."
+      },
+      {
+        "sinal": "S5",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S5.3",
+            "trecho": "No cenário de primeiro turno, Lula (PT) lidera com 9 pontos percentuais de vantagem para Flávio. Na pesquisa anterior, na última semana, estavam empatados tecnicamente. No cenário com Michelle Bolsonaro (PL) no lugar de Flávio, o petista amplia vantagem para 20 pontos percentuais.",
+            "justificativa": "O texto concentra-se na disputa eleitoral, destacando variações numéricas e quem está à frente, sem abordar propostas, programas ou impactos das candidaturas. É um enquadramento típico de 'corrida de cavalos'.",
+            "confianca": "alta",
+            "limitacao": "É um padrão comum em notícias de pesquisa eleitoral; não indica viés, mas limita a compreensão do leitor sobre o significado político das intenções de voto."
+          }
+        ],
+        "justificativa_ausencia": ""
+      }
+    ],
+    "resumo": "A notícia é um relato direto de pesquisa eleitoral, sem marcas lexicais avaliativas, atribuição causal ou problemas de evidência. O principal sinal discursivo é o enquadramento episódico focado na disputa (corrida de cavalos), comum nesse tipo de cobertura."
+  }
+}

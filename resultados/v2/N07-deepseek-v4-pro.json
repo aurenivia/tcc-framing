@@ -1,0 +1,55 @@
+{
+  "noticia_id": "N07",
+  "modelo": "openrouter/deepseek/deepseek-v4-pro",
+  "tokens_prompt": 4225,
+  "tokens_resposta": 7766,
+  "tempo_segundos": 155.85,
+  "erro": null,
+  "analise": {
+    "raciocinio": "Analisei cada categoria independentemente, percorrendo o texto em busca de sinais conforme os subcritérios. Para S1, identifiquei termos avaliativos na abertura do texto, como 'infesta' e 'pragas', que introduzem julgamento sem base factual própria, configurando marcação lexical avaliativa. Não encontrei verbos de elocução carregados. Para S2, o texto apresenta múltiplas causas para a indexação (herança histórica, política governamental, inércia) e não constrói enquadramento causal unilateral ou moral; não há sinais. Para S3, a introdução usa fonte vaga ('economistas ouvidos pelo G1') e apresenta número sem origem documentada, fragilizando a evidência. As demais afirmações são bem atribuídas. Para S4, o texto não trata de controvérsia entre partes; as fontes são economistas com visões complementares, não havendo exigência de contraponto. Para S5, o texto é rico em contextualização histórica e institucional, afastando o enquadramento episódico.",
+    "achados": [
+      {
+        "sinal": "S1",
+        "sub_sinal": "S1.1",
+        "sub_sinal_nome": "Adjetivação avaliativa",
+        "trecho": "a indexação, ainda infesta boa parte da economia brasileira",
+        "justificativa": "O verbo 'infesta' constitui metáfora com forte carga negativa, qualificando a indexação como praga ou invasão daninha, sem que essa avaliação decorra de evidência factual apresentada no próprio período.",
+        "confianca": "media",
+        "limitacao": "O termo pode ser interpretado como figura de linguagem comum em análises econômicas, e o texto subsequentemente fornece dados que embasam a ideia de persistência nociva, reduzindo a carga avaliativa."
+      },
+      {
+        "sinal": "S1",
+        "sub_sinal": "S1.2",
+        "sub_sinal_nome": "Rotulação lexical",
+        "trecho": "uma das “pragas” da hiperinflação",
+        "justificativa": "O substantivo 'pragas' (mesmo entre aspas) rotula a indexação com termo fortemente negativo, enquadrando-a como flagelo, sem que o texto justifique esse enquadramento com evidência direta.",
+        "confianca": "media",
+        "limitacao": "As aspas podem indicar que o jornalista está reproduzindo expressão de uso corrente ou citação indireta, e não necessariamente endossando o rótulo; além disso, o texto desenvolve argumentos que sustentam a ideia de dano."
+      },
+      {
+        "sinal": "S3",
+        "sub_sinal": "S3.2",
+        "sub_sinal_nome": "Fonte vaga ou anônima",
+        "trecho": "Segundo economistas ouvidos pelo G1, os preços indexados no Brasil têm peso de cerca de 30% no índice oficial de inflação",
+        "justificativa": "A atribuição a 'economistas ouvidos pelo G1' não identifica os profissionais nem a instituição, constituindo fonte vaga para uma afirmação quantitativa relevante.",
+        "confianca": "alta",
+        "limitacao": "O texto posteriormente nomeia economistas (Patrícia Pereira, Alcides Leite) que podem ser a origem da informação, mas a atribuição inicial permanece genérica, e não há menção a estudo ou metodologia."
+      },
+      {
+        "sinal": "S3",
+        "sub_sinal": "S3.4",
+        "sub_sinal_nome": "Número ou comparação sem origem",
+        "trecho": "os preços indexados no Brasil têm peso de cerca de 30% no índice oficial de inflação",
+        "justificativa": "O percentual de 30% é apresentado sem referência a pesquisa, instituto ou metodologia que o sustente, fragilizando a evidência do dado.",
+        "confianca": "alta",
+        "limitacao": "O número pode ter sido extraído das declarações dos economistas citados adiante, mas o texto não vincula explicitamente o dado a uma fonte documentada, e a expressão 'cerca de' indica estimativa sem origem precisa."
+      }
+    ],
+    "sinais_ausentes": [
+      "S2",
+      "S4",
+      "S5"
+    ],
+    "resumo": "O texto apresenta marcação lexical avaliativa na abertura (S1.1 e S1.2) e fragilidade evidencial na atribuição de dado quantitativo (S3.2 e S3.4). As demais categorias (enquadramento causal‑moral, pluralidade e contextualização) não exibem sinais conforme os critérios do protocolo."
+  }
+}

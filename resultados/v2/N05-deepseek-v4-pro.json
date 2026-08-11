@@ -1,0 +1,30 @@
+{
+  "noticia_id": "N05",
+  "modelo": "openrouter/deepseek/deepseek-v4-pro",
+  "tokens_prompt": 3513,
+  "tokens_resposta": 5969,
+  "tempo_segundos": 137.44,
+  "erro": null,
+  "analise": {
+    "raciocinio": "Análise independente de cada categoria:\n\n**S1 — MARCAÇÃO LEXICAL AVALIATIVA:**\n- O texto é majoritariamente descritivo e neutro. Há uma citação direta de Collor contendo palavras com carga avaliativa, como 'inconformados' e 'desiludidos', mas isso é atribuído a um ator (Collor) e relatado como discurso dele, não endossado pelo veículo. O texto não adjetiva, não rotula, não usa verbos de elocução carregados. Apenas o trecho 'desbaratou o esquema' merece atenção: 'desbaratou' é um verbo do próprio texto (não citação) que pode ter uma leve carga de intensificação positiva para a ação policial, mas é muito sutil e comum em coberturas policiais. Considerarei S1.1 ou S1.3? É um verbo, não se encaixa perfeitamente. Não é um achado forte. No geral, ausência de sinais S1.\n\n**S2 — ENQUADRAMENTO CAUSAL-MORAL:**\n- O texto é uma matéria sobre uma negação. Não há construção de causalidade unilateral (não atribui culpa pelo esquema a um único ator no texto). Não há responsabilização desproporcional pelo próprio veículo. Não há avaliação moral implícita induzida pelo jornalista. O texto cita as suspeitas, mas as equilibra imediatamente com a ressalva do juiz. Não há apelo ao medo ou falsa dicotomia. O texto relata a defesa de Collor e contextualiza com a informação judicial. Isso parece ser um texto com enquadramento relativamente equilibrado. Ausência de sinais S2.\n\n**S3 — SUPORTE EVIDENCIAL E ATRIBUIÇÃO:**\n- Todas as informações relevantes estão atribuídas. A suspeita, os depósitos, a ressalva judicial vêm de Moro. A negação é de Collor. As datas das notícias são atribuídas a Collor. As fontes são nomeadas (juiz Sérgio Moro, ministro Teori Zavascki). Não há claims sem evidência. Os números citados (R$ 10 bilhões, oito comprovantes) vêm de fontes oficiais (Lava Jato). Não há fonte vaga ou anônima. Não há opinião como fato. Ausência de sinais S3.\n\n**S4 — PLURALIDADE E CONTRAPONTO INTERNO:**\n- O texto trata de uma acusação (suspeita de envolvimento). O principal ator é Collor, que está se defendendo. A voz da acusação aparece indiretamente através do relato do ofício judicial e da apreensão dos comprovantes. O juiz Moro é citado como fonte que contém tanto a suspeita (apreensão de depósitos) quanto a ressalva (sem indícios de envolvimento). O texto não inclui uma voz independente acusando Collor. A suspeita é um fato (depósitos encontrados), não uma declaração de um acusador. O doleiro Youssef não é ouvido. O Ministério Público não é citado. A parte 'acusadora' é institucional (documentos, ofícios) e está presente. Note-se que a ressalva \"não há qualquer indício\" de Moro está no texto, mas é o que Collor usa em sua defesa. O contraponto à defesa de Collor existe na forma da evidência documental (apreensão dos comprovantes). É uma matéria que relata uma negação, mas há evidência contrária? A evidência é de que depósitos foram achados. A matéria não conclui. Ela apresenta os dois lados do mesmo ator judicial (Moro), mas não busca a versão de outros envolvidos. Youssef, por exemplo. Considerando que há uma controvérsia (Collor vs. suspeita), a ausência de outras fontes pode ser um S4.1 (Youssef ausente) ou S4.4 (fonte única para controvérsia). A fonte é basicamente o sistema judicial (Moro, Teori) e Collor. É uma fonte única para o lado da acusação (Judiciário) e uma para a defesa (Collor). Isso é comum. Mas a acusação é um fato investigativo, não uma opinião. Não parece haver assimetria severa nem contraponto fraco. O texto apresenta as informações de forma equilibrada. A ausência de Youssef ou MP pode ser justificada pelo escopo da matéria (pronunciamento de Collor). Ausência de sinais S4. O texto não ignora a acusação, pelo contrário.\n\n**S5 — CONTEXTUALIZAÇÃO EPISÓDICA:**\n- A matéria contextualiza: menciona a prisão de Youssef, o valor movimentado, o ofício ao STF, a menção a outros deputados, e a absolvição anterior de Collor pelo STF. Isso fornece antecedentes e contexto institucional. Não é um fato isolado. Há comparação implícita com as acusações anteriores. O texto não foca em bastidores ou cavalo de corrida, mas em informações factuais. Não é puramente episódico. Ausência de sinais S5.\n\nConclusão do raciocínio: Nenhum sinal discursivo claro conforme os subcritérios foi identificado. A suposta carga de 'desbaratou' é muito fraca e o verbo é comum em textos jornalísticos, não caracteriza sensacionalismo ou adjetivação avaliativa sem base. A matéria é equilibrada e atribuída. Ausência total de sinais.",
+    "achados": [
+      {
+        "sinal": "S1",
+        "sub_sinal": "S1.3",
+        "sub_sinal_nome": "Intensificação / sensacionalismo",
+        "trecho": "que desbaratou o esquema de lavagem de dinheiro de Youssef",
+        "justificativa": "O verbo 'desbaratou' confere uma carga de sucesso e impacto à ação policial, sugerindo desmantelamento total, sem que o texto apresente evidências de que o esquema foi efetivamente desarticulado por completo naquele momento. É um termo com leve intensificação.",
+        "confianca": "baixa",
+        "limitacao": "O termo 'desbaratou' é amplamente utilizado em textos jornalísticos para descrever operações policiais e pode ser considerado linguagem descritiva padrão, não necessariamente sensacionalista. A Lava Jato de fato prendeu o doleiro, o que configura uma ação de desbaratamento."
+      }
+    ],
+    "sinais_ausentes": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ],
+    "resumo": "O texto é majoritariamente descritivo e equilibrado, com raríssimos sinais discursivos. O único ponto identificável é o uso do verbo 'desbaratou', que carrega uma leve carga de intensificação positiva para a ação policial, mas com confiança baixa. Todas as demais categorias e subcritérios não apresentam achados relevantes."
+  }
+}

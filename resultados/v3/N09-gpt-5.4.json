@@ -1,0 +1,138 @@
+{
+  "noticia_id": "N09",
+  "modelo": "openrouter/openai/gpt-5.4",
+  "tokens_prompt": 4796,
+  "tokens_resposta": 2384,
+  "tempo_segundos": 26.99,
+  "erro": null,
+  "analise": {
+    "raciocinio": "S1: Examinei o texto em busca de adjetivação avaliativa, rótulos, intensificação e verbos de elocução carregados. Há vários adjetivos promocionais ou valorativos na voz do texto jornalístico, como \"bem interessantes\", \"consagrado\" e \"ampla\", além de formulações como \"novo olhar\" e \"importância\" que podem introduzir avaliação sem sustentação explícita no próprio texto. Não identifiquei verbos de elocução carregados, pois o texto é majoritariamente descritivo e informativo sobre programação cultural. S2: Avaliei se o texto atribui causas, culpas, ameaças ou constrói juízo moral por encadeamento narrativo. O conteúdo é agenda cultural e não estrutura conflito causal ou moral; não encontrei causalidade unilateral, responsabilização, apelo ao medo ou falsa dicotomia. S3: Verifiquei se afirmações relevantes carecem de evidência, fonte ou atribuição. Há comparativos e quantificações como \"mais de mil atrações\" e a mudança de distribuição de palcos, sem indicação de fonte ou origem no próprio texto; também há afirmações interpretativas sobre obras e exposições apresentadas como constatações descritivas sem atribuição adicional. S4: Analisei pluralidade e contraponto interno. Como se trata de uma matéria de serviço/listagem de programação, não há controvérsia explícita nem acusação que exija ouvir lados opostos; por isso não detectei ausência relevante de contraponto. S5: Busquei sinais de contextualização episódica. O texto oferece algum contexto mínimo sobre a Virada Cultural e compara a distribuição atual de palcos com edições anteriores, mas em grande parte funciona como agenda episódica de programação, sem maiores dados comparativos sobre dimensão, critérios, impactos ou contexto institucional do evento; por isso há sinais de ausência de dado comparativo e de contexto mais amplo em trechos específicos.",
+    "sinais": [
+      {
+        "sinal": "S1",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S1.1",
+            "trecho": "estão com muitas atrações culturais bem interessantes",
+            "justificativa": "A expressão \"bem interessantes\" introduz avaliação positiva do jornalista sobre as atrações, sem critério factual explícito no próprio texto que sustente esse juízo.",
+            "confianca": "alta",
+            "limitacao": "Em textos de agenda cultural, esse tipo de formulação pode funcionar como estilo promocional ou convite ao público, o que reduz a força interpretativa do sinal."
+          },
+          {
+            "sub_sinal": "S1.1",
+            "trecho": "ator consagrado pela Associação Paulista dos Críticos de Arte",
+            "justificativa": "O termo \"consagrado\" é valorativo. Embora venha acompanhado de referência à APCA, o texto não explicita em que consiste esse reconhecimento, mantendo um componente avaliativo.",
+            "confianca": "media",
+            "limitacao": "A menção à associação fornece algum suporte contextual, de modo que o uso pode ser parcialmente descritivo e não apenas opinativo."
+          },
+          {
+            "sub_sinal": "S1.1",
+            "trecho": "um thriller do consagrado dramaturgo espanhol Rodolf Sirera",
+            "justificativa": "Novamente, \"consagrado\" opera como adjetivação de prestígio na voz do texto, sem explicitação factual adicional no trecho.",
+            "confianca": "media",
+            "limitacao": "O adjetivo pode refletir reconhecimento consolidado no campo cultural, mas isso não é demonstrado no próprio texto."
+          },
+          {
+            "sub_sinal": "S1.1",
+            "trecho": "que trouxe um novo olhar sobre a literatura infanto-juvenil",
+            "justificativa": "A formulação \"novo olhar\" sugere juízo positivo sobre relevância ou inovação da autora, sem base demonstrada no texto.",
+            "confianca": "media",
+            "limitacao": "Pode ser paráfrase de curadoria da exposição, e não necessariamente avaliação autônoma do redator; o texto não esclarece essa origem."
+          },
+          {
+            "sub_sinal": "S1.1",
+            "trecho": "que evidencia a importância do artista para evolução da luta contra o racismo",
+            "justificativa": "A palavra \"importância\" atribui valor e centralidade ao artista sem apresentar, no próprio texto, elementos que sustentem essa avaliação.",
+            "confianca": "media",
+            "limitacao": "A frase pode reproduzir a proposta curatorial da exposição, o que torna ambíguo se se trata de endosso jornalístico ou descrição institucional."
+          },
+          {
+            "sub_sinal": "S1.1",
+            "trecho": "na ampla sala do segundo andar do museu",
+            "justificativa": "O adjetivo \"ampla\" acrescenta qualificação descritiva com matiz valorativo, sem referência objetiva de dimensão no texto.",
+            "confianca": "baixa",
+            "limitacao": "Pode ser apenas descrição espacial comum, com baixo impacto avaliativo sobre a interpretação geral."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S2",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto não organiza narrativa de culpa, ameaça ou juízo moral; trata-se predominantemente de uma agenda de programação cultural. Não há encadeamento causal ou responsabilização seletiva identificável nos trechos apresentados."
+      },
+      {
+        "sinal": "S3",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S3.4",
+            "trecho": "O evento deste ano reúne, nos dois dias, mais de mil atrações em 22 palcos espalhados por toda a cidade.",
+            "justificativa": "Há quantificação relevante sobre a dimensão do evento, mas o texto não informa a origem desse número, documento, organização responsável ou metodologia de contagem.",
+            "confianca": "alta",
+            "limitacao": "Em matérias de serviço, números de programação podem ser tomados de divulgação oficial; ainda assim, essa origem não está explicitada no texto."
+          },
+          {
+            "sub_sinal": "S3.4",
+            "trecho": "Ao contrário das primeiras edições, que priorizavam o centro, apenas cinco palcos serão montados na região central paulistana em 2026.",
+            "justificativa": "O trecho faz comparação temporal e apresenta número específico, mas sem indicar fonte para a comparação nem base documental sobre as edições anteriores.",
+            "confianca": "alta",
+            "limitacao": "A afirmação pode derivar de histórico conhecido da programação do evento, porém o texto não explicita essa base."
+          },
+          {
+            "sub_sinal": "S3.3",
+            "trecho": "demonstra a narrativa homogênea que atravessa o continente através de trajetórias paralelas",
+            "justificativa": "O verbo \"demonstra\" apresenta como constatação objetiva uma interpretação curatorial sobre a exposição, sem atribuição explícita a curadores, catálogo ou instituição.",
+            "confianca": "media",
+            "limitacao": "Pode ser mera descrição da proposta expositiva, o que atenua a leitura de opinião apresentada como fato."
+          },
+          {
+            "sub_sinal": "S3.3",
+            "trecho": "cantora que dominou as rádios nos anos 50",
+            "justificativa": "A formulação \"dominou as rádios\" é um resumo interpretativo forte sobre alcance e sucesso da artista, sem dado ou fonte explicitados no texto.",
+            "confianca": "media",
+            "limitacao": "A expressão pode ser entendida como síntese cultural amplamente usada, mas carece de sustentação interna no trecho."
+          }
+        ],
+        "justificativa_ausencia": ""
+      },
+      {
+        "sinal": "S4",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "Não há controvérsia, acusação ou disputa pública estruturando a matéria que exija contraponto entre partes afetadas. O texto funciona como guia de programação e, dentro desse gênero, não se observa ausência relevante de vozes opostas."
+      },
+      {
+        "sinal": "S5",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S5.2",
+            "trecho": "O evento deste ano reúne, nos dois dias, mais de mil atrações em 22 palcos espalhados por toda a cidade.",
+            "justificativa": "Embora haja um número absoluto, falta base comparativa mais ampla para dimensionar essa escala no tempo ou em relação a outras edições, além do contraste pontual com a região central.",
+            "confianca": "media",
+            "limitacao": "O texto oferece algum contexto ao mencionar a distribuição de palcos em relação às primeiras edições, o que reduz parcialmente a ausência comparativa."
+          },
+          {
+            "sub_sinal": "S5.1",
+            "trecho": "Durante a Virada Cultural 2026, que acontece neste sábado (23) e domingo (24), há diversos espaços culturais na Avenida Paulista que contam com programação gratuita e horário de funcionamento estendido.",
+            "justificativa": "A abertura apresenta o evento como dado imediato de agenda, sem explicar minimamente o que é a Virada Cultural, seus objetivos ou seu formato geral, além da informação operacional do fim de semana.",
+            "confianca": "media",
+            "limitacao": "Como agenda de serviço, o texto pode pressupor familiaridade prévia do leitor com o evento, o que limita a exigência de histórico mais extenso."
+          },
+          {
+            "sub_sinal": "S5.3",
+            "trecho": "Acesse aqui a programação completa.",
+            "justificativa": "O texto se organiza principalmente como serviço episódico de listagem de atrações e horários, com foco operacional no consumo do evento, sem desenvolver impactos culturais, públicos atendidos ou discussão substantiva mais ampla.",
+            "confianca": "baixa",
+            "limitacao": "Esse traço decorre do gênero jornalístico de agenda cultural e não indica problema por si; a classificação aqui aponta apenas limitação contextual."
+          }
+        ],
+        "justificativa_ausencia": ""
+      }
+    ],
+    "resumo": "O principal conjunto de sinais está em S1 e S3: há linguagem promocional/avaliativa em alguns trechos e afirmações quantitativas ou comparativas sem fonte explicitada no texto. Não há sinais claros de enquadramento causal-moral nem de falha de pluralidade, enquanto S5 aparece de forma limitada por se tratar de uma agenda cultural com contextualização restrita."
+  }
+}

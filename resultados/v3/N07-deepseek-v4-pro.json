@@ -1,0 +1,59 @@
+{
+  "noticia_id": "N07",
+  "modelo": "openrouter/deepseek/deepseek-v4-pro",
+  "tokens_prompt": 4292,
+  "tokens_resposta": 7834,
+  "tempo_segundos": 158.79,
+  "erro": null,
+  "analise": {
+    "raciocinio": "S1: O texto é predominantemente factual, com atribuições claras à polícia e outras fontes. A expressão 'absolutamente incompatível' está entre aspas e atribuída à autoridade policial, não sendo linguagem avaliativa do jornalista. O verbo 'alegou' é usado em contexto policial sem carga valorativa explícita. Não foram encontrados adjetivos, rótulos, intensificações ou verbos de elocução carregados. S1 ausente.\n\nS2: O texto relata a conclusão policial sobre a causa do acidente, sem adicionar enquadramento causal unilateral ou moral. A versão do motorista é apresentada, e a conclusão oficial é descrita como tal. Não há avaliação moral implícita, apelo ao medo ou falsa dicotomia. S2 ausente.\n\nS3: As afirmações relevantes estão atribuídas a fontes oficiais (polícia, SSP, família). O título afirma o fato sem atribuição, mas o corpo do texto fornece a fonte. Considerando o texto integral, não há claims sem evidência, fontes vagas, opiniões como fato, números sem origem ou generalizações. S3 ausente.\n\nS4: O texto inclui a versão do acusado e de uma testemunha, além da conclusão policial. Há contraponto, sem assimetria severa de espaço. A parte afetada está presente. S4 ausente.\n\nS5: O texto é um relato episódico típico de notícia de última hora. Não fornece antecedentes históricos, dados comparativos ou contexto mais amplo sobre segurança viária. Embora haja contexto institucional (polícia, justiça), falta contextualização temporal e comparativa. S5 presente, especificamente S5.1 e S5.2.",
+    "sinais": [
+      {
+        "sinal": "S1",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto não apresenta marcação lexical avaliativa por parte do jornalista. As expressões potencialmente avaliativas estão atribuídas a fontes ou são descrições factuais."
+      },
+      {
+        "sinal": "S2",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto relata a atribuição de causa pela polícia sem adicionar enquadramento causal unilateral ou moral. Não há avaliação moral implícita, apelo ao medo ou falsa dicotomia."
+      },
+      {
+        "sinal": "S3",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "As afirmações relevantes estão suportadas por fontes nomeadas (polícia, SSP, família). O título, embora sem atribuição, é detalhado no corpo do texto. Não há fontes vagas, opiniões como fato, números sem origem ou generalizações."
+      },
+      {
+        "sinal": "S4",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto apresenta a versão do acusado e de uma testemunha, além da conclusão policial. Há contraponto, sem assimetria severa de espaço ou ausência da parte afetada."
+      },
+      {
+        "sinal": "S5",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S5.1",
+            "trecho": "O Porsche dirigido pelo cantor MC Tuto trafegava em velocidade considerada 'absolutamente incompatível com a via' quando atropelou o jovem Gabriel Luiz Berrelhas Alves, de 20 anos, na madrugada deste sábado(24/1), em Barueri, na região metropolitana de São Paulo, segundo a polícia.",
+            "justificativa": "O texto introduz o evento como um fato isolado, sem mencionar qualquer antecedente histórico sobre acidentes semelhantes na região, o histórico do motorista ou o contexto de segurança viária no local.",
+            "confianca": "alta",
+            "limitacao": "A ausência de antecedentes pode ser justificada pelo formato de notícia de última hora, que prioriza o relato imediato do fato."
+          },
+          {
+            "sub_sinal": "S5.2",
+            "trecho": "O acidente ocorreu em uma área destinada exclusivamente ao lazer de pedestres, situada entre as duas pistas da Avenida Guilherme Perereca Guglielmo.",
+            "justificativa": "O texto não fornece dados comparativos, como estatísticas de acidentes na via, frequência de eventos semelhantes ou comparação com outras áreas, o que limita a compreensão da magnitude do problema.",
+            "confianca": "alta",
+            "limitacao": "Reportagens factuais curtas frequentemente omitem dados comparativos por restrições de espaço e tempo."
+          }
+        ],
+        "justificativa_ausencia": ""
+      }
+    ],
+    "resumo": "Texto predominantemente factual, com atribuição adequada e contraponto. Apresenta enquadramento episódico típico, sem contextualização histórica ou comparativa."
+  }
+}

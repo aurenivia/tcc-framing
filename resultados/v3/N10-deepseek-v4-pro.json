@@ -1,0 +1,52 @@
+{
+  "noticia_id": "N10",
+  "modelo": "openrouter/deepseek/deepseek-v4-pro",
+  "tokens_prompt": 4114,
+  "tokens_resposta": 3083,
+  "tempo_segundos": 70.78,
+  "erro": null,
+  "analise": {
+    "raciocinio": "S1: O texto é exclusivamente descritivo, sem adjetivos avaliativos, rótulos, intensificações ou verbos de elocução carregados. Todos os termos são neutros (ex.: 'especial' descreve o sorteio, não avalia). S2: Não há enquadramento causal ou moral; o texto apenas relata fatos, sem atribuir culpa, construir ameaças ou sugerir julgamentos. S3: Todas as afirmações são factuais e atribuídas à Caixa Econômica Federal ou são procedimentos padrão; não há claims sem evidência, fontes vagas, opiniões ou números sem origem. S4: O texto trata de um resultado de loteria, sem controvérsia ou acusação; não há necessidade de pluralidade de vozes, e não há indício de assimetria ou ausência de partes afetadas. S5: Embora o texto seja majoritariamente informativo e procedimental, ele não oferece qualquer dado comparativo que situe o prêmio de R$ 336,3 milhões em relação a outros concursos especiais ou à série histórica da Mega-Sena, limitando a compreensão do leitor sobre a dimensão do valor. Não há outros sinais de enquadramento episódico (antecedentes ou contexto institucional estão parcialmente presentes).",
+    "sinais": [
+      {
+        "sinal": "S1",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "Não há adjetivos avaliativos, rótulos, intensificações ou verbos de elocução carregados; o texto é puramente descritivo e neutro."
+      },
+      {
+        "sinal": "S2",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "Não há enquadramento causal ou moral: o texto relata fatos sem atribuir culpa, construir ameaças ou induzir julgamentos morais."
+      },
+      {
+        "sinal": "S3",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "Todas as afirmações são baseadas em dados do sorteio ou procedimentos da Caixa, com fonte nomeada; não há opiniões não atribuídas, números sem origem ou generalizações infundadas."
+      },
+      {
+        "sinal": "S4",
+        "presente": false,
+        "sub_sinais_detectados": [],
+        "justificativa_ausencia": "O texto não trata de controvérsia ou acusação; por ser informativo e sem conflito, não requer pluralidade de vozes, e não há indícios de assimetria ou ausência de partes relevantes."
+      },
+      {
+        "sinal": "S5",
+        "presente": true,
+        "sub_sinais_detectados": [
+          {
+            "sub_sinal": "S5.2",
+            "trecho": "Ganhadores do Rio de Janeiro e de Fortaleza vão dividir os R$ 336,3 milhões do sorteio especial de 30 anos da Mega-Sena.",
+            "justificativa": "O montante do prêmio é informado, mas o texto não fornece nenhum dado comparativo (como valores de concursos especiais anteriores ou a série histórica), o que dificulta o dimensionamento da cifra pelo leitor.",
+            "confianca": "media",
+            "limitacao": "Trata-se de uma nota factual de resultado de loteria, onde a inserção de dados comparativos não é estritamente obrigatória, mas sua ausência caracteriza o enquadramento episódico, reduzindo a compreensão contextual."
+          }
+        ],
+        "justificativa_ausencia": ""
+      }
+    ],
+    "resumo": "Texto factual sobre o resultado do sorteio especial da Mega-Sena, com informações sobre ganhadores e regras de premiação. Não foram detectados sinais discursivos nas categorias de marcação lexical, enquadramento causal-moral, suporte evidencial ou pluralidade. Apenas o enquadramento episódico (S5) se manifesta pela ausência de comparação que dimensionasse o valor do prêmio, algo comum em notas de resultado, mas que limita a contextualização."
+  }
+}

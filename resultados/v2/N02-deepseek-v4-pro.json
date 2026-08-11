@@ -1,0 +1,219 @@
+{
+  "noticia_id": "N02",
+  "modelo": "openrouter/deepseek/deepseek-v4-pro",
+  "tokens_prompt": 3585,
+  "tokens_resposta": 5148,
+  "tempo_segundos": 207.17,
+  "erro": null,
+  "analise": {
+    "raciocinio": "Analisei cada categoria independentemente. S1: O texto é essencialmente uma lista de resultados de pesquisa, sem adjetivação avaliativa, rótulos carregados, intensificação ou verbos de elocução carregados. Termos como 'pior taxa de rejeição' são descritivos com base nos dados apresentados. S2: Não há construção de causalidade, atribuição de culpa, avaliação moral implícita, apelo ao medo ou falsa dicotomia. O texto apenas reporta percentuais de opinião, sem enquadrar narrativas. S3: Todas as afirmações são atribuídas à pesquisa Datafolha, com detalhes de amostra e datas. Não há claims sem evidência, fontes vagas, opiniões como fato, números sem origem ou generalizações infundadas. S4: O texto não trata de acusação, conflito ou disputa que exija contraponto; é um relato de survey. Não há partes afetadas a serem ouvidas, e a natureza do conteúdo não demanda pluralidade de vozes. S5: Embora seja um texto curto e sem contexto histórico amplo sobre o impeachment, ele fornece dado comparativo com pesquisa anterior (fevereiro), o que mitiga o enquadramento puramente episódico. Não há foco em bastidores ou estratégia, e a ausência de contexto institucional é esperada em notas de pesquisa. Assim, não identifiquei sinais discursivos relevantes em nenhuma categoria.",
+    "achados": [
+      {
+        "sinal": "S1",
+        "sub_sinal": "S1.1",
+        "sub_sinal_nome": "Adjetivação avaliativa",
+        "trecho": "Nenhum trecho identificado.",
+        "justificativa": "O texto não contém adjetivos que expressem juízo de valor sem base factual. 'Pior taxa de rejeição' está ancorado nos números apresentados (57% vs. 47% anterior).",
+        "confianca": "alta",
+        "limitacao": "A ausência é clara; o texto é descritivo e baseado em dados."
+      },
+      {
+        "sinal": "S1",
+        "sub_sinal": "S1.2",
+        "sub_sinal_nome": "Rotulação lexical",
+        "trecho": "Nenhum trecho identificado.",
+        "justificativa": "Não há rótulos valorativos como 'petista', 'golpista' ou equivalentes. As siglas partidárias (PT, PMDB) são usadas de forma neutra.",
+        "confianca": "alta",
+        "limitacao": "A ausência é inequívoca."
+      },
+      {
+        "sinal": "S1",
+        "sub_sinal": "S1.3",
+        "sub_sinal_nome": "Intensificação / sensacionalismo",
+        "trecho": "Nenhum trecho identificado.",
+        "justificativa": "Não há hipérboles, superlativos dramáticos ou termos como 'caos', 'colapso'.",
+        "confianca": "alta",
+        "limitacao": "A linguagem é sóbria e factual."
+      },
+      {
+        "sinal": "S1",
+        "sub_sinal": "S1.4",
+        "sub_sinal_nome": "Verbo de elocução carregado",
+        "trecho": "Nenhum trecho identificado.",
+        "justificativa": "Os verbos utilizados são neutros: 'indica', 'questionou', 'perguntou', 'respondeu'. Não há 'admitiu', 'alegou' ou similares.",
+        "confianca": "alta",
+        "limitacao": "A ausência é total."
+      },
+      {
+        "sinal": "S2",
+        "sub_sinal": "S2.1",
+        "sub_sinal_nome": "Causalidade unilateral",
+        "trecho": "Nenhum trecho identificado.",
+        "justificativa": "O texto não atribui causas ao apoio ao impeachment ou a qualquer outro fenômeno; apenas reporta opiniões.",
+        "confianca": "alta",
+        "limitacao": "Não há construção causal."
+      },
+      {
+        "sinal": "S2",
+        "sub_sinal": "S2.2",
+        "sub_sinal_nome": "Responsabilização desproporcional",
+        "trecho": "Nenhum trecho identificado.",
+        "justificativa": "Não há atribuição de culpa a qualquer ator. As perguntas da pesquisa são apresentadas sem endosso do texto.",
+        "confianca": "alta",
+        "limitacao": "Inexistente."
+      },
+      {
+        "sinal": "S2",
+        "sub_sinal": "S2.3",
+        "sub_sinal_nome": "Avaliação moral implícita",
+        "trecho": "Nenhum trecho identificado.",
+        "justificativa": "A justaposição de perguntas (ex.: rejeição a Lula, motivação para assumir ministério) não é acompanhada de narrativa que induza julgamento; são itens de survey listados sequencialmente.",
+        "confianca": "alta",
+        "limitacao": "A mera listagem de resultados não configura enquadramento moral implícito."
+      },
+      {
+        "sinal": "S2",
+        "sub_sinal": "S2.4",
+        "sub_sinal_nome": "Apelo ao medo / consequência extrema",
+        "trecho": "Nenhum trecho identificado.",
+        "justificativa": "Não há cenários catastróficos ou ameaças.",
+        "confianca": "alta",
+        "limitacao": "Ausente."
+      },
+      {
+        "sinal": "S2",
+        "sub_sinal": "S2.5",
+        "sub_sinal_nome": "Falsa dicotomia ou lógica falha",
+        "trecho": "Nenhum trecho identificado.",
+        "justificativa": "O texto não apresenta argumentação binária ou falaciosa; é uma exposição de dados.",
+        "confianca": "alta",
+        "limitacao": "Não se aplica."
+      },
+      {
+        "sinal": "S3",
+        "sub_sinal": "S3.1",
+        "sub_sinal_nome": "Claim sem evidência explícita",
+        "trecho": "Nenhum trecho identificado.",
+        "justificativa": "Todas as afirmações são resultados de pesquisa, com fonte clara (Datafolha).",
+        "confianca": "alta",
+        "limitacao": "O texto é inteiramente baseado na pesquisa citada."
+      },
+      {
+        "sinal": "S3",
+        "sub_sinal": "S3.2",
+        "sub_sinal_nome": "Fonte vaga ou anônima",
+        "trecho": "Nenhum trecho identificado.",
+        "justificativa": "A fonte é nomeada: Datafolha, com detalhes de metodologia (dias, amostra, municípios).",
+        "confianca": "alta",
+        "limitacao": "Fonte plenamente identificada."
+      },
+      {
+        "sinal": "S3",
+        "sub_sinal": "S3.3",
+        "sub_sinal_nome": "Opinião apresentada como fato",
+        "trecho": "Nenhum trecho identificado.",
+        "justificativa": "O texto distingue claramente entre os dados da pesquisa e a apresentação jornalística, usando 'segundo o Datafolha', 'indicou', etc.",
+        "confianca": "alta",
+        "limitacao": "Não há opiniões do jornalista."
+      },
+      {
+        "sinal": "S3",
+        "sub_sinal": "S3.4",
+        "sub_sinal_nome": "Número ou comparação sem origem",
+        "trecho": "Nenhum trecho identificado.",
+        "justificativa": "Todos os percentuais são atribuídos ao Datafolha, com informação de amostra e período.",
+        "confianca": "alta",
+        "limitacao": "Origem explícita."
+      },
+      {
+        "sinal": "S3",
+        "sub_sinal": "S3.5",
+        "sub_sinal_nome": "Generalização não fundamentada",
+        "trecho": "Nenhum trecho identificado.",
+        "justificativa": "O texto sempre se refere aos 'entrevistados' ou 'ouvidos', não a 'os brasileiros' de forma genérica.",
+        "confianca": "alta",
+        "limitacao": "A linguagem é precisa quanto à amostra."
+      },
+      {
+        "sinal": "S4",
+        "sub_sinal": "S4.1",
+        "sub_sinal_nome": "Parte diretamente afetada ausente",
+        "trecho": "Nenhum trecho identificado.",
+        "justificativa": "O texto não é sobre uma acusação ou disputa que exija ouvir partes; é um relato de opinião pública. Não há 'acusado' ou 'afetado' cuja voz seja necessária.",
+        "confianca": "alta",
+        "limitacao": "A natureza do conteúdo (pesquisa de opinião) não demanda contraponto."
+      },
+      {
+        "sinal": "S4",
+        "sub_sinal": "S4.2",
+        "sub_sinal_nome": "Contraponto formal / fraco",
+        "trecho": "Nenhum trecho identificado.",
+        "justificativa": "Não há contraponto porque não há tese sendo defendida; o texto apenas lista resultados.",
+        "confianca": "alta",
+        "limitacao": "Inexistente."
+      },
+      {
+        "sinal": "S4",
+        "sub_sinal": "S4.3",
+        "sub_sinal_nome": "Assimetria severa de espaço",
+        "trecho": "Nenhum trecho identificado.",
+        "justificativa": "Não há vozes em conflito; o espaço é dedicado integralmente aos dados.",
+        "confianca": "alta",
+        "limitacao": "Não se aplica."
+      },
+      {
+        "sinal": "S4",
+        "sub_sinal": "S4.4",
+        "sub_sinal_nome": "Fonte única para controvérsia",
+        "trecho": "Nenhum trecho identificado.",
+        "justificativa": "A única fonte é a pesquisa, o que é adequado para uma matéria que apenas divulga seus resultados.",
+        "confianca": "alta",
+        "limitacao": "A fonte única é a pesquisa, não um ator em controvérsia."
+      },
+      {
+        "sinal": "S5",
+        "sub_sinal": "S5.1",
+        "sub_sinal_nome": "Ausência de antecedente relevante",
+        "trecho": "Nenhum trecho identificado como sinal claro.",
+        "justificativa": "O texto menciona a pesquisa anterior de fevereiro, fornecendo um antecedente imediato. Embora não haja contexto histórico amplo sobre o impeachment, a nota é curta e o foco é o dado novo. A ausência de histórico mais profundo é esperada para o gênero.",
+        "confianca": "media",
+        "limitacao": "Pode-se argumentar que falta contexto sobre o processo de impeachment, mas o protocolo considera que o enquadramento episódico é padrão no jornalismo diário e não necessariamente um sinal discursivo intencional. A presença de dado comparativo reduz o isolamento."
+      },
+      {
+        "sinal": "S5",
+        "sub_sinal": "S5.2",
+        "sub_sinal_nome": "Ausência de dado comparativo",
+        "trecho": "Nenhum trecho identificado.",
+        "justificativa": "Há comparação explícita com a pesquisa de fevereiro: 'Na pesquisa anterior, de fevereiro, 60% se disseram a favor do impeachment, contra 33% que eram desfavoráveis.'",
+        "confianca": "alta",
+        "limitacao": "Dado comparativo presente."
+      },
+      {
+        "sinal": "S5",
+        "sub_sinal": "S5.3",
+        "sub_sinal_nome": "Foco estratégico / bastidor / cavalo de corrida",
+        "trecho": "Nenhum trecho identificado.",
+        "justificativa": "O texto não aborda cálculos políticos, estratégias ou disputas de poder; limita-se a apresentar percentuais.",
+        "confianca": "alta",
+        "limitacao": "Ausente."
+      },
+      {
+        "sinal": "S5",
+        "sub_sinal": "S5.4",
+        "sub_sinal_nome": "Contexto institucional ausente",
+        "trecho": "Nenhum trecho identificado como sinal claro.",
+        "justificativa": "O texto não explica as regras do impeachment, competências ou trâmites. Contudo, é uma nota de pesquisa, não uma reportagem explicativa. A ausência é típica do formato e não configura um enquadramento episódico forçado.",
+        "confianca": "baixa",
+        "limitacao": "A expectativa de contexto institucional pode ser desproporcional para um texto tão curto e focado em dados de opinião."
+      }
+    ],
+    "sinais_ausentes": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ],
+    "resumo": "O texto é um relato objetivo de resultados de pesquisa Datafolha, sem sinais discursivos de viés. Todas as categorias (S1 a S5) estão ausentes ou apresentam, no máximo, limitações contextuais inerentes ao jornalismo diário, sem configurar enquadramento intencional."
+  }
+}
